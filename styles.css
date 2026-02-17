@@ -9,7 +9,7 @@ h1{
 }
 
 h2{
-    color: #000080;
+    color: #000080 !important;
 }
 
 img{
@@ -21,6 +21,7 @@ img{
     margin: auto;
 )
     
+
 
 
 
