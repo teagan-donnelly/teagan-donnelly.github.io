@@ -12,14 +12,15 @@ h2{
     color: #000080 !important;
 }
 
-img{
-    width:500px;
+.project img{
+    width: 300px;
     height: 300px;
     margin: 10px;
-    border: 2px solid rbg(04, 04, 04);
+    border: 2px solid rgb(126, 14, 201); /* choose a color */
     display: block;
     margin: auto;
-)
+}
+
     
 
 
