@@ -1,52 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSCE 190: Teagan Donnelly</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teagan Donnelly Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-    <h1>Teagan Donnelly</h1>
-    <div class=""about>
-        <h2>About me</h2>
-        <p>My ultimate goal is to be a project manger for software development. In order to achieve this goal I plan to work as a software developer for around ten years and then climb the latter to become a project manager. I am majoring in computer science and plan to minor in management to set me up to achieve this goal.</p>
-    </div>
+<body>
 
-    <div class="prjects">
-    <h2>Highlighted Projects</h2>
-    <!--Problem Statement Assignment-->
-    <section class="project">
-        <a href="files/Statement.pdf"><h3>Problem Statement</h3></a>
-        <a hred="files/Statement.pdf"><img src="images/problem.png"></a>
-        <p>Students struggle to find healthy, delicious, and budget-friendly food options close to campus.</p>
-    </section>
-        
-  <!--Sketches Assignment-->
-    <section class="project">
-        <a href="files/persona comics.pdf"><h3>Sketches</h3></a>
-        <a href="files/persona comics.pdf"><img src="images/persona.png"></a>
-        <p>
-            Possible scenerios of my target audience using my app.
-        </p>
-    </section>
+    <header>
+        <h1>Teagan Donnelly's Portfolio</h1>
+    </header>
 
-    <!--Affinity Diagram Assignment -->
-    <section class="project">
-        <a href="files/diagram.pdf.pdf"><h3>Affinity Diagram</h3></a>
-        <a href="files/diagram.pdf.pdf"><img src="images/diagram.png.png"></a>
-        <p>
-            Affinity Diagram for Food Finder
-        </p>
-    </section>
+    <nav>
+        <button class="tab-btn active" onclick="openTab(event, 'about')">About Me</button>
+        <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+        <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+    </nav>
 
-    <!--Prototype Assignment -->
-    <section class="project">
-        <a href="files/Sketches.pdf.pdf"><h3>App Interface Prototye</h3></a>
-        <a href="files/Sketches.pdf.pdf"><img src="images/appSketch.png"></a>
-        <p>
-            Prototye of App Interface
-        </p>
-    </section>
+    <main>
 
+        <section id="about" class="active">
+            <h2>About Me</h2>
 
+            <div class="profile-layout">
+                <img src="images/profile.png" alt="Profile Picture">
+
+                <div>
+                    <p>
+                        My name is Teagan Donnelly, and I am a Computer Science student at the University of South Carolina.
+                        My goal is to become a project manager in software development. I plan to begin my career as a software
+                        developer for around ten years before advancing into a leadership role. I am also pursuing a minor in
+                        Management to support this path.
+                    </p>
+
+                    <a href="files/resume.pdf" target="_blank">View My Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Highlighted Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>
+                        <a href="files/Statement.pdf">Problem Statement</a>
+                    </h3>
+                    <a href="files/Statement.pdf">
+                        <img src="images/problem.png" alt="Problem Statement">
+                    </a>
+                    <p>Students struggle to find healthy, affordable food options near campus.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>
+                        <a href="files/persona comics.pdf">Sketches</a>
+                    </h3>
+                    <a href="files/persona comics.pdf">
+                        <img src="images/persona.png" alt="Sketches">
+                    </a>
+                    <p>Scenarios showing how users interact with the app.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>
+                        <a href="files/diagram.pdf.pdf">Affinity Diagram</a>
+                    </h3>
+                    <a href="files/diagram.pdf.pdf">
+                        <img src="images/diagram.png.png" alt="Affinity Diagram">
+                    </a>
+                    <p>Organized ideas for the Food Finder project.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>
+                        <a href="files/Sketches.pdf.pdf">Prototype</a>
+                    </h3>
+                    <a href="files/Sketches.pdf.pdf">
+                        <img src="images/appSketch.png" alt="Prototype">
+                    </a>
+                    <p>Initial interface design for the application.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-links">
+                <a href="https://github.com">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="mailto:your-email@email.com">Email Me</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            let sections = document.getElementsByTagName("section");
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].classList.remove("active");
+            }
+
+            let buttons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
 </html>
