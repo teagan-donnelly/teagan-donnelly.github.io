@@ -9,21 +9,36 @@ body {
 /* Header */
 
 header {
-    background: #f7f4ef;
+    background: #ffffff;
+    color: #1f2937;
     text-align: center;
-    padding: 3rem 1rem 2rem;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 header h1 {
-    color: #2f4156;
-    font-size: 3rem;
-    font-weight: 800;
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #1e3a5f;
+}
+
+header h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2f4f7a;
+    margin: 12px auto 0;
+    border-radius: 2px;
 }
 
 header p {
-    margin-top: 0.6rem;
-    font-size: 1.05rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
     color: #64748b;
+    font-weight: 500;
 }
 
 /* Navigation */
