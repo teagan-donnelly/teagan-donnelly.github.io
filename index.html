@@ -9,113 +9,222 @@
 
 <body>
 
-    <header>
-        <h1>Teagan Donnelly's Portfolio</h1>
-    </header>
+<header>
+    <h1>Teagan Donnelly</h1>
+    <p>Computer Science Student | University of South Carolina</p>
+</header>
 
-    <nav>
-        <button class="tab-btn active" onclick="openTab(event, 'about')">About Me</button>
-        <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
-        <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
-    </nav>
+<nav>
+    <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+    <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+    <button class="tab-btn" onclick="openTab(event, 'coursework')">Coursework</button>
+    <button class="tab-btn" onclick="openTab(event, 'resume')">Resume</button>
+    <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+</nav>
 
-    <main>
+<main>
 
-        <section id="about" class="active">
-            <h2>About Me</h2>
+<section id="home" class="active">
+    <h2>Home</h2>
 
-            <div class="profile-layout">
-                <img src="images/profile.jpeg" alt="Profile Picture">
+    <div class="profile-layout">
+        <img src="images/profile.jpeg" alt="Profile Picture">
 
-                <div>
-                    <p>
-                        My name is Teagan Donnelly, and I am a Computer Science student at the University of South Carolina.
-                        My goal is to become a project manager in software development. I plan to begin my career as a software
-                        developer for around ten years before advancing into a leadership role. I am also pursuing a minor in
-                        Management to support this path.
-                    </p>
+        <div>
+            <h3>Hi, I'm Teagan.</h3>
+            <p>
+                I am a Computer Science student at the University of South Carolina interested in
+                software development, product management, and human-centered technology.
+            </p>
 
-                    <a href="files/resume.pdf" target="_blank">View My Resume</a>
-                </div>
-            </div>
-        </section>
+            <p>
+                This portfolio highlights my academic projects, technical coursework, and future personal projects.
+            </p>
 
-        <section id="projects">
-            <h2>Highlighted Projects</h2>
+            <a class="button-link" href="files/resume.pdf" target="_blank">View My Resume</a>
+        </div>
+    </div>
 
-            <div class="project-grid">
+    <div class="skills-box">
+        <h3>Current Focus</h3>
+        <ul>
+            <li>Java Development</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Development</li>
+            <li>Building Personal Projects</li>
+        </ul>
+    </div>
+</section>
 
-                <div class="project-card">
-                    <h3>
-                        <a href="files/Statement.pdf">Problem Statement</a>
-                    </h3>
-                    <a href="files/Statement.pdf">
-                        <img src="images/problem.png" alt="Problem Statement">
-                    </a>
-                    <p>Students struggle to find healthy, affordable food options near campus.</p>
-                </div>
+<section id="projects">
+    <h2>Projects</h2>
 
-                <div class="project-card">
-                    <h3>
-                        <a href="files/persona comics.pdf">Sketches</a>
-                    </h3>
-                    <a href="files/persona comics.pdf">
-                        <img src="images/persona.png" alt="Sketches">
-                    </a>
-                    <p>Scenarios showing how users interact with the app.</p>
-                </div>
+    <h3>Academic Projects</h3>
 
-                <div class="project-card">
-                    <h3>
-                        <a href="files/diagram.pdf.pdf">Affinity Diagram</a>
-                    </h3>
-                    <a href="files/diagram.pdf.pdf">
-                        <img src="images/diagram.png.png" alt="Affinity Diagram">
-                    </a>
-                    <p>Organized ideas for the Food Finder project.</p>
-                </div>
+    <div class="project-grid">
 
-                <div class="project-card">
-                    <h3>
-                        <a href="files/Sketches.pdf.pdf">Prototype</a>
-                    </h3>
-                    <a href="files/Sketches.pdf.pdf">
-                        <img src="images/appSketch.png" alt="Prototype">
-                    </a>
-                    <p>Initial interface design for the application.</p>
-                </div>
+        <div class="project-card">
+            <h3>Vector Math Calculator</h3>
+            <p>
+                Built a Java program that performs vector operations including addition,
+                subtraction, and magnitude calculations.
+            </p>
+            <p><strong>Technologies:</strong> Java, Math Operations, Console Input</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-            </div>
-        </section>
+        <div class="project-card">
+            <h3>Showcase Game Simulator</h3>
+            <p>
+                Created a Java game inspired by a price-based game show where users guess
+                the total value of randomly selected prizes.
+            </p>
+            <p><strong>Technologies:</strong> Java, Randomization, User Input</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <div class="project-card">
+            <h3>Video Game Database Search</h3>
+            <p>
+                Developed a program that loads and searches a video game database by title,
+                console, or wildcard search.
+            </p>
+            <p><strong>Technologies:</strong> Java, File I/O, Search Algorithms</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-            <div class="contact-links">
-                <a href="https://teagan-donnelly.github.io/">GitHub</a>
-                <a href="www.linkedin.com/in/teagan-donnelly">LinkedIn</a>
-                <a href="mailto:teaganad@email.sc.edu">Email Me</a>
-            </div>
-        </section>
+        <div class="project-card">
+            <h3>Task Management System</h3>
+            <p>
+                Built a task manager that organizes tasks into priority-based lists ranging
+                from highest to lowest priority.
+            </p>
+            <p><strong>Technologies:</strong> Java, Lists, Data Structures</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-    </main>
+        <div class="project-card">
+            <h3>Robot Command Simulator</h3>
+            <p>
+                Created a robot simulation that processes a queue of commands to move around
+                a board with obstacles.
+            </p>
+            <p><strong>Technologies:</strong> Java, Queues, Object-Oriented Programming</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-    <script>
-        function openTab(evt, tabName) {
-            let sections = document.getElementsByTagName("section");
-            for (let i = 0; i < sections.length; i++) {
-                sections[i].classList.remove("active");
-            }
+        <div class="project-card">
+            <h3>Sierpinski Triangle Fractal</h3>
+            <p>
+                Used recursion and Java Swing to draw Sierpinski’s Triangle.
+            </p>
+            <p><strong>Technologies:</strong> Java, Recursion, Swing GUI</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-            let buttons = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove("active");
-            }
+        <div class="project-card">
+            <h3>Shape Manager BST</h3>
+            <p>
+                Designed a shape management program using a binary search tree organized by area.
+            </p>
+            <p><strong>Technologies:</strong> Java, Binary Search Trees, File Processing</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
 
-            document.getElementById(tabName).classList.add("active");
-            evt.currentTarget.classList.add("active");
+        <div class="project-card">
+            <h3>Sheep Shearing Scheduler</h3>
+            <p>
+                Created a scheduling program that prioritizes sheep by shortest shearing time
+                and alphabetical order.
+            </p>
+            <p><strong>Technologies:</strong> Java, Priority Queues, Scheduling Algorithms</p>
+            <a href="[INSERT JAVA FILE OR GITHUB LINK HERE]">View Code</a>
+        </div>
+
+    </div>
+
+    <h3>Personal Projects</h3>
+
+    <div class="project-card">
+        <h3>[Personal Project Coming Soon]</h3>
+        <p>
+            [Add a short description of your personal project here once you begin building it.]
+        </p>
+        <p><strong>Technologies:</strong> [Insert technologies here]</p>
+        <a href="[INSERT LINK HERE]">View Project</a>
+    </div>
+
+</section>
+
+<section id="coursework">
+    <h2>Coursework</h2>
+
+    <div class="course-card">
+        <h3>Completed Coursework</h3>
+        <ul>
+            <li>Algorithmic Design II</li>
+            <li>Digital Logic Design</li>
+            <li>[Add Course Here]</li>
+            <li>[Add Course Here]</li>
+        </ul>
+    </div>
+
+    <div class="course-card">
+        <h3>Relevant Skills Learned</h3>
+        <ul>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures</li>
+            <li>Recursion</li>
+            <li>File Processing</li>
+            <li>Priority Queues</li>
+            <li>Binary Search Trees</li>
+            <li>Digital Circuit Design</li>
+        </ul>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+
+    <p>
+        You can view my resume below. 
+    </p>
+
+    <a class="button-link" href="files/resume.pdf" target="_blank">Open Resume</a>
+
+    <p class="placeholder">
+        [Make sure your resume file is saved as resume.pdf inside your files folder.]
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-links">
+        <a href="[INSERT GITHUB LINK HERE]" target="_blank">GitHub</a>
+        <a href="[INSERT LINKEDIN LINK HERE]" target="_blank">LinkedIn</a>
+        <a href="mailto:[INSERT EMAIL HERE]">Email Me</a>
+    </div>
+</section>
+
+</main>
+
+<script>
+    function openTab(evt, tabName) {
+        let sections = document.getElementsByTagName("section");
+        for (let i = 0; i < sections.length; i++) {
+            sections[i].classList.remove("active");
         }
-    </script>
+
+        let buttons = document.getElementsByClassName("tab-btn");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active");
+        }
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+</script>
 
 </body>
 </html>
