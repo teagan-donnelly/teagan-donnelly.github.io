@@ -240,3 +240,46 @@ ul {
         font-size: 14px;
     }
 }
+
+.hero-banner {
+    background-image: linear-gradient(rgba(47, 65, 86, 0.55), rgba(47, 65, 86, 0.55)), url("images/INSERT-USC-BANNER-FILE-NAME-HERE.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.hero-content {
+    max-width: 620px;
+    color: white;
+}
+
+.hero-content h2 {
+    border-bottom: none;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.hero-content p {
+    color: white;
+    font-size: 1.15rem;
+}
+
+.hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+.button-link.secondary {
+    background: rgba(255, 255, 255, 0.85);
+    color: #2f4156;
+    margin-left: 10px;
+}
