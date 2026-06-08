@@ -30,23 +30,18 @@
 <main>
 
 <section id="home" class="active">
-    <h2>Home</h2>
-
-    <div class="profile-layout">
-        <img src="images/profile.jpeg" alt="Profile Picture">
-
-        <div>
-            <h3>Hi, I'm Teagan.</h3>
-            <p>
-                I am a Computer Science student at the University of South Carolina interested in
-                software development, product management, and human-centered technology.
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h2>Teagan Donnelly</h2>
+            <p>Computer Science Student at the University of South Carolina</p>
+            <p class="hero-subtitle">
+                Building software through coursework, projects, and continuous learning.
             </p>
 
-            <p>
-                This portfolio highlights my academic projects, technical coursework, and future personal projects.
-            </p>
-
-            <a class="button-link" href="files/resume.pdf" target="_blank">View My Resume</a>
+            <div class="hero-buttons">
+                <button class="button-link" onclick="openTab(event, 'projects')">View Projects</button>
+                <button class="button-link secondary" onclick="openTab(event, 'resume')">View Resume</button>
+            </div>
         </div>
     </div>
 
@@ -193,14 +188,19 @@
 <section id="resume">
     <h2>Resume</h2>
 
-    <p>
-        You can view my resume below. 
-    </p>
+    <div class="profile-layout">
+        <img src="images/profile.jpeg" alt="Profile Picture">
 
-    <a class="button-link" href="files/resume.pdf" target="_blank">Open Resume</a>
+        <div>
+            <h3>Hi, I'm Teagan.</h3>
+            <p>
+                I am a Computer Science student at the University of South Carolina interested in
+                software development, product management, and human-centered technology.
+            </p>
 
-    <p class="placeholder">
-    </p>
+            <a class="button-link" href="files/resume.pdf" target="_blank">Open Resume</a>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
