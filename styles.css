@@ -242,7 +242,7 @@ ul {
 }
 
 .hero-banner {
-    background-image: linear-gradient(rgba(47, 65, 86, 0.55), rgba(47, 65, 86, 0.55)), url("images/INSERT-USC-BANNER-FILE-NAME-HERE.jpg");
+    background-image: linear-gradient(rgba(47, 65, 86, 0.55), rgba(47, 65, 86, 0.55)), url("images/horseshow.png");
     background-size: cover;
     background-position: center;
     border-radius: 24px;
