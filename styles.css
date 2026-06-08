@@ -85,7 +85,7 @@ section.active {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Typography */
+/* Typography  */
 
 h2 {
     border-bottom: 2px solid #dbeafe;
