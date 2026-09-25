@@ -165,11 +165,12 @@ ul {
     margin-top: 1.7rem;
 }
 
-.featured-card {
+div.featured-card {
     border: 1px solid #dbeafe;
     border-radius: 14px;
     padding: 20px;
-    background: #f1f7fc;
+    background: red;
+    margin-top: 1.7rem;
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
