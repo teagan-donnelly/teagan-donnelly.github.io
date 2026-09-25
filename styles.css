@@ -224,6 +224,20 @@ ul {
     margin-bottom: 2.2rem;
 }
 
+.project-thumbnail {
+    width: 260px;
+    min-width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.featured-projects .project-card {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
 /* Contact */
 
 .contact-links a {
@@ -282,7 +296,7 @@ ul {
     rgba(20, 30, 40, 0) 65%
     ), url("images/horseshoe.png");
 
-    width: 1250px;
+    width: 1225px;
     height: 530px;
     border-radius: 14px;
     overflow: hidden;
@@ -294,7 +308,7 @@ ul {
     color: white;
     
     background-size: cover;
-    background-position: center 55%;
+    background-position: center 50%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
