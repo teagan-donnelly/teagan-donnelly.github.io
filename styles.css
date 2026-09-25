@@ -216,6 +216,12 @@ ul {
     text-decoration: underline;
 }
 
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
 /* Contact */
 
 .contact-links a {
