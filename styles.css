@@ -166,11 +166,10 @@ ul {
 }
 
 .featured-card {
-    background: #f1f7fc;
-    border: 1px solid #dbeafe;;
+    border: 1px solid #dbeafe;
     border-radius: 14px;
-    padding: 1.4rem;
-    margin-top: 1.7rem;
+    padding: 20px;
+    background: #f1f7fc;
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
 
