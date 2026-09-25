@@ -165,6 +165,15 @@ ul {
     margin-top: 1.7rem;
 }
 
+.featured-card {
+    background: #f1f7fc;
+    border: 1px solid #dbeafe;;
+    border-radius: 14px;
+    padding: 1.4rem;
+    margin-top: 1.7rem;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
 /* Projects */
 
 .project-grid {
@@ -177,8 +186,7 @@ ul {
 .project-card {
     border: 1px solid #e5e7eb;
     border-radius: 14px;
-    padding: 1.4rem;
-    margin-top: 1.7rem;
+    padding: 20px;
     background: #ffffff;
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
 }
