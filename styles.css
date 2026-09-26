@@ -246,6 +246,16 @@ ul {
     white-space: nowrap;
 }
 
+.project-type-badge {
+    background: #e8f3e8;
+    color: lightpink;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
 .project-tech {
     display: flex;
     align-items: center;
@@ -264,8 +274,8 @@ ul {
 }
 
 .tech-item img {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
