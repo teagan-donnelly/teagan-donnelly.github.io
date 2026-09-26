@@ -247,7 +247,7 @@ ul {
 }
 
 .project-type-badge {
-    background: #e8f3e8;
+    background: rgb(255, 212, 218);
     color: lightpink;
     padding: 4px 9px;
     border-radius: 20px;
@@ -267,7 +267,7 @@ ul {
 .tech-item {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 3px;
     font-size: 0.85rem;
     color: #475569;
     font-weight: 600;
