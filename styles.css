@@ -247,7 +247,7 @@ ul {
 }
 
 .project-type-badge {
-    background: rgb(255, 212, 218);
+    background: rgb(253, 236, 238);
     color: lightpink;
     padding: 4px 9px;
     border-radius: 20px;
@@ -275,6 +275,7 @@ ul {
 
 .tech-item span {
     margin-left: -3px;
+    margin-right: -3px;
 }
 
 .tech-item img {
