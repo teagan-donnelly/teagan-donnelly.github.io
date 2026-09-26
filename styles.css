@@ -108,6 +108,7 @@ h2 {
 h3 {
     color: #111827;
     font-weight: 650;
+    font-family: Georgia, serif;
 }
 
 h4 {
@@ -134,8 +135,8 @@ ul {
 }
 
 .profile-layout img {
-    width: 170px;
-    height: 270px;
+    width: 300px;
+    height: 350px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 24px;
