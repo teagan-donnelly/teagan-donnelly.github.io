@@ -247,8 +247,8 @@ ul {
 }
 
 .project-type-badge {
-    background: rgb(253, 236, 238);
-    color: lightpink;
+    background: #add8e6;
+    color: cornflowerblue;
     padding: 4px 9px;
     border-radius: 20px;
     font-size: 0.7rem;
