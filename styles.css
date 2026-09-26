@@ -218,23 +218,19 @@ ul {
     text-decoration: underline;
 }
 
-.featured-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    margin-bottom: 2.2rem;
-
-    max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .project-thumbnail {
     width: 260px;
     min-width: 260px;
     height: 220px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 2.2rem;
 }
 
 .featured-projects .project-card {
