@@ -468,10 +468,12 @@ ul {
     margin: 0;
 }
 
-.project-hero-visual {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.project-hero-visual img {
+    width: 380px;
+    height: 215px;
+
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .project-hero-badges {
