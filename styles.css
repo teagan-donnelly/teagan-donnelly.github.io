@@ -134,8 +134,9 @@ ul {
 }
 
 .profile-layout img {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
     object-fit: cover;
     border-radius: 24px;
     box-shadow: 0 12px 30px rgba(47,65,86,0.15);
@@ -296,7 +297,7 @@ ul {
     rgba(20, 30, 40, 0) 65%
     ), url("images/horseshoe.png");
 
-    width: 1225px;
+    width: 1240px;
     height: 530px;
     border-radius: 14px;
     overflow: hidden;
