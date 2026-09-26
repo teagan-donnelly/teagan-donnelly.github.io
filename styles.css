@@ -434,23 +434,23 @@ ul {
 
 .project-hero {
     display: grid;
-    grid-template-columns: 1.35fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
     gap: 55px;
     align-items: center;
 
-    padding-bottom: 28px;
+    padding-bottom: 35px;
     border-bottom: 1px solid #dbeafe;
 }
 
 .project-hero-text h2 {
     font-family: Georgia, serif;
-    font-size: 2.25rem;
-    line-height: 1.05;
+    font-size: 2.7rem;
+    line-height: 1.08;
     color: #1e3a5f;
 
     border: none;
     padding: 0;
-    margin: 0 0 10px;
+    margin: 0 0 12px;
 }
 
 .project-hero-text h4 {
@@ -468,25 +468,19 @@ ul {
     margin: 0;
 }
 
-.project-hero-visual img {
-    width: 380px;
-    height: 215px;
-
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .project-hero-badges {
     display: flex;
+    justify-content: flex-end;
     gap: 8px;
     margin-bottom: 10px;
 }
 
 .project-hero-visual img {
     width: 100%;
-    max-width: 340px;
-    height: 175px;
-
+    height: 280px;
     object-fit: cover;
-    border-radius: 10px;
+    object-position: center 55%;
+
+    display: block;
+    border-radius: 14px;
 }
