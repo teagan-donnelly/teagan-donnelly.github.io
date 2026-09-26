@@ -267,10 +267,14 @@ ul {
 .tech-item {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 0;
     font-size: 0.85rem;
     color: #475569;
     font-weight: 600;
+}
+
+.tech-item span {
+    margin-left: -3px;
 }
 
 .tech-item img {
