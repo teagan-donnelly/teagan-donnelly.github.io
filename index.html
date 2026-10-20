@@ -374,84 +374,71 @@
 
 </section>
 
-<section id="coursework">
-    <h2>Coursework</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Software Engineering</h3>
-            <p>
-                Fundamentals of software design and development; software implementation 
-                strategies; object-oriented design techniques; functional design techniques; 
-                design patterns; design process; source control; testing.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-       <div class="project-card">
-            <h3>Algorithmic Design I</h3>
-            <p>
-                Problem-solving, algorithmic design, and programming. Three lectures 
-                and two laboratory hours per week.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Algorithmic Design II</h3>
-            <p>
-                Rigorous development of algorithms and computer programs;
-                 elementary data structures.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Computing in the Modern World</h3>
-            <p>
-                An introduction to the field of computing: trends in computing 
-                technology, the profession, and careers; subdisciplines in computing; the nature of research and development.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Digital Logic Design</h3>
-            <p>
-                Number systems, Boolean algebra, logic design, sequential machines.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Introduction to Computer Architecture</h3>
-            <p>
-                Computer architecture, components. and organization; memory addressing; 
-                Input/Output; instruction sets; interrupts; assembly-language programming.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>IUNIX/Linux Fundamentals</h3>
-            <p>
-                UNIX operating system, user-level system commands, and 
-                programming tools. UNIX scripting languages.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Discrete Structures</h3>
-            <p>
-                Propositional and predicate logic; proof techniques; recursion and recurrence 
-                relations; sets, combinatorics, and probability; functions, relations, 
-                and matrices; algebraic structures.
-            </p>
-            <p><strong>Technologies:</strong> Java, Observer Pattern, HashMaps, OOP</p>
-        </div>
-
+<section id="coursework" aria-labelledby="coursework-title">
+    <div class="coursework-hero">
+        <div><p class="coursework-eyebrow">ACADEMIC FOUNDATION</p><h2 id="coursework-title">Behind the build</h2><p class="coursework-intro">These courses have shaped my technical foundation and the way I approach software, systems, and real-world problem solving.</p></div>
+        <blockquote>&ldquo;A strong foundation today builds a more meaningful tomorrow.&rdquo;</blockquote>
+    </div>
+    <!-- Native buttons expose the selected category to keyboard and screen-reader users. -->
+    <div class="coursework-toolbar"><div class="coursework-filters" role="group" aria-label="Filter courses by category">
+        <button type="button" data-course-filter="all" aria-pressed="true" aria-controls="coursework-grid">All Courses</button>
+        <button type="button" data-course-filter="Programming" aria-pressed="false" aria-controls="coursework-grid">Programming</button>
+        <button type="button" data-course-filter="Software Design" aria-pressed="false" aria-controls="coursework-grid">Software Design</button>
+        <button type="button" data-course-filter="Systems &amp; Hardware" aria-pressed="false" aria-controls="coursework-grid">Systems &amp; Hardware</button>
+        <button type="button" data-course-filter="Math &amp; Theory" aria-pressed="false" aria-controls="coursework-grid">Math &amp; Theory</button>
+        <button type="button" data-course-filter="Computing &amp; Society" aria-pressed="false" aria-controls="coursework-grid">Computing &amp; Society</button>
+    </div><p id="coursework-count" role="status" aria-live="polite" aria-atomic="true">8 COURSES</p></div>
+    <div class="coursework-grid" id="coursework-grid">
+        <article class="coursework-card" data-course-category="Software Design">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 6-10 6L2 8ZM2 12l10 6 10-6M2 16l10 6 10-6"/></svg></span><span class="coursework-code">CSCE 247</span></div>
+            <p class="coursework-category">Software Design</p><h3>Software Engineering</h3>
+            <p class="coursework-description">Fundamentals of software design and development, including requirements, design patterns, testing, and project management.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Requirements</li><li>UML</li><li>Design Patterns</li><li>Testing</li><li>SDLC</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Programming">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/><path d="M12 6v5M4 17v-3q0-3 8-3t8 3v3M12 11v6"/></svg></span><span class="coursework-code">CSCE 145</span></div>
+            <p class="coursework-category">Programming</p><h3>Algorithmic Design I</h3>
+            <p class="coursework-description">Problem-solving, algorithmic design, and programming through structured problem analysis and implementation.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Java</li><li>Problem Solving</li><li>Algorithms</li><li>Programming Fundamentals</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Programming">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 6-10 6L2 8ZM2 12l10 6 10-6M2 16l10 6 10-6"/></svg></span><span class="coursework-code">CSCE 146</span></div>
+            <p class="coursework-category">Programming</p><h3>Algorithmic Design II</h3>
+            <p class="coursework-description">Development of algorithms and computer programs with an emphasis on object-oriented programming and data structures.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Java</li><li>Data Structures</li><li>Recursion</li><li>OOP</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Computing &amp; Society">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-lavender"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M5 5a3 3 0 0 0 0 6M19 5a3 3 0 0 1 0 6M2 19v-5M22 19v-5"/></svg></span><span class="coursework-code">CSCE 101</span></div>
+            <p class="coursework-category">Computing &amp; Society</p><h3>Computing in the Modern World</h3>
+            <p class="coursework-description">An introduction to computing, including its impact on society, current technologies, professional opportunities, and research.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Technology &amp; Society</li><li>Professional Development</li><li>Current Trends</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Systems &amp; Hardware">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-sage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="1"/><rect x="9" y="9" width="6" height="6"/><path d="M8 2v3M12 2v3M16 2v3M8 19v3M12 19v3M16 19v3M2 8h3M2 12h3M2 16h3M19 8h3M19 12h3M19 16h3"/></svg></span><span class="coursework-code">CSCE 211</span></div>
+            <p class="coursework-category">Systems &amp; Hardware</p><h3>Digital Logic Design</h3>
+            <p class="coursework-description">Number systems, Boolean algebra, logic design, and the analysis of combinational and sequential logic circuits.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Boolean Algebra</li><li>Logic Gates</li><li>Combinational Circuits</li><li>Sequential Circuits</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Systems &amp; Hardware">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="1"/><rect x="2" y="14" width="20" height="7" rx="1"/><path d="M5 6h1M9 6h1M5 17h1M9 17h1M15 7h4M15 18h4"/></svg></span><span class="coursework-code">CSCE 212</span></div>
+            <p class="coursework-category">Systems &amp; Hardware</p><h3>Introduction to Computer Architecture</h3>
+            <p class="coursework-description">Computer organization, memory addressing, input/output, instruction sets, and assembly-language programming.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>RISC-V Assembly</li><li>Memory</li><li>CPU Organization</li><li>Instruction Sets</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Systems &amp; Hardware">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 5 7 7-7 7M13 19h8"/></svg></span><span class="coursework-code">CSCE 240</span></div>
+            <p class="coursework-category">Systems &amp; Hardware</p><h3>UNIX/Linux Fundamentals</h3>
+            <p class="coursework-description">UNIX operating systems, user-level commands, shell programming, file systems, and development tools.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Linux Commands</li><li>Shell Scripting</li><li>File Systems</li><li>Development Tools</li></ul>
+        </article>
+        <article class="coursework-card" data-course-category="Math &amp; Theory">
+            <div class="coursework-card-top"><span class="coursework-icon coursework-icon-lavender"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18M8 5v8q0 5-3 7M16 5v13q0 3 4 1"/></svg></span><span class="coursework-code">MATH 374</span></div>
+            <p class="coursework-category">Math &amp; Theory</p><h3>Discrete Structures</h3>
+            <p class="coursework-description">Propositional and predicate logic, proof techniques, sets, relations, combinatorics, and graph theory.</p>
+            <ul class="coursework-concepts" aria-label="Key concepts"><li>Logic</li><li>Proofs</li><li>Sets</li><li>Relations</li><li>Combinatorics</li><li>Graphs</li></ul>
+        </article>
+    </div>
+    <footer class="coursework-footer"><span>BUILT ON A FOUNDATION OF CURIOSITY</span><span class="coursework-footer-line" aria-hidden="true"></span><span>LEARNING TODAY, BUILDING TOMORROW <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16M12 5Q6 1 2 4v15q5-3 10 2 5-5 10-2V4q-4-3-10 1Z"/></svg></span></footer>
 </section>
 
 <section id="about" aria-labelledby="about-title">
@@ -990,6 +977,25 @@
 </main>
 
 <script>
+    // Filter coursework without changing the current tab or reloading the page.
+    const courseFilters = document.querySelectorAll('[data-course-filter]');
+    const courseCards = document.querySelectorAll('[data-course-category]');
+    courseFilters.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.dataset.courseFilter;
+            let visibleCount = 0;
+            courseCards.forEach(card => {
+                card.hidden = category !== 'all' && card.dataset.courseCategory !== category;
+                if (!card.hidden) visibleCount++;
+            });
+            courseFilters.forEach(filter => {
+                filter.setAttribute('aria-pressed', String(filter === button));
+            });
+            document.getElementById('coursework-count').textContent =
+                visibleCount + (visibleCount === 1 ? ' COURSE' : ' COURSES');
+        });
+    });
+
     document.getElementById("copy-email").addEventListener("click", async function () {
         const status = document.getElementById("copy-email-status");
         try {

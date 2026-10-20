@@ -1419,3 +1419,356 @@ ul {
         margin-top: 10px;
     }
 }
+
+/* Coursework: academic introduction and decorative editorial quote.
+   These styles are scoped to Coursework; the existing navbar is unchanged. */
+#coursework {
+    padding: 28px 0 18px;
+    color: #446585;
+}
+
+#coursework *, #coursework *::before, #coursework *::after {
+    box-sizing: border-box;
+}
+
+.coursework-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    align-items: center;
+    gap: 60px;
+    padding: 0 10px 22px;
+    border-bottom: 1px solid #d9dfe3;
+}
+
+#coursework .coursework-eyebrow {
+    margin: 0 0 4px;
+    font-size: 0.78rem;
+    letter-spacing: 0.23em;
+    font-weight: 600;
+    color: #46799f;
+}
+
+#coursework h2 {
+    border: 0;
+    padding: 0;
+    margin: 0 0 4px;
+    font-family: Georgia, serif;
+    font-size: clamp(3.3rem, 5.5vw, 5.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+    color: #0b203e;
+}
+
+#coursework .coursework-intro {
+    max-width: 760px;
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    color: #446b8d;
+}
+
+.coursework-hero blockquote {
+    margin: 30px 0 0;
+    padding-left: 30px;
+    border-left: 1px solid #93aabd;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #537b9d;
+    text-align: center;
+}
+
+/* Category buttons and the live visible-course count. */
+.coursework-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 14px 4px 18px;
+}
+
+.coursework-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.coursework-filters button {
+    font: inherit;
+    font-size: 0.82rem;
+    color: #0b203e;
+    border: 1px solid #ccd6e0;
+    border-radius: 28px;
+    background: transparent;
+    padding: 10px 25px;
+    min-height: 42px;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.coursework-filters button[aria-pressed='true'] {
+    background: #082542;
+    border-color: #082542;
+    color: #fff;
+}
+
+.coursework-filters button:hover:not([aria-pressed='true']) {
+    background: #e9eef3;
+    border-color: #91a8bd;
+}
+
+.coursework-filters button:focus-visible {
+    outline: 3px solid #7896b2;
+    outline-offset: 3px;
+}
+
+#coursework-count {
+    margin: 0;
+    flex-shrink: 0;
+    color: #46799f;
+    font-size: 0.69rem;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+}
+
+/* Four equal desktop columns; hidden cards are removed from grid flow. */
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.coursework-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px 20px;
+    border: 1px solid #d6dce1;
+    border-radius: 11px;
+    background: #faf8f3;
+    min-width: 0;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.coursework-card[hidden] {
+    display: none;
+}
+
+.coursework-card:hover {
+    border-color: #9eafbf;
+    box-shadow: 0 5px 16px rgba(26, 50, 75, 0.07);
+    transform: translateY(-2px);
+}
+
+.coursework-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.coursework-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.coursework-icon svg {
+    width: 29px;
+    height: 29px;
+}
+
+/* Coordinated pastel icon tiles distinguish subject areas. */
+.coursework-icon-blue {
+    background: #dfe8f3;
+    color: #2c5b8c;
+}
+.coursework-icon-coral {
+    background: #fae4dc;
+    color: #914d3d;
+}
+.coursework-icon-lavender {
+    background: #e9e1ee;
+    color: #334b78;
+}
+.coursework-icon-sage {
+    background: #e0e9de;
+    color: #357382;
+}
+.coursework-icon-mint {
+    background: #e0eae2;
+    color: #357382;
+}
+
+.coursework-code {
+    color: #46799f;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    padding-top: 8px;
+    white-space: nowrap;
+}
+
+#coursework .coursework-category {
+    margin: 0 0 5px;
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+    line-height: 1.4;
+    color: #46799f;
+}
+
+#coursework .coursework-card h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+    color: #0b203e;
+    margin: 0 0 10px;
+}
+
+#coursework .coursework-description {
+    color: #446585;
+    font-size: 0.91rem;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+/* Concept badges sit at the bottom while card heights follow each row. */
+.coursework-concepts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 9px;
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0;
+}
+
+.coursework-concepts li {
+    padding: 5px 12px;
+    border: 1px solid #dde2e6;
+    border-radius: 25px;
+    background: #edeeef;
+    color: #264967;
+    font-size: 0.73rem;
+    line-height: 1.2;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* Decorative closing footer belongs only to the Coursework section. */
+.coursework-footer {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    border-top: 1px solid #d9dfe3;
+    padding-top: 12px;
+    margin-top: 12px;
+    font-size: 0.65rem;
+    letter-spacing: 0.22em;
+    color: #46799f;
+}
+
+.coursework-footer-line {
+    height: 1px;
+    flex: 1;
+    background: #8ca2b8;
+}
+
+.coursework-footer > span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.coursework-footer svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* Medium screens retain comfortable card widths; tablets use two columns. */
+@media (min-width: 901px) and (max-width: 1150px) {
+    .coursework-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .coursework-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .coursework-hero {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+    .coursework-hero blockquote {
+        margin: 0;
+        max-width: 380px;
+        text-align: left;
+    }
+    .coursework-toolbar {
+        align-items: flex-start;
+    }
+    .coursework-footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .coursework-footer-line {
+        display: none;
+    }
+}
+
+/* Phones: one column and wrapped filters without horizontal page scrolling. */
+@media (max-width: 560px) {
+    #coursework {
+        padding: 22px 0 18px;
+    }
+    #coursework h2 {
+        font-size: clamp(2.5rem, 10vw, 3.3rem);
+    }
+    #coursework .coursework-intro {
+        font-size: 1rem;
+    }
+    .coursework-hero {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .coursework-hero blockquote {
+        font-size: 1.05rem;
+        padding-left: 18px;
+    }
+    .coursework-toolbar {
+        flex-direction: column;
+    }
+    .coursework-filters {
+        gap: 8px;
+    }
+    .coursework-filters button {
+        padding: 10px 16px;
+        font-size: 0.78rem;
+    }
+    .coursework-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .coursework-footer > span {
+        flex-basis: 100%;
+    }
+    .coursework-footer {
+        font-size: 0.57rem;
+        letter-spacing: 0.14em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .coursework-card, .coursework-filters button {
+        transition: none;
+    }
+    .coursework-card:hover {
+        transform: none;
+    }
+}
