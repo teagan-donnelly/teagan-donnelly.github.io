@@ -475,14 +475,17 @@
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-
-    <div class="contact-links">
-        <a href="https://github.com/teagan-donnelly" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/teagan-donnelly" target="_blank">LinkedIn</a>
-        <a href="mailto:teaganad@email.sc.edu">Email Me</a>
-    </div>
+<section id="contact" aria-labelledby="contact-title">
+<div class="contact-intro"><p class="contact-eyebrow">GET IN TOUCH</p><h2 id="contact-title">Let&rsquo;s connect<span>.</span></h2><p>Have a project in mind, an opportunity to share, or just want to say hello?<br class="contact-desktop-break"> I&rsquo;d love to hear from you.</p></div>
+<div class="contact-grid">
+<div class="contact-card-email">
+<span class="contact-email-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span>
+<p class="contact-label">EMAIL</p><h3>Start a<br>conversation.</h3>
+<div class="contact-address"><a href="mailto:teaganad@email.sc.edu">teaganad@email.sc.edu</a><button type="button" id="copy-email" aria-label="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="7" y="3" width="13" height="14" rx="1"/><path d="M16 17v4H3V7h4"/></svg></button></div>
+<span id="copy-email-status" role="status"></span><a class="contact-email-button" href="mailto:teaganad@email.sc.edu">Send me an email <span aria-hidden="true">&#8599;</span></a></div>
+<a class="contact-social-card" href="https://www.linkedin.com/in/teagan-donnelly" target="_blank" rel="noopener noreferrer"><div class="contact-social-content"><img class="contact-logo" src="icons/logos/linkedin-logo.png" alt=""><p class="contact-label">LINKEDIN</p><h3>Connect professionally.</h3><span class="contact-action">View profile <span aria-hidden="true">&#8599;</span></span></div><div class="contact-photo"><img src="images/contact-linkedin.png" alt="A sunlit desk with a notebook and laptop"></div></a>
+<a class="contact-social-card" href="https://github.com/teagan-donnelly" target="_blank" rel="noopener noreferrer"><div class="contact-social-content"><img class="contact-logo" src="icons/logos/github-logo.jpg" alt=""><p class="contact-label">GITHUB</p><h3>Explore my code<br>and projects.</h3><span class="contact-action">Visit GitHub <span aria-hidden="true">&#8599;</span></span></div><div class="contact-photo contact-photo-github"><img src="images/contact-github.png" alt="A laptop displaying code beside a plant"></div></a>
+</div><footer class="contact-footer"><span>OPEN TO OPPORTUNITIES &amp; COLLABORATIONS</span><span class="contact-footer-line" aria-hidden="true"></span><span>BASED IN COLUMBIA, SC <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg></span></footer>
 </section>
 
 <section id="hurricane-project">
@@ -955,6 +958,16 @@
 </main>
 
 <script>
+    document.getElementById("copy-email").addEventListener("click", async function () {
+        const status = document.getElementById("copy-email-status");
+        try {
+            await navigator.clipboard.writeText("teaganad@email.sc.edu");
+            status.textContent = "Email address copied!";
+        } catch {
+            status.textContent = "Select and copy: teaganad@email.sc.edu";
+        }
+    });
+
     function openTab(evt, tabName) {
         let sections = document.getElementsByTagName("section");
         for (let i = 0; i < sections.length; i++) {
