@@ -1968,7 +1968,9 @@ ul {
 .work-featured .work-tags img,
 .work-featured .work-tech-icon,
 .home-building .work-tags img,
-.home-building .work-tech-icon {
+.home-building .work-tech-icon,
+.cam-stack .work-tech-icon,
+.cam-stack .work-tags img {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
@@ -1976,7 +1978,8 @@ ul {
 
 /* Tint the monochrome brand assets to the same navy as the outline symbols. */
 .work-featured .work-tags img,
-.home-building .work-tags img {
+.home-building .work-tags img,
+.cam-stack .work-tags img {
     object-fit: contain;
     filter: brightness(0) saturate(100%) invert(18%) sepia(27%) saturate(1471%) hue-rotate(168deg) brightness(94%) contrast(95%);
 }
@@ -2530,5 +2533,656 @@ ul {
 
     .home-building-card:hover, .home-all-projects:hover svg {
         transform: none;
+    }
+}
+
+/* Camellia case study: scoped editorial styles leave other project pages intact. */
+#camellia-project {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 24px 0;
+    color: #4f607a;
+}
+#camellia-project *, #camellia-project *::before, #camellia-project *::after {
+    box-sizing: border-box;
+}
+#camellia-project p {
+    color: #4f607a;
+    font-size: 1rem;
+    line-height: 1.55;
+    margin: 0 0 14px;
+}
+#camellia-project h2, #camellia-project h3, #camellia-project h4 {
+    font-family: Georgia, serif;
+    color: #17253d;
+    letter-spacing: -0.025em;
+}
+#camellia-project h3 {
+    font-size: clamp(1.8rem, 2.6vw, 2.35rem);
+    line-height: 1.03;
+    margin: 0 0 12px;
+}
+#camellia-project h4 {
+    font-size: 1.15rem;
+    margin: 0 0 8px;
+}
+#camellia-project a:focus-visible, #camellia-project button:focus-visible {
+    outline: 3px solid #b85c60;
+    outline-offset: 4px;
+}
+.cam-breadcrumb {
+    display: flex;
+    gap: 8px;
+    font-size: 0.76rem;
+    margin: 0 0 20px;
+}
+.cam-breadcrumb a {
+    color: #34465e;
+    text-decoration: none;
+}
+.cam-breadcrumb a:hover {
+    text-decoration: underline;
+}
+.cam-breadcrumb > span:nth-child(2) {
+    color: #a75a5f;
+}
+
+/* Hero: existing hospital photograph and a compact row of project resources. */
+.cam-hero {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 20px 42px;
+}
+#camellia-project h2 {
+    font-size: clamp(3.5rem, 5.5vw, 5rem);
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+#camellia-project .cam-subtitle {
+    font-family: Georgia, serif;
+    font-size: 1.9rem;
+    line-height: 1.08;
+    margin: 0 0 18px;
+    color: #5d708b;
+    letter-spacing: -0.025em;
+}
+.cam-hero-image {
+    width: 100%;
+    height: 100%;
+    max-height: 390px;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cam-awards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cam-award {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #e6c6c4;
+    border-radius: 30px;
+    padding: 9px 14px;
+    background: #fcf5f1;
+}
+.cam-award > svg {
+    width: 27px;
+    height: 27px;
+    color: #bd585f;
+    flex-shrink: 0;
+}
+.cam-award strong {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #20314b;
+}
+.cam-award span {
+    display: block;
+    font-size: 0.65rem;
+    color: #52627b;
+    margin-top: 3px;
+}
+.cam-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.cam-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #d7cfca;
+    border-radius: 30px;
+    min-height: 44px;
+    padding: 11px 20px;
+    color: #17253d;
+    text-decoration: none;
+    font-size: 0.76rem;
+}
+.cam-button svg, .cam-button img {
+    width: 19px;
+    height: 19px;
+}
+.cam-button-primary {
+    background: #1a293d;
+    color: #fff;
+    border-color: #1a293d;
+}
+.cam-button:hover {
+    background: #f3e9e5;
+}
+.cam-button-primary:hover {
+    background: #30425b;
+}
+
+/* Divided sections: problem statement and three restrained blush cards. */
+.cam-section {
+    border-top: 1px solid #ddd6d0;
+    margin-top: 30px;
+    padding-top: 28px;
+}
+#camellia-project .cam-label {
+    color: #ad454d;
+    font-size: 0.63rem;
+    letter-spacing: 0.23em;
+    margin-bottom: 10px;
+}
+.cam-label span {
+    margin: 0 8px;
+    color: #a68e8d;
+}
+.cam-problem-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-self: stretch;
+}
+.cam-problem-cards article {
+    background: #f8eeeb;
+    border-radius: 8px;
+    padding: 26px 22px;
+}
+.cam-problem-cards svg {
+    width: 29px;
+    height: 29px;
+    color: #bd585f;
+    margin-bottom: 15px;
+}
+#camellia-project .cam-problem-cards p {
+    margin: 0;
+}
+
+/* Application screenshots: uncropped images, small browser chrome, and captions. */
+.cam-figure {
+    margin: 0;
+    min-width: 0;
+}
+.cam-browser {
+    display: block;
+    border: 1px solid #d9d5d4;
+    border-radius: 7px;
+    overflow: hidden;
+    background: #f1eeec;
+    box-shadow: 0 4px 14px rgba(28, 34, 49, 0.08);
+}
+.cam-browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    background: #e8e4e5;
+}
+.cam-browser-bar i {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c76c70;
+}
+.cam-browser-bar i:nth-child(2) {
+    background: #c8ab64;
+}
+.cam-browser-bar i:nth-child(3) {
+    background: #7c9b7b;
+}
+.cam-browser img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+.cam-browser:hover {
+    border-color: #b97779;
+}
+.cam-figure figcaption {
+    margin-top: 9px;
+}
+.cam-figure figcaption strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #17253d;
+}
+.cam-figure figcaption span {
+    display: block;
+    font-size: 0.88rem;
+    color: #5d6c82;
+    line-height: 1.4;
+    margin-top: 3px;
+}
+#camellia-project .cam-demo-note {
+    margin: 10px 0 0;
+    font-size: 0.82rem;
+    color: #6b4b52;
+}
+.cam-features {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+}
+.cam-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 13px;
+}
+.cam-features li > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #f6e9e5;
+    color: #b9515a;
+}
+.cam-features svg {
+    width: 21px;
+    height: 21px;
+}
+.cam-features strong {
+    display: block;
+    color: #26334b;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+#camellia-project .cam-features p {
+    font-size: 0.9rem;
+    margin: 3px 0 0;
+}
+
+/* Hardware remains explicitly conceptual; the full architecture opens separately. */
+.cam-wearable {
+    margin: 0;
+    min-width: 0;
+}
+.cam-wearable img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cam-wearable figcaption {
+    font-size: 0.85rem;
+    color: #6a5d67;
+    margin-top: 8px;
+}
+#camellia-project .cam-concept-note {
+    color: #8f4850;
+    font-size: 0.85rem;
+}
+.cam-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    color: #344b68;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+.cam-text-link svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.cam-text-link:hover {
+    text-decoration: underline;
+}
+/* Recognition, future plans, and resources form a compact final editorial row. */
+#camellia-project .cam-closing h3 {
+    font-size: 1.65rem;
+}
+.cam-resources {
+    padding-left: 20px;
+    border-left: 1px solid #e1dad5;
+}
+.cam-resources a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #d9d0ca;
+    border-radius: 8px;
+    padding: 10px 12px;
+    min-height: 44px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-size: 0.73rem;
+    color: #34465e;
+}
+.cam-resources a > svg, .cam-resources img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.cam-resources a > svg:last-child {
+    margin-left: auto;
+    width: 16px;
+}
+.cam-resources a:hover {
+    background: #f6eae5;
+    border-color: #c49191;
+}
+.cam-stack {
+    padding-top: 20px;
+}
+
+/* Native image dialog: focus containment and Escape behavior come from the browser. */
+.cam-image-dialog {
+    width: min(1400px, 96vw);
+    max-width: 96vw;
+    max-height: 94vh;
+    padding: 14px;
+    border: 1px solid #d4c6c4;
+    border-radius: 12px;
+    background: #faf8f4;
+    color: #17253d;
+}
+.cam-image-dialog::backdrop {
+    background: rgba(14, 24, 40, 0.75);
+}
+.cam-dialog-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 12px;
+}
+#camellia-project .cam-dialog-toolbar h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.cam-dialog-toolbar button {
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 10px 15px;
+    border: 1px solid #b8a4a5;
+    border-radius: 20px;
+    color: #24354b;
+    background: #fff;
+    cursor: pointer;
+}
+.cam-image-dialog > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Each grid has explicit shrinkable tracks and children; images cannot size the tracks. */
+#camellia-project {
+    width: 100%;
+}
+#camellia-project img {
+    max-width: 100%;
+}
+#camellia-project :is(.cam-hero, .cam-problem, .cam-platform, .cam-gallery, .cam-hardware, .cam-next) > * {
+    min-width: 0;
+}
+#camellia-project .cam-hero {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+#camellia-project .cam-hero-copy > p:not(.cam-subtitle) {
+    font-size: 0.95rem;
+}
+.cam-problem {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 2fr);
+    gap: 28px;
+}
+.cam-problem-cards {
+    min-width: 0;
+}
+.cam-problem-cards article {
+    min-width: 0;
+    padding: 22px 18px;
+}
+#camellia-project .cam-problem-cards p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.cam-platform, .cam-hardware {
+    display: grid;
+    grid-template-columns: minmax(0, 0.38fr) minmax(0, 0.62fr);
+    align-items: center;
+    gap: 32px;
+}
+.cam-platform .cam-features {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.cam-platform .cam-features li {
+    margin: 0;
+}
+.cam-features li > div {
+    min-width: 0;
+}
+.cam-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+.cam-figure figcaption {
+    line-height: 1.5;
+}
+.cam-gallery .cam-browser img {
+    aspect-ratio: 2880 / 1450;
+    object-fit: contain;
+    background: #fff;
+}
+.cam-wearable a {
+    display: block;
+    background: #fff;
+    border: 1px solid #e1dcda;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.cam-wearable img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.cam-wearable figcaption {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Architecture expands across the full content width and can also be enlarged. */
+.cam-architecture {
+    border: 1px solid #ded6d1;
+    border-radius: 10px;
+    margin-top: 24px;
+    padding: 22px;
+}
+#camellia-project .cam-architecture h4 {
+    font-size: 1.4rem;
+}
+.cam-architecture > div > p {
+    max-width: 780px;
+}
+.cam-architecture-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #b88e90;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #384a61;
+    list-style: none;
+}
+.cam-architecture-details summary::-webkit-details-marker {
+    display: none;
+}
+.cam-architecture-details summary svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.cam-architecture-details[open] summary svg {
+    transform: rotate(90deg);
+}
+.cam-architecture-details summary:hover {
+    background: #f6eae5;
+}
+.cam-architecture-details summary:focus-visible {
+    outline: 3px solid #b85c60;
+    outline-offset: 4px;
+}
+.cam-architecture-content {
+    margin-top: 20px;
+}
+.cam-architecture-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#camellia-project .cam-architecture-content .cam-concept-note {
+    margin-top: 12px;
+}
+.cam-architecture .cam-text-link {
+    white-space: normal;
+    line-height: 1.5;
+}
+.cam-stack {
+    padding-top: 4px;
+}
+.cam-stack .work-tags li {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+}
+.cam-next {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 36px;
+}
+.cam-next .cam-actions {
+    margin-top: 18px;
+}
+.cam-resources a {
+    font-size: 0.85rem;
+}
+#camellia-project .cam-resources h4 {
+    font-size: 1.15rem;
+}
+.cam-image-dialog {
+    overscroll-behavior: contain;
+}
+
+/* Laptop/tablet: simplify before either text or image becomes cramped. */
+@media (max-width: 1100px) {
+    .cam-problem {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+    .cam-problem > div:first-child {
+        max-width: 850px;
+    }
+    .cam-platform, .cam-hardware {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+    .cam-platform .cam-features {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 24px;
+    }
+    .cam-hardware .cam-features {
+        max-width: 680px;
+    }
+    .cam-wearable {
+        width: 100%;
+        max-width: 850px;
+        justify-self: center;
+    }
+}
+
+/* Mobile: natural reading order, full-width images, and no fixed text heights. */
+@media (max-width: 700px) {
+    #camellia-project {
+        padding: 22px 0;
+    }
+    #camellia-project .cam-hero, .cam-problem-cards, .cam-gallery, .cam-next {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .cam-hero-image {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        aspect-ratio: 1.65;
+        object-fit: cover;
+    }
+    #camellia-project h2 {
+        font-size: 3.6rem;
+    }
+    #camellia-project .cam-subtitle {
+        font-size: 1.65rem;
+    }
+    .cam-platform .cam-features {
+        display: flex;
+    }
+    .cam-section {
+        margin-top: 26px;
+        padding-top: 24px;
+    }
+    .cam-problem-cards article {
+        padding: 20px;
+    }
+    .cam-actions {
+        gap: 9px;
+    }
+    .cam-button {
+        padding: 11px 16px;
+    }
+    .cam-award {
+        border-radius: 14px;
+    }
+    .cam-resources {
+        border-left: 0;
+        padding-left: 0;
+    }
+    .cam-architecture {
+        padding: 18px;
+    }
+    .cam-image-dialog {
+        padding: 10px;
     }
 }
