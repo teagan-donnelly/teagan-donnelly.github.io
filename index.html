@@ -450,43 +450,65 @@
 
 </section>
 
-<section id="HOPE-project">
-    <p class="project-breadcrumb">
-        Projects > HOPE Inc. Website
-    </p>
+<section id="HOPE-project" aria-labelledby="hope-title">
+    <div class="hope-breadcrumb" role="navigation" aria-label="Breadcrumb"><a href="#projects" onclick="openTab(event, 'projects'); return false;">Projects</a><span aria-hidden="true">&rsaquo;</span><span aria-current="page">HOPE Inc.</span></div>
 
-    <div class="project-hero">
-
-        <div class="project-hero-text">
-
-            <h2>Hands On<br>Prosthetic Engineering</h2>
-
-            <h4>
-                Kappa Theta Pi · HOPE Inc. Client Project
-            </h4>
-
-            <p>
-                ....
-            </p>
-
+    <!-- Hero: existing public photograph and accurate project context. -->
+    <div class="hope-hero">
+        <div class="hope-hero-copy">
+            <p class="hope-eyebrow">CLIENT PROJECT / IN PROGRESS</p>
+            <h2 id="hope-title">HOPE Inc.</h2>
+            <p class="hope-subtitle">Building a digital home for a mission that matters.</p>
+            <p>I&rsquo;m collaborating with a five-developer team through Kappa Theta Pi to build a full-stack website for HOPE Inc. (Hands On Prosthetic Engineering), a nonprofit working to make prosthetic solutions more accessible and affordable.</p>
+            <p>Our work focuses on translating the organization&rsquo;s needs into an accessible, maintainable website that supports its mission and future growth.</p>
         </div>
-
-        <div class="project-hero-visual">
-
-            <div class="project-hero-badges">
-                <span class="project-type-badge">Course Project</span>
-                <span class="status-badge">In Progress</span>
-            </div>
-
-            <img
-                src="images/hope-thumbnail.jpeg"
-                alt="Prosthetic Hand"
-            >
-
-        </div>
-
+        <figure class="hope-hero-photo"><img src="images/hope-thumbnail.jpeg" alt="An open prosthetic hand"></figure>
+        <dl class="hope-metadata">
+            <div><dt>Role</dt><dd>Full-Stack Software Engineer</dd></div>
+            <div><dt>Team</dt><dd>5 Developers</dd></div>
+            <div><dt>Timeline</dt><dd>September 2026 &ndash; Present</dd></div>
+            <div><dt>Status</dt><dd><span class="hope-status">In Development</span></dd></div>
+        </dl>
     </div>
-    </section>
+
+    <!-- Each numbered section is a sibling; grids are confined to its contents. -->
+    <div class="hope-section" role="region" aria-labelledby="hope-mission-title">
+        <p class="hope-eyebrow"><span>01</span> / THE MISSION</p>
+        <div class="hope-mission-intro"><h3 id="hope-mission-title">Technology in service of accessibility.</h3><p>HOPE Inc. works to improve access to affordable prosthetic solutions. Our team&rsquo;s responsibility is to create a digital experience that communicates the organization&rsquo;s mission clearly, helps visitors understand its work, and provides a foundation the organization can maintain and expand.</p></div>
+        <div class="hope-principles"><article><span class="hope-line-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M3 9h18M12 6v7M6 22l6-9 6 9"/></svg></span><div><h4>ACCESSIBILITY</h4><p>Designing for usability across devices and audiences.</p></div></article><article><span class="hope-line-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span><div><h4>CLARITY</h4><p>Making the organization&rsquo;s mission and information easy to understand.</p></div></article><article><span class="hope-line-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7a9 9 0 0 0-15-2L2 8M2 3v5h5M4 17a9 9 0 0 0 15 2l3-3M22 21v-5h-5"/></svg></span><div><h4>SUSTAINABILITY</h4><p>Building a website the organization can maintain and grow.</p></div></article></div>
+    </div>
+
+    <div class="hope-section" role="region" aria-labelledby="hope-contribution-title">
+        <p class="hope-eyebrow"><span>02</span> / MY CONTRIBUTION</p>
+        <h3 id="hope-contribution-title">From approved design to working code.</h3>
+        <div class="hope-contribution-panel">
+            <div class="hope-contribution-copy"><p class="hope-eyebrow">ABOUT PAGE DESIGN &amp; DEVELOPMENT</p><h4>A design approved.<br>An experience taking shape.</h4><p>I created the About page design in Figma and refined it through review and approval. I&rsquo;m now implementing the approved design as responsive, maintainable frontend components.</p><p>Throughout implementation, I collaborate with the team to keep the page consistent with the larger website.</p></div>
+            <ol class="hope-progress" aria-label="About page design and development progress">
+                <li class="hope-progress-complete"><span class="hope-progress-marker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><span class="hope-step-number">01</span><h5>Design in Figma</h5><span class="hope-progress-state">Complete</span></div></li>
+                <li class="hope-progress-complete"><span class="hope-progress-marker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><span class="hope-step-number">02</span><h5>Client/Team Approval</h5><span class="hope-progress-state">Complete</span></div></li>
+                <li aria-current="step"><span class="hope-progress-marker"><span class="hope-progress-dot"></span></span><div><span class="hope-step-number">03</span><h5>Frontend Implementation</h5><span class="hope-progress-state">In progress</span></div></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="hope-section" role="region" aria-labelledby="hope-process-title">
+        <p class="hope-eyebrow"><span>03</span> / THE PROCESS</p>
+        <div class="hope-section-heading"><h3 id="hope-process-title">Building with the client in mind.</h3><p>Our project workflow &mdash; a guide to the work, rather than a list of completed milestones.</p></div>
+        <ol class="hope-process"><li><span class="hope-step-number">01</span><h4>DISCOVER</h4><p>Understand the nonprofit&rsquo;s goals and website requirements.</p></li><li><span class="hope-step-number">02</span><h4>DESIGN</h4><p>Translate those needs into clear, accessible page designs.</p></li><li><span class="hope-step-number">03</span><h4>DEVELOP</h4><p>Implement responsive pages using our team&rsquo;s development stack.</p><span class="hope-process-state">Current focus</span></li><li><span class="hope-step-number">04</span><h4>REFINE</h4><p>Review, test, and prepare the website for future deployment and handoff.</p><span class="hope-process-state">Ahead</span></li></ol>
+    </div>
+
+    <div class="hope-section hope-stack-section" role="region" aria-labelledby="hope-stack-title">
+        <div><p class="hope-eyebrow"><span>04</span> / THE STACK</p><h3 id="hope-stack-title">Built collaboratively.</h3></div>
+        <div><ul class="hope-tech-tags" aria-label="Project technologies"><li><img src="icons/technologies/typescript.svg" alt="" width="16" height="16">TypeScript</li><li><img src="icons/technologies/nodedotjs.svg" alt="" width="16" height="16">Node.js</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 10-10 10L2 12ZM8 6l9 9M8 6v10"/><circle cx="8" cy="6" r="1.5"/><circle cx="8" cy="16" r="1.5"/><circle cx="17" cy="15" r="1.5"/></svg>Git</li><li><img src="icons/technologies/github.svg" alt="" width="16" height="16">GitHub</li><li><img src="icons/technologies/vercel.svg" alt="" width="16" height="16">Vercel</li></ul><p>Working as part of a five-developer team has given me experience translating stakeholder needs into technical decisions while coordinating design and implementation across a shared codebase.</p></div>
+    </div>
+
+    <div class="hope-section hope-current-section" role="region" aria-labelledby="hope-current-title">
+        <div><p class="hope-eyebrow"><span>05</span> / CURRENT STATUS</p><h3 id="hope-current-title">A work in progress,<br>with a real purpose.</h3><span class="hope-status hope-status-active">ACTIVE DEVELOPMENT</span></div>
+        <div><p>Development is underway. My current focus is implementing the approved About page design and contributing to a consistent, accessible website experience.</p><p>As the project progresses and client-approved materials become available, I&rsquo;ll update this case study with more details about the finished work.</p></div>
+    </div>
+
+    <div class="hope-closing"><div><p>Have a project in mind?</p><a class="hope-connect" href="#contact" onclick="openTab(event, 'contact'); return false;">Let&rsquo;s connect <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div><a class="hope-back" href="#projects" onclick="openTab(event, 'projects'); return false;">Back to Projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
+</section>
 
 <section id="camellia-project" aria-labelledby="cam-title">
     <div class="cam-breadcrumb" role="navigation" aria-label="Breadcrumb"><a href="#projects" onclick="openTab(event, 'projects'); return false;">Projects</a><span aria-hidden="true">&rsaquo;</span><span aria-current="page">Camellia</span></div>
