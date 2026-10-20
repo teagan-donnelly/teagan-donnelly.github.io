@@ -927,3 +927,495 @@ ul {
     font-size: 0.75rem;
     margin-top: 2px;
 }
+
+/* About page: editorial introduction and resume content.
+   All rules are scoped to About so other tabs retain their existing appearance. */
+#about {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 28px 0 20px;
+    color: #405678;
+}
+
+#about *, #about *::before, #about *::after {
+    box-sizing: border-box;
+}
+
+#about p, #about li {
+    color: #405678;
+    line-height: 1.45;
+}
+
+#about .about-label {
+    margin: 0 0 9px;
+    font-size: 0.67rem;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+#about h2, #about h3, #about h4 {
+    font-family: Georgia, serif;
+    color: #0b203e;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+}
+
+/* Hero: two aligned photographs frame the introduction. */
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: stretch;
+    gap: 36px;
+}
+
+.about-portrait, .about-workspace {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    max-height: 440px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-portrait {
+    object-position: center 35%;
+}
+
+.about-workspace {
+    object-position: 56% center;
+}
+
+.about-hero-copy {
+    padding: 12px 0 4px;
+    min-width: 0;
+}
+
+#about h2 {
+    border: 0;
+    padding: 0;
+    margin: 0 0 14px;
+    font-size: clamp(2.8rem, 4.9vw, 4.7rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+#about h2 span {
+    color: #8299b3;
+}
+
+.about-hero-copy > p:not(.about-label) {
+    margin: 0 0 16px;
+    font-size: 1rem;
+}
+
+/* Subtle tags are reused for interests, project technologies, and skills. */
+#about .about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#about .about-tags li {
+    border: 1px solid #cdd5df;
+    background: #eeefef;
+    border-radius: 30px;
+    padding: 5px 14px;
+    font-size: 0.72rem;
+    color: #0b203e;
+    line-height: 1.25;
+}
+
+.about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 46px;
+    padding: 12px 22px;
+    border: 1px solid #193452;
+    border-radius: 30px;
+    background: #142e48;
+    color: #fff;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.about-button-outline {
+    background: #fff;
+    color: #0b203e;
+    border-color: #8496ac;
+}
+
+/* Equal-height feature cards with integrated vertical photo panels. */
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.about-feature {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    border: 1px solid #d3d8df;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #faf8f4;
+}
+
+.about-feature-copy {
+    padding: 20px 20px 22px;
+}
+
+.about-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 14px;
+    border-radius: 7px;
+    background: #8299b3;
+    color: #fff;
+}
+
+.about-icon svg {
+    width: 27px;
+    height: 27px;
+}
+
+#about .about-feature h3 {
+    margin: 0 0 12px;
+    font-size: 1.6rem;
+    line-height: 1.06;
+}
+
+.about-feature-copy > p:last-child {
+    font-size: 0.87rem;
+    margin: 0;
+}
+
+.about-feature > img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+/* Experience/projects and education/skills form two aligned editorial rows. */
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-panel {
+    border-top: 1px solid #cdd5df;
+    padding: 12px 26px 26px 0;
+    min-width: 0;
+}
+
+.about-panel:nth-child(even) {
+    border-left: 1px solid #cdd5df;
+    padding-left: 26px;
+    padding-right: 0;
+}
+
+#about .about-panel > h3 {
+    font-size: 2.55rem;
+    line-height: 1.05;
+    margin: 0 0 20px;
+}
+
+/* Timeline dots and dates remain attached to their respective experience. */
+.about-timeline {
+    border-left: 1px solid #bac8d7;
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.about-job {
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.about-job:last-child {
+    margin-bottom: 0;
+}
+
+.about-job::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #8299b3;
+}
+
+.about-job-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+#about h4 {
+    font-size: 1.15rem;
+    margin: 0;
+    letter-spacing: -0.015em;
+}
+
+#about .about-job-heading p {
+    margin: 0;
+    font-size: 0.83rem;
+}
+
+#about .about-role {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.about-meta {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.about-job ul {
+    padding-left: 20px;
+    margin: 9px 0;
+    font-size: 0.85rem;
+}
+
+#about .about-job-tech {
+    margin: 10px 0 0;
+    font-size: 0.78rem;
+}
+
+/* Compact project summaries link to the existing full project sections. */
+.about-project {
+    display: block;
+    margin-bottom: 18px;
+    border: 1px solid #d3d8df;
+    border-radius: 12px;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-project:last-child {
+    margin-bottom: 0;
+}
+
+.about-project-main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.about-project-main > img {
+    width: 100%;
+    height: 100%;
+    min-height: 225px;
+    object-fit: cover;
+}
+
+.about-project-main > div {
+    padding: 16px 18px;
+    min-width: 0;
+}
+
+#about .about-project h4 {
+    font-size: 1.55rem;
+}
+
+#about .about-project .about-label {
+    font-size: 0.58rem;
+    margin-bottom: 12px;
+}
+
+.about-project-main p:not(.about-label) {
+    margin: 0 0 16px;
+    font-size: 0.82rem;
+}
+
+#about .about-project .about-tags li {
+    font-size: 0.65rem;
+    padding: 5px 10px;
+}
+
+#about .about-project-event {
+    padding: 12px 0;
+    margin: 0 16px;
+    border-top: 1px solid #d3d8df;
+    font-size: 0.76rem;
+}
+
+.about-project-event span {
+    margin-left: 6px;
+}
+
+/* Education details and skill groups; integrations are explicitly identified. */
+.about-education {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 18px;
+}
+
+.about-education-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #718ba6;
+}
+
+#about .about-coursework {
+    font-size: 0.83rem;
+    margin: 12px 0 0;
+}
+
+.about-skills [role='group'] {
+    margin-bottom: 9px;
+}
+
+#about .about-integration-label {
+    margin: 12px 0 7px;
+    font-size: 0.72rem;
+}
+
+/* Reuse the contact footer without changing its existing page. */
+#about .contact-footer {
+    border-top: 1px solid #cdd5df;
+    padding-top: 22px;
+    margin-top: 0;
+}
+
+#about a:focus-visible {
+    outline: 3px solid #8299b3;
+    outline-offset: 4px;
+}
+
+.about-button:hover, .about-project:hover {
+    box-shadow: 0 4px 14px rgba(30, 58, 95, 0.1);
+}
+
+/* Tablet: give the introduction space and stack feature cards horizontally. */
+@media (max-width: 1100px) {
+    .about-hero {
+        grid-template-columns: 0.85fr 2fr;
+        gap: 28px;
+    }
+
+    .about-workspace {
+        grid-column: 1 / -1;
+        height: 200px;
+        min-height: 0;
+        object-position: center 65%;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature {
+        grid-template-columns: 65% 35%;
+    }
+
+    .about-feature > img {
+        min-height: 0;
+        max-height: 260px;
+    }
+
+    .about-job-heading {
+        flex-wrap: wrap;
+    }
+
+    .about-meta {
+        text-align: left;
+    }
+
+    #about .about-panel > h3 {
+        font-size: 2.1rem;
+    }
+}
+
+/* Mobile: one reading column, generous tap targets, and usable photo crops. */
+@media (max-width: 700px) {
+    #about {
+        padding: 22px 0;
+    }
+
+    .about-hero, .about-columns {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .about-portrait {
+        height: 350px;
+        min-height: 0;
+        max-width: 310px;
+        object-position: center 25%;
+    }
+
+    .about-workspace {
+        display: block;
+        height: 220px;
+        min-height: 0;
+        object-position: center 65%;
+    }
+
+    #about h2 {
+        font-size: clamp(2.5rem, 10vw, 3.7rem);
+    }
+
+    .about-features {
+        gap: 18px;
+    }
+
+    .about-feature {
+        grid-template-columns: 60% 40%;
+    }
+
+    .about-feature-copy {
+        padding: 18px 14px;
+    }
+
+    .about-feature > img {
+        max-height: none;
+    }
+
+    #about .about-feature h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-panel, .about-panel:nth-child(even) {
+        padding: 20px 0;
+        border-left: 0;
+    }
+
+    .about-project-main {
+        grid-template-columns: 32% 68%;
+    }
+
+    .about-project-main > div {
+        padding: 14px 12px;
+    }
+
+    .about-education {
+        gap: 10px;
+    }
+
+    #about .contact-footer {
+        margin-top: 10px;
+    }
+}

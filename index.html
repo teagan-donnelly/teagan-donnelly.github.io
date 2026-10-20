@@ -23,7 +23,7 @@
     <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
     <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
     <button class="tab-btn" onclick="openTab(event, 'coursework')">Coursework</button>
-    <button class="tab-btn" onclick="openTab(event, 'resume')">Resume</button>
+    <button class="tab-btn" onclick="openTab(event, 'about')">About</button>
     <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
 </nav>
 
@@ -41,7 +41,7 @@
 
             <div class="hero-buttons">
                 <button class="button-link" onclick="openTab(event, 'projects')">View Projects</button>
-                <button class="button-link secondary" onclick="openTab(event, 'resume')">View Resume</button>
+                <button class="button-link secondary" onclick="openTab(event, 'about')">About Me</button>
             </div>
         </div>
     </div>
@@ -454,25 +454,57 @@
 
 </section>
 
-<section id="resume">
-    <h2>Resume</h2>
-
-    <div class="profile-layout">
-        <img src="images/profile.jpeg" alt="Profile Picture">
-
-        <div>
-            <h2>Hi, I'm Teagan.</h2>
-            <p>
-                Hi, I'm Teagan, a Computer Science student at the University of South Carolina focused on software engineering and full-stack development.
-                I enjoy taking a problem from an idea through requirements, system design, and eventually implementation. This semester, I'm leading a 5-person team developing a hurricane relief coordination system while also working as a Full Stack Engineer through Kappa Theta Pi on a real client project for Hands On Prosthetic Engineering (HOPE).
-                My experience includes Java, Python, TypeScript, JavaScript, Node.js, Git/GitHub, UML, object-oriented programming, data structures, design patterns, and requirements engineering.
-                I'm especially interested in opportunities where I can contribute to real software, learn from experienced engineers, and continue developing both my technical and collaborative skills.
-                I'm currently seeking Summer 2027 software engineering internship opportunities.
-                            </p>
-
-            <a class="button-link" href="files/Teagan Donnelly Resume.pdf" target="_blank">Open Resume</a>
+<section id="about" aria-labelledby="about-title">
+    <!-- Introduction: headshot, biography, and supplied workspace photograph. -->
+    <div class="about-hero">
+        <img class="about-portrait" src="images/profile.jpeg" alt="Teagan Donnelly">
+        <div class="about-hero-copy">
+            <p class="about-label">A LITTLE ABOUT ME</p>
+            <h2 id="about-title">Hi, I&rsquo;m Teagan<span>.</span></h2>
+            <p>I&rsquo;m a Computer Science student at the University of South Carolina who loves turning complex problems into practical, people-centered technology. From healthcare tools to financial applications, I enjoy taking an idea from requirements and design to a working product, and I&rsquo;m especially drawn to the intersection of technology, creativity, and social impact.</p>
+            <ul class="about-tags"><li>Software Engineering</li><li>Product Development</li><li>Full-Stack</li><li>Class of 2028</li></ul>
+            <div class="about-actions"><a class="about-button" href="files/Teagan Donnelly Resume.pdf" target="_blank" rel="noopener noreferrer">View my r&eacute;sum&eacute; <span aria-hidden="true">&#8599;</span></a><a class="about-button about-button-outline" href="#contact" onclick="openTab(event, 'contact'); return false;">Let&rsquo;s connect <span aria-hidden="true">&#8599;</span></a></div>
+        </div>
+        <img class="about-workspace" src="images/about-hero.png" alt="A sunlit workspace beside a window">
+    </div>
+    <!-- Three complementary perspectives, paired with supplied photography. -->
+    <div class="about-features">
+        <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="13" rx="1"/><path d="M2 20h20l-2-4H4Z"/></svg></span><p class="about-label">WHAT I BUILD</p><h3>Technology<br>with purpose.</h3><p>From healthcare solutions and financial tools to consumer applications, I love building software that solves real-world problems and makes a meaningful impact.</p></div><img src="images/about-build.png" alt="A coding workspace with a laptop" loading="lazy"></article>
+        <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M5 5a3 3 0 0 0 0 6M19 5a3 3 0 0 1 0 6M2 19v-3a4 4 0 0 1 3-4M22 19v-3a4 4 0 0 0-3-4"/></svg></span><p class="about-label">HOW I WORK</p><h3>From idea to implementation.</h3><p>I enjoy understanding problems, translating them into features, and collaborating across design, engineering, and stakeholders to build products people actually use.</p></div><img src="images/about-process.png" alt="Notebook with interface sketches beside a laptop" loading="lazy"></article>
+        <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></svg></span><p class="about-label">BEYOND THE CLASSROOM</p><h3>Building<br>beyond coursework.</h3><p>Through hackathons, client work, and personal projects, I&rsquo;ve had opportunities to explore new technologies, solve meaningful problems, and strengthen both my technical and collaborative skills.</p></div><img src="images/about-beyond.png" alt="Sunlight on the University of South Carolina campus" loading="lazy"></article>
+    </div>
+    <!-- Experience and featured projects share an editorial two-column layout. -->
+    <div class="about-columns">
+        <div class="about-panel" aria-labelledby="about-experience-title">
+            <p class="about-label">PROFESSIONAL EXPERIENCE</p><h3 id="about-experience-title">Work Experience</h3>
+            <div class="about-timeline">
+                <article class="about-job"><div class="about-job-heading"><div><h4>HOPE Foundation</h4><p class="about-role">Full Stack Software Engineer</p></div><p class="about-meta">Columbia, SC<br>September 2026 &ndash; Present</p></div><ul>
+                    <li>Collaborate on a five-developer team building a full-stack website for HOPE Inc., a nonprofit supporting affordable prosthetic solutions.</li>
+                    <li>Translate stakeholder requirements into technical and UX decisions for a maintainable production website.</li>
+                    <li>Contribute to responsive design, accessibility, content management, and deployment planning.</li>
+                    <li>Help design configurable donation functionality and participate from requirements gathering through implementation, testing, deployment, and handoff.</li>
+                </ul><p class="about-job-tech">TypeScript, Node.js, Git/GitHub, Vercel</p></article>
+                <article class="about-job"><div class="about-job-heading"><div><h4>Stylish Patina Boutique</h4><p class="about-role">Retail Associate &amp; Content Creator</p></div><p class="about-meta">Falls Church, VA<br>September 2024 &ndash; Present</p></div><ul>
+                    <li>Independently open, operate, and close the boutique, managing daily operations and customer needs.</li>
+                    <li>Train new employees on store procedures, Shopify, customer service, and inventory operations.</li>
+                    <li>Create social media content and product photography supporting the boutique&rsquo;s digital presence.</li>
+                    <li>Maintain e-commerce listings, product descriptions, and online inventory.</li>
+                </ul></article>
+            </div>
+        </div>
+        <div class="about-panel" aria-labelledby="about-projects-title"><p class="about-label">FEATURED PROJECTS</p><h3 id="about-projects-title">Hackathon Projects</h3>
+            <a class="about-project" href="#camellia-project" onclick="openTab(event, 'camellia-project'); return false;" aria-label="View Camellia project details"><div class="about-project-main"><img src="images/camellia-thumbnail.png" alt="Camellia application preview" loading="lazy"><div><h4>Camellia</h4><p class="about-label">CLINICAL INTELLIGENCE PLATFORM</p><p>A clinical intelligence prototype unifying fragmented medical records, flagging patterns for clinical review, supporting OB anesthesia coordination, and simulating wearable patient monitoring.</p><ul class="about-tags"><li>React</li><li>Spring Boot</li><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li><li>Raspberry Pi</li></ul></div></div><p class="about-project-event">PalmettoHacks 2026 &middot; Best Use of Hardware &middot; Best Use of ElevenLabs <span aria-hidden="true">&#8599;</span></p></a>
+            <a class="about-project" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project details"><div class="about-project-main"><img src="images/vesta-thumbnail.png" alt="Vesta application preview" loading="lazy"><div><h4>Vesta</h4><p class="about-label">COLLABORATIVE FINANCIAL PLANNING</p><p>A collaborative financial planning prototype for recurring commitments, financial risks, what-if scenarios, and AI-assisted guidance with control over shared information.</p><ul class="about-tags"><li>Next.js / React</li><li>Gemini</li><li>Nessie</li><li>Backboard</li><li>Tiger Data / Timescale</li></ul></div></div><p class="about-project-event">Technica 2026 &middot; Collaborative financial planning prototype <span aria-hidden="true">&#8599;</span></p></a>
+        </div>
+        <div class="about-panel" aria-labelledby="about-education-title"><p class="about-label">EDUCATION</p><h3 id="about-education-title">Education</h3><div class="about-education">
+            <span class="about-education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5ZM5 10v7q7 6 14 0v-7M22 8v9"/></svg></span><div><div class="about-job-heading"><div><h4>University of South Carolina</h4><p>B.S. Computer Science</p></div><p class="about-meta">Columbia, SC<br>Expected May 2028</p></div><p class="about-coursework"><strong>Relevant Coursework:</strong> Software Engineering, Algorithmic Design, UNIX/Linux, Discrete Structures, Computer Architecture, Design Patterns, Ethics in Computing</p></div></div></div>
+        <div class="about-panel about-skills" aria-labelledby="about-skills-title"><p class="about-label">SKILLS</p><h3 id="about-skills-title">Technical Skills</h3>
+            <div role="group" aria-label="Core programming and web technologies"><ul class="about-tags"><li>Java</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>HTML/CSS</li><li>React</li><li>Node.js</li><li>Spring Boot</li></ul></div>
+            <div role="group" aria-label="Tools and development"><ul class="about-tags"><li>Git/GitHub</li><li>Vercel</li><li>UML</li><li>Linux</li><li>Shopify</li><li>RISC-V Assembly</li></ul></div>
+            <p class="about-integration-label">Project-specific integrations</p><div role="group" aria-label="Project-specific integrations"><ul class="about-tags"><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li><li>Nessie</li><li>Backboard</li><li>Tiger Data / Timescale</li></ul></div>
         </div>
     </div>
+    <footer class="contact-footer"><span>OPEN TO OPPORTUNITIES &amp; COLLABORATIONS</span><span class="contact-footer-line" aria-hidden="true"></span><span>BASED IN COLUMBIA, SC <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg></span></footer>
 </section>
 
 <section id="contact" aria-labelledby="contact-title">
@@ -980,7 +1012,13 @@
         }
 
         document.getElementById(tabName).classList.add("active");
-        evt.currentTarget.classList.add("active");
+        // Detail pages keep Projects selected; internal links select their destination tab.
+        const navigationTab = tabName.endsWith('-project') ? 'projects' : tabName;
+        for (const button of buttons) {
+            if (button.getAttribute('onclick').includes("'" + navigationTab + "'")) {
+                button.classList.add('active');
+            }
+        }
     }
 </script>
 
