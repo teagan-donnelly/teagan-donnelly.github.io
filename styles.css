@@ -3645,3 +3645,754 @@ ul {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+/* Hurricane Relief: scoped editorial composition and source-code presentation. */
+#hurricane-project {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 26px 0;
+    color: #4c6378;
+}
+
+#hurricane-project *, #hurricane-project *::before, #hurricane-project *::after {
+    box-sizing: border-box;
+}
+
+#hurricane-project p {
+    color: #4c6378;
+    font-size: 1rem;
+    line-height: 1.55;
+    margin: 0 0 16px;
+}
+
+#hurricane-project h2, #hurricane-project h3, #hurricane-project h4 {
+    font-family: Georgia, serif;
+    color: #152e48;
+    letter-spacing: -0.035em;
+}
+
+#hurricane-project h3 {
+    font-size: clamp(1.9rem, 3vw, 2.6rem);
+    line-height: 1.08;
+    margin: 0 0 18px;
+}
+
+#hurricane-project h4 {
+    font-size: 1.25rem;
+    line-height: 1.15;
+    margin: 0 0 10px;
+}
+
+#hurricane-project a:focus-visible {
+    outline: 3px solid #718da5;
+    outline-offset: 5px;
+    border-radius: 3px;
+}
+
+#hurricane-project .relief-label {
+    font-size: 0.67rem;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    color: #577b95;
+    margin: 0 0 14px;
+}
+
+#hurricane-project .relief-breadcrumb {
+    display: flex;
+    gap: 9px;
+    font-size: 0.78rem;
+    margin-bottom: 24px;
+}
+
+#hurricane-project .relief-breadcrumb a {
+    color: #335770;
+    text-decoration: none;
+}
+
+#hurricane-project .relief-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+#hurricane-project .relief-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#hurricane-project .relief-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 46px;
+    padding: 11px 17px;
+    border: 1px solid #bdcbd5;
+    border-radius: 28px;
+    color: #24465f;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#hurricane-project .relief-button-primary {
+    background: #213e57;
+    color: #fff;
+    border-color: #213e57;
+}
+
+#hurricane-project .relief-button:hover {
+    background: #e7edf1;
+}
+
+#hurricane-project .relief-button-primary:hover {
+    background: #345772;
+}
+
+#hurricane-project a > svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+#hurricane-project .relief-metadata {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    border-top: 1px solid #cdd8e0;
+    padding-top: 18px;
+    margin: 26px 0 12px;
+}
+
+#hurricane-project dt {
+    color: #627d94;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 7px;
+}
+
+#hurricane-project dd {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #25445e;
+    line-height: 1.5;
+}
+
+#hurricane-project .relief-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #bfceda;
+    border-radius: 20px;
+    background: #eaf0f4;
+    color: #3b5c76;
+    font-size: 0.72rem;
+}
+
+#hurricane-project .relief-scope, #hurricane-project .relief-note {
+    font-size: 0.79rem;
+    line-height: 1.5;
+    color: #64788a;
+}
+
+#hurricane-project .relief-section {
+    border-top: 1px solid #cdd8e0;
+    padding-top: 28px;
+    margin-top: 30px;
+}
+
+#hurricane-project .relief-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+}
+
+#hurricane-project .relief-tags li {
+    padding: 6px 11px;
+    background: #e9eff3;
+    border: 1px solid #d4dee6;
+    border-radius: 20px;
+    color: #375870;
+    font-size: 0.75rem;
+}
+
+#hurricane-project .relief-contributions a, #hurricane-project .relief-document-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    color: #2e5877;
+    font-size: 0.87rem;
+    text-underline-offset: 4px;
+}
+
+#hurricane-project .relief-closing {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#hurricane-project .relief-closing > div {
+    max-width: 850px;
+}
+
+#hurricane-project .relief-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    white-space: nowrap;
+    color: #2e5877;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+#hurricane-project .relief-back:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero image blends into the existing warm page background, without replacing the photo. */
+#hurricane-project .relief-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: 0;
+    position: relative;
+}
+#hurricane-project .relief-hero > div {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+}
+#hurricane-project h2 {
+    font-size: clamp(2.65rem, 4.3vw, 4.4rem);
+    line-height: 1;
+    margin: 0 0 14px;
+    padding: 0;
+    border: 0;
+}
+#hurricane-project .relief-subtitle {
+    font-family: Georgia, serif;
+    color: #28435e;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    line-height: 1.14;
+}
+#hurricane-project .relief-hero-photo {
+    margin: 0 0 0 -85px;
+    align-self: stretch;
+    min-width: 0;
+}
+#hurricane-project .relief-hero-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to right, transparent, #000 24%);
+}
+#hurricane-project .relief-section {
+    padding-top: 22px;
+    margin-top: 22px;
+}
+#hurricane-project .relief-metadata {
+    margin-top: 12px;
+}
+#hurricane-project .relief-scope {
+    margin-bottom: 0;
+}
+#hurricane-project :is(.storm-split, .storm-problem, .storm-technical, .relief-hero) > * {
+    min-width: 0;
+}
+
+/* Flood photograph sits between the introductory copy and one unified challenge panel. */
+#hurricane-project .storm-problem {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 0.72fr);
+    gap: 18px;
+    align-items: stretch;
+}
+#hurricane-project .storm-flood {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#hurricane-project .storm-challenges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    background: #e8eff4;
+    border-radius: 7px;
+    padding: 22px 18px;
+}
+#hurricane-project .storm-challenges article {
+    display: flex;
+    gap: 14px;
+}
+#hurricane-project .storm-challenges svg {
+    width: 30px;
+    height: 30px;
+    color: #3b6283;
+    flex-shrink: 0;
+}
+#hurricane-project .storm-challenges h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.83rem;
+    letter-spacing: 0;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+#hurricane-project .storm-challenges p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+#hurricane-project .storm-split {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+    gap: 30px;
+    align-items: start;
+}
+#hurricane-project .storm-section-copy p {
+    margin-bottom: 0;
+}
+
+/* A central backend with four surrounding domain nodes and visible connectors. */
+#hurricane-project .storm-system {
+    margin: 0;
+    padding: 16px;
+    border-radius: 10px;
+    background: #e9eff4;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+    align-items: center;
+}
+#hurricane-project .storm-role {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #d4dfe7;
+    padding: 18px 14px;
+    border-radius: 9px;
+    background: #f7f9fb;
+    box-shadow: 0 2px 5px rgba(25, 45, 66, 0.04);
+}
+#hurricane-project .storm-role svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    color: #3e6586;
+}
+#hurricane-project .storm-role h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+#hurricane-project .storm-role p {
+    font-size: 0.76rem;
+    line-height: 1.4;
+    margin: 0;
+}
+#hurricane-project .storm-requester {
+    grid-column: 1;
+    grid-row: 1;
+}
+#hurricane-project .storm-volunteer {
+    grid-column: 1;
+    grid-row: 2;
+}
+#hurricane-project .storm-coordinator {
+    grid-column: 3;
+    grid-row: 1;
+}
+#hurricane-project .storm-shelter {
+    grid-column: 3;
+    grid-row: 2;
+}
+#hurricane-project .storm-role::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 1px;
+    background: #738fa6;
+}
+#hurricane-project :is(.storm-requester, .storm-volunteer)::after {
+    right: -25px;
+}
+#hurricane-project :is(.storm-coordinator, .storm-shelter)::after {
+    left: -25px;
+}
+#hurricane-project .storm-core {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #254662;
+    color: #fff;
+    border-radius: 9px;
+    padding: 20px 15px;
+}
+#hurricane-project .storm-core > svg {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 12px;
+}
+#hurricane-project .storm-core h4 {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+    margin: 0;
+}
+#hurricane-project .storm-core p {
+    color: #edf3f7;
+    font-size: 0.8rem;
+}
+#hurricane-project .storm-core ul {
+    text-align: left;
+    padding-left: 16px;
+    font-size: 0.74rem;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    margin: 0;
+}
+#hurricane-project .storm-core > span {
+    font-size: 0.7rem;
+    margin-top: 10px;
+    color: #d5e2ec;
+}
+#hurricane-project .storm-system figcaption {
+    grid-column: 1 / -1;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: #526e85;
+    margin-top: -10px;
+}
+
+/* Open workflow timelines, with icon circles and readable captions. */
+#hurricane-project .storm-workflow {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+}
+#hurricane-project .storm-workflow li {
+    position: relative;
+    text-align: center;
+    min-width: 0;
+}
+#hurricane-project .storm-step-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dce8f3;
+    color: #355f82;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 12px;
+}
+#hurricane-project .storm-step-icon svg {
+    width: 30px;
+    height: 30px;
+}
+#hurricane-project .storm-workflow strong {
+    font-size: 0.82rem;
+    color: #243e57;
+}
+#hurricane-project .storm-workflow p {
+    font-size: 0.76rem;
+    line-height: 1.4;
+    margin: 6px 0 0;
+}
+#hurricane-project .storm-workflow li > svg {
+    position: absolute;
+    top: 27px;
+    right: -20px;
+    width: 23px;
+    height: 16px;
+    color: #58748b;
+}
+#hurricane-project .storm-process {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+#hurricane-project .storm-process [aria-current='step'] .storm-step-icon {
+    background: #254662;
+    color: #fff;
+}
+
+/* Real source excerpts are rendered as selectable code, not imagery. */
+#hurricane-project .storm-technical {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr) minmax(0, 0.65fr);
+    gap: 22px;
+}
+#hurricane-project .storm-editor {
+    background: #142c3e;
+    color: #e7eef4;
+    border: 1px solid #344f64;
+    border-radius: 7px;
+    overflow: hidden;
+    align-self: start;
+    min-width: 0;
+}
+#hurricane-project .storm-code-tabs {
+    display: flex;
+    background: #1c3448;
+    border-bottom: 1px solid #355065;
+}
+#hurricane-project .storm-code-tabs button {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 13px 15px;
+    font: inherit;
+    font-size: 0.76rem;
+    color: #adbccc;
+    cursor: pointer;
+    min-height: 44px;
+}
+#hurricane-project .storm-code-tabs [aria-selected='true'] {
+    color: #fff;
+    border-bottom-color: #90bacf;
+    background: #223e54;
+}
+#hurricane-project .storm-code-tabs button:focus-visible {
+    outline: 2px solid #bed8ea;
+    outline-offset: -4px;
+}
+#hurricane-project .storm-editor pre {
+    margin: 0;
+    padding: 18px 12px 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    tab-size: 4;
+}
+#hurricane-project .storm-editor code {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1.55;
+}
+#hurricane-project .storm-code-line {
+    display: grid;
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 8px;
+}
+#hurricane-project .storm-code-number {
+    color: #8ba0b2;
+    user-select: none;
+    text-align: right;
+}
+#hurricane-project .storm-code-keyword {
+    color: #e7a5bb;
+}
+#hurricane-project .storm-code-string {
+    color: #e9cd9b;
+}
+#hurricane-project .storm-code-comment {
+    color: #9eb6a6;
+}
+#hurricane-project .storm-code-source {
+    margin: 0;
+    padding: 10px 16px;
+    border-top: 1px solid #355065;
+    color: #b8cad7;
+    font-size: 0.69rem;
+    line-height: 1.4;
+}
+#hurricane-project .storm-editor [hidden] {
+    display: none;
+}
+#hurricane-project .storm-architecture-note {
+    background: #e8eff4;
+    padding: 22px 18px;
+    border-radius: 7px;
+}
+#hurricane-project .storm-architecture-note > svg {
+    width: 35px;
+    height: 35px;
+    color: #3e6484;
+    margin-bottom: 18px;
+}
+#hurricane-project .storm-architecture-note p {
+    font-size: 0.88rem;
+}
+#hurricane-project .storm-architecture-note code {
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: #345872;
+}
+#hurricane-project .storm-architecture-note .relief-note {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 0.76rem;
+}
+
+/* Two contribution panels sit beside the editorial introduction. */
+#hurricane-project .storm-contributions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+#hurricane-project .storm-contributions article {
+    display: flex;
+    gap: 16px;
+    min-width: 0;
+    padding: 22px;
+    background: #e8eff5;
+    border-radius: 7px;
+}
+#hurricane-project .storm-contribution-icon > svg {
+    width: 26px;
+    height: 26px;
+    color: #315d81;
+}
+#hurricane-project .storm-contributions h4 {
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+}
+#hurricane-project .storm-contributions p {
+    font-size: 0.82rem;
+    margin-bottom: 12px;
+}
+#hurricane-project .storm-contributions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#hurricane-project .storm-contributions li {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 7px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+}
+#hurricane-project .storm-contributions li svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+#hurricane-project .storm-contributions .relief-note {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 0.73rem;
+}
+
+/* Laptop/tablet: widen the diagram and editor instead of squeezing their contents. */
+@media (max-width: 1150px) {
+    #hurricane-project .storm-problem {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #hurricane-project .storm-challenges {
+        grid-column: 1 / -1;
+        flex-direction: row;
+    }
+    #hurricane-project .storm-challenges article {
+        flex: 1;
+    }
+    #hurricane-project .storm-split {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+    #hurricane-project .storm-technical {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    }
+    #hurricane-project .storm-architecture-note {
+        grid-column: 1 / -1;
+    }
+}
+@media (max-width: 700px) {
+    #hurricane-project {
+        padding: 22px 0;
+    }
+    #hurricane-project .relief-hero, #hurricane-project .storm-problem, #hurricane-project .storm-technical, #hurricane-project .storm-contributions {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #hurricane-project .relief-hero-photo {
+        margin: 0;
+    }
+    #hurricane-project .relief-hero-photo img {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.5;
+        mask-image: none;
+        border-radius: 8px;
+    }
+    #hurricane-project .relief-metadata {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #hurricane-project .storm-flood {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.4;
+    }
+    #hurricane-project .storm-challenges {
+        flex-direction: column;
+    }
+    #hurricane-project .storm-system {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+    #hurricane-project :is(.storm-requester, .storm-volunteer, .storm-coordinator, .storm-shelter, .storm-core) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    #hurricane-project .storm-core {
+        grid-row: 1;
+    }
+    #hurricane-project .storm-role::after {
+        display: none;
+    }
+    #hurricane-project .storm-system figcaption {
+        margin-top: 0;
+    }
+    #hurricane-project .storm-workflow {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+    #hurricane-project .storm-workflow li {
+        display: grid;
+        grid-template-columns: 50px minmax(0, 1fr);
+        gap: 0 15px;
+        text-align: left;
+    }
+    #hurricane-project .storm-step-icon {
+        grid-row: 1 / 3;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+    }
+    #hurricane-project .storm-workflow li > svg {
+        display: none;
+    }
+    #hurricane-project .storm-architecture-note {
+        grid-column: auto;
+    }
+    #hurricane-project .relief-closing {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
