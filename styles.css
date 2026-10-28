@@ -4396,3 +4396,1173 @@ ul {
         gap: 20px;
     }
 }
+
+/* Vesta case study: warm ivory, burgundy typography, and page-native demo visuals.
+   Scope all styling to Vesta; header, navigation, and other case studies remain intact. */
+#vesta-project {
+    --vesta-wine: #65102c;
+    --vesta-rose: #831d3d;
+    --vesta-blush: #f4e5e2;
+    --vesta-ivory: #faf7f1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0 26px;
+    color: #50494a;
+}
+#vesta-project *, #vesta-project *::before, #vesta-project *::after {
+    box-sizing: border-box;
+}
+#vesta-project p {
+    font-size: 0.96rem;
+    line-height: 1.5;
+    color: #50494a;
+    margin: 0 0 16px;
+}
+#vesta-project h2, #vesta-project h3, #vesta-project h4 {
+    font-family: Georgia, serif;
+    color: var(--vesta-wine);
+    letter-spacing: -0.035em;
+}
+#vesta-project h3 {
+    font-size: clamp(1.8rem, 2.65vw, 2.6rem);
+    line-height: 1.05;
+    margin: 0 0 14px;
+}
+#vesta-project h4 {
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin: 0 0 9px;
+}
+#vesta-project .vesta-label {
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--vesta-wine);
+    margin-bottom: 12px;
+}
+#vesta-project a:focus-visible, #vesta-project pre:focus-visible {
+    outline: 3px solid #a2566b;
+    outline-offset: 4px;
+}
+#vesta-project .vesta-small {
+    font-size: 0.77rem;
+    line-height: 1.45;
+    color: #766768;
+}
+#vesta-project .vesta-section {
+    border-top: 1px solid #dfd0ca;
+    padding-top: 24px;
+    margin-top: 24px;
+}
+#vesta-project :is(.vesta-hero, .vesta-problem, .vesta-split, .vesta-modeling, .vesta-ai, .vesta-technical) > * {
+    min-width: 0;
+}
+
+/* Prominent supplied hero image: no extra screen mockup, border, or cropping. */
+#vesta-project .vesta-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: 20px;
+}
+#vesta-project .vesta-breadcrumb {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 0.76rem;
+}
+#vesta-project .vesta-breadcrumb a {
+    color: var(--vesta-wine);
+    text-decoration: none;
+}
+#vesta-project .vesta-breadcrumb a:hover {
+    text-decoration: underline;
+}
+#vesta-project h2 {
+    font-size: clamp(4.5rem, 8vw, 7.4rem);
+    line-height: 0.95;
+    padding: 0;
+    border: 0;
+    margin: 0 0 10px;
+}
+#vesta-project .vesta-subtitle {
+    font-family: Georgia, serif;
+    color: var(--vesta-wine);
+    font-size: clamp(1.6rem, 2.6vw, 2.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+#vesta-project .vesta-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Fade only the outer botanical margins. The bezel begins beyond 23%
+       horizontally and 9% vertically, inside the fully opaque region.
+       Percentage masks scale with the uncropped image on every viewport. */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 19%, #000 98%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 6%, #000 97%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent 0%, #000 19%, #000 98%, transparent 100%), linear-gradient(to bottom, transparent 0%, #000 6%, #000 97%, transparent 100%);
+    mask-composite: intersect;
+}
+#vesta-project .vesta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+#vesta-project .vesta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid #a46a78;
+    border-radius: 26px;
+    color: var(--vesta-wine);
+    font-size: 0.77rem;
+    text-decoration: none;
+}
+#vesta-project .vesta-button-primary {
+    background: var(--vesta-wine);
+    color: #fff;
+    border-color: var(--vesta-wine);
+}
+#vesta-project .vesta-button:hover {
+    background: #f0dedb;
+}
+#vesta-project .vesta-button-primary:hover {
+    background: #831d3d;
+}
+#vesta-project a > svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+}
+#vesta-project .vesta-metadata {
+    display: grid;
+    grid-template-columns: 0.85fr 1.4fr 0.65fr 1.4fr 1fr;
+    gap: 18px;
+    border-top: 1px solid #dfd0ca;
+    padding-top: 15px;
+    margin: 22px 0 0;
+}
+#vesta-project dt {
+    color: var(--vesta-wine);
+    font-size: 0.61rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 7px;
+}
+#vesta-project dd {
+    margin: 0;
+    color: #50494a;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+/* Three-part problem composition uses an existing warm planning photograph. */
+#vesta-project .vesta-problem {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.05fr) minmax(0, 0.9fr);
+    gap: 22px;
+}
+#vesta-project .vesta-lifestyle {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    object-position: 50% center;
+    border-radius: 8px;
+}
+#vesta-project .vesta-challenges {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#vesta-project .vesta-challenges article {
+    display: flex;
+    gap: 13px;
+    padding: 17px;
+    background: #f6eae4;
+    border-radius: 8px;
+    flex: 1;
+}
+#vesta-project .vesta-challenges svg {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-challenges h4 {
+    font-size: 1.04rem;
+    margin-bottom: 6px;
+}
+#vesta-project .vesta-challenges p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Shared finances: intentionally labeled visualization, not a fabricated screenshot. */
+#vesta-project .vesta-split, #vesta-project .vesta-modeling {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.8fr);
+    gap: 30px;
+}
+#vesta-project .vesta-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+}
+#vesta-project .vesta-feature-list li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: #f4e6df;
+    border-radius: 18px;
+    margin-bottom: 7px;
+    padding: 8px 12px;
+    color: var(--vesta-wine);
+    font-size: 0.82rem;
+}
+#vesta-project .vesta-feature-list svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+#vesta-project .vesta-shared-visual {
+    margin: 0;
+    border: 1px solid #e1cdc7;
+    background: #faf3ed;
+    border-radius: 10px;
+    padding: 24px;
+}
+#vesta-project .vesta-visual-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e1cdc7;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-visual-header > strong {
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+}
+#vesta-project .vesta-visual-header > span {
+    align-self: center;
+    font-size: 0.7rem;
+}
+#vesta-project .vesta-shared-visual > h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#vesta-project .vesta-workspaces {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+#vesta-project .vesta-workspaces article {
+    padding: 20px;
+    border: 1px solid #e4d8d0;
+    background: #fdfaf5;
+    border-radius: 7px;
+}
+#vesta-project .vesta-workspaces article > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    align-items: center;
+    justify-content: space-between;
+}
+#vesta-project .vesta-workspaces h5 {
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a2731;
+    margin: 0;
+}
+#vesta-project .vesta-readiness {
+    border-radius: 12px;
+    padding: 4px 8px;
+    background: #e9efdf;
+    color: #476347;
+    font-size: 0.66rem;
+}
+#vesta-project .vesta-readiness-risk {
+    background: #f3deda;
+    color: #8a293f;
+}
+#vesta-project .vesta-workspaces article > p {
+    font-size: 0.76rem;
+    margin-top: 10px;
+}
+#vesta-project .vesta-workspaces dl {
+    margin: 18px 0;
+}
+#vesta-project .vesta-workspaces dl > div {
+    border-bottom: 1px solid #e7dcd4;
+    padding: 12px 0;
+}
+#vesta-project .vesta-workspaces dt {
+    font-size: 0.77rem;
+    letter-spacing: 0;
+    color: #65595a;
+}
+#vesta-project .vesta-workspaces dd {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #45252e;
+}
+#vesta-project .vesta-workspaces dd span {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-left: 7px;
+    color: #627454;
+}
+#vesta-project .vesta-shared-visual figcaption {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #7b6465;
+    margin-top: 18px;
+}
+
+/* Native SVG comparison charts use only verified obligation/readiness amounts. */
+#vesta-project .vesta-chart-pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+}
+#vesta-project .vesta-chart {
+    margin: 0;
+    padding: 20px 16px;
+    background: #fcf6f2;
+    border: 1px solid #e2cfca;
+    border-radius: 10px;
+}
+#vesta-project .vesta-chart-after {
+    background: #fcf7eb;
+}
+#vesta-project .vesta-chart figcaption {
+    color: var(--vesta-wine);
+    font-weight: 600;
+    font-size: 0.83rem;
+    margin-bottom: 12px;
+}
+#vesta-project .vesta-chart-value {
+    color: var(--vesta-wine);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+#vesta-project .vesta-chart-value span {
+    display: block;
+    color: #8b7474;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 4px;
+}
+#vesta-project .vesta-comparison {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+}
+#vesta-project .vesta-comparison text {
+    fill: #75595c;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+}
+#vesta-project .vesta-chart-grid {
+    stroke: #e8d9d3;
+    stroke-width: 1;
+}
+#vesta-project .vesta-bar-target {
+    fill: #dfc2c3;
+}
+#vesta-project .vesta-bar-result {
+    fill: #831d3d;
+}
+#vesta-project .vesta-bar-gap {
+    fill: #f7eeea;
+    stroke: #a6586e;
+    stroke-dasharray: 4 3;
+}
+#vesta-project .vesta-chart-after .vesta-bar-target {
+    fill: #eddbb6;
+}
+#vesta-project .vesta-chart-after .vesta-bar-result {
+    fill: #b88836;
+}
+#vesta-project .vesta-chart p {
+    font-size: 0.78rem;
+    margin: 0;
+}
+#vesta-project .vesta-chart-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-chart-arrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Contextual guidance stays on the ivory page, with soft panels and burgundy accents. */
+#vesta-project .vesta-ai {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr) minmax(0, 0.65fr);
+    gap: 24px;
+    padding: 28px;
+    background: transparent;
+    border-top: 1px solid #dfd0ca;
+    border-radius: 0;
+}
+#vesta-project .vesta-ai h3, #vesta-project .vesta-ai .vesta-label {
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-ai > div:first-child p {
+    color: #50494a;
+}
+#vesta-project .vesta-ai > div:first-child .vesta-label {
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-ai > div:first-child .vesta-small {
+    color: #766768;
+}
+#vesta-project .vesta-conversation {
+    background: #fcf2ed;
+    border-radius: 9px;
+    padding: 20px;
+}
+#vesta-project .vesta-conversation > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e3d1ca;
+    margin-bottom: 16px;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-conversation > div > span {
+    font-size: 0.67rem;
+}
+#vesta-project .vesta-conversation p {
+    font-size: 0.88rem;
+}
+#vesta-project .vesta-conversation .vesta-question {
+    background: #f3dfd9;
+    border-radius: 8px;
+    padding: 13px;
+    color: #702b40;
+}
+#vesta-project .vesta-memory {
+    padding: 20px;
+    background: #f1dfd5;
+    border-radius: 9px;
+}
+#vesta-project .vesta-memory > svg {
+    width: 29px;
+    height: 29px;
+    color: var(--vesta-wine);
+    margin-bottom: 14px;
+}
+#vesta-project .vesta-memory p {
+    font-size: 0.85rem;
+}
+
+/* Verified TypeScript source is selectable, scrollable, and never rendered as an image. */
+#vesta-project .vesta-technical {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.2fr) minmax(0, 0.7fr);
+    gap: 24px;
+}
+#vesta-project .vesta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0;
+    list-style: none;
+    margin: 18px 0;
+}
+#vesta-project .vesta-tags li {
+    padding: 6px 11px;
+    background: #f0dfd9;
+    color: var(--vesta-wine);
+    border-radius: 18px;
+    font-size: 0.77rem;
+}
+#vesta-project .vesta-editor {
+    min-width: 0;
+    background: #241c25;
+    color: #f0e6e8;
+    border: 1px solid #49333e;
+    border-radius: 8px;
+    align-self: start;
+    overflow: hidden;
+}
+#vesta-project .vesta-editor-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 13px 16px;
+    border-bottom: 1px solid #5a3d4b;
+    font-size: 0.8rem;
+}
+#vesta-project .vesta-editor-tab span {
+    color: #bb9da8;
+    font-size: 0.69rem;
+}
+#vesta-project .vesta-editor pre {
+    margin: 0;
+    padding: 16px 12px;
+    overflow-x: auto;
+}
+#vesta-project .vesta-editor code {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.82rem;
+    line-height: 1.55;
+}
+#vesta-project .vesta-code-line {
+    display: grid;
+    grid-template-columns: 24px max-content;
+    gap: 12px;
+}
+#vesta-project .vesta-code-line > span:first-child {
+    color: #b89aa6;
+    user-select: none;
+    text-align: right;
+}
+#vesta-project .vesta-code-line b {
+    font-weight: normal;
+    color: #e7aac4;
+}
+#vesta-project .vesta-editor > p {
+    font-size: 0.7rem;
+    color: #c3a8b4;
+    border-top: 1px solid #5a3d4b;
+    padding: 12px 16px;
+    margin: 0;
+}
+#vesta-project .vesta-technical-notes {
+    background: #f3e4de;
+    border-radius: 8px;
+    padding: 18px;
+}
+#vesta-project .vesta-technical-notes > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+#vesta-project .vesta-technical-notes svg {
+    width: 23px;
+    height: 23px;
+    color: var(--vesta-wine);
+    flex-shrink: 0;
+}
+#vesta-project .vesta-technical-notes p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+#vesta-project .vesta-technical-notes strong {
+    display: block;
+    color: var(--vesta-wine);
+    margin-bottom: 4px;
+}
+#vesta-project .vesta-process {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#vesta-project .vesta-process li {
+    position: relative;
+    text-align: center;
+}
+#vesta-project .vesta-process-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: #f0ded9;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-process-icon svg {
+    width: 26px;
+    height: 26px;
+}
+#vesta-project .vesta-process h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.25;
+    letter-spacing: 0;
+}
+#vesta-project .vesta-process p {
+    font-size: 0.79rem;
+    line-height: 1.4;
+}
+#vesta-project .vesta-process li > svg {
+    position: absolute;
+    width: 27px;
+    height: 17px;
+    top: 22px;
+    right: -24px;
+    color: var(--vesta-wine);
+}
+#vesta-project .vesta-closing > p {
+    max-width: 850px;
+}
+#vesta-project .vesta-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--vesta-wine);
+    min-height: 44px;
+    padding: 10px;
+    font-size: 0.85rem;
+    text-underline-offset: 4px;
+}
+
+/* Simplify tablet compositions before the visual and copy become cramped. */
+@media (max-width: 1100px) {
+    #vesta-project .vesta-problem {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #vesta-project .vesta-challenges {
+        grid-column: 1 / -1;
+        flex-direction: row;
+    }
+    #vesta-project .vesta-challenges article {
+        min-width: 0;
+    }
+    #vesta-project .vesta-split, #vesta-project .vesta-modeling {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+    #vesta-project .vesta-ai, #vesta-project .vesta-technical {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #vesta-project .vesta-memory, #vesta-project .vesta-technical-notes {
+        grid-column: 1 / -1;
+    }
+    #vesta-project .vesta-metadata {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (max-width: 700px) {
+    #vesta-project .vesta-hero, #vesta-project .vesta-problem, #vesta-project .vesta-ai, #vesta-project .vesta-technical, #vesta-project .vesta-workspaces {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-challenges {
+        flex-direction: column;
+    }
+    #vesta-project .vesta-hero-image {
+        margin-top: 8px;
+    }
+    #vesta-project h2 {
+        font-size: 5rem;
+    }
+    #vesta-project .vesta-lifestyle {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.4;
+    }
+    #vesta-project .vesta-metadata {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #vesta-project .vesta-chart-pair {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-chart-arrow {
+        justify-content: center;
+        transform: rotate(90deg);
+    }
+    #vesta-project .vesta-ai {
+        padding: 22px;
+    }
+    #vesta-project .vesta-shared-visual {
+        padding: 18px;
+    }
+    #vesta-project .vesta-process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+    #vesta-project .vesta-process li > svg {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    #vesta-project .vesta-process {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-process li {
+        display: grid;
+        grid-template-columns: 54px minmax(0, 1fr);
+        text-align: left;
+        gap: 0 15px;
+    }
+    #vesta-project .vesta-process-icon {
+        grid-row: 1 / 3;
+        margin: 0;
+    }
+}
+
+/* Vesta visual refinement. The shared navigation changes only while Vesta is active. */
+body:has(#vesta-project.active) {
+    background: #faf7f1;
+}
+body:has(#vesta-project.active) > nav {
+    background: #65102c;
+}
+body:has(#vesta-project.active) > nav button {
+    color: #faeee7;
+}
+body:has(#vesta-project.active) > nav button:hover, body:has(#vesta-project.active) > nav button.active {
+    color: #65102c;
+    background: #f6e9df;
+}
+#vesta-project .vesta-hero {
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    gap: 12px;
+}
+#vesta-project .vesta-metadata {
+    margin-top: 16px;
+    padding-top: 13px;
+}
+#vesta-project .vesta-problem {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.12fr) minmax(0, 0.95fr);
+}
+#vesta-project .vesta-challenges article {
+    padding: 18px;
+    gap: 16px;
+    background: #f5e8e0;
+}
+#vesta-project .vesta-challenges svg {
+    width: 36px;
+    height: 36px;
+}
+
+/* Labeled application illustration: branding, sidebar, health states, and readiness. */
+#vesta-project .vesta-shared-visual {
+    padding: 0;
+    overflow: hidden;
+    background: #fcf5ed;
+}
+#vesta-project .vesta-app-frame {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+}
+#vesta-project .vesta-app-sidebar {
+    padding: 22px 15px;
+    background: #f3e5d7;
+    border-right: 1px solid #e5d5ca;
+    color: #65102c;
+}
+#vesta-project .vesta-app-sidebar > strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 2.1rem;
+    font-variant: small-caps;
+    letter-spacing: -0.04em;
+}
+#vesta-project .vesta-app-sidebar > span {
+    display: block;
+    color: #a97a77;
+    font-size: 0.53rem;
+    letter-spacing: 0.14em;
+    margin: 14px 0;
+}
+#vesta-project .vesta-app-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    font-size: 0.7rem;
+    line-height: 1.4;
+}
+#vesta-project .vesta-app-sidebar li {
+    padding: 11px 8px;
+    margin: 3px -5px;
+    border-radius: 6px;
+}
+#vesta-project .vesta-app-selected {
+    background: #ebcec5;
+    font-weight: 600;
+}
+#vesta-project .vesta-app-sidebar > div {
+    background: #f0d8bd;
+    padding: 17px 12px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+#vesta-project .vesta-app-sidebar b {
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1;
+}
+#vesta-project .vesta-app-sidebar > div > span {
+    display: block;
+    font-size: 0.66rem;
+    margin-top: 12px;
+    color: #936967;
+}
+#vesta-project .vesta-app-sidebar > p {
+    font-size: 0.73rem;
+    color: #65102c;
+    margin: 0;
+}
+#vesta-project .vesta-app-sidebar small {
+    font-size: 0.61rem;
+    color: #8e7774;
+}
+#vesta-project .vesta-app-main {
+    padding: 20px;
+    min-width: 0;
+}
+#vesta-project .vesta-app-main > h4 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+#vesta-project .vesta-app-intro {
+    color: #88716e;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+#vesta-project .vesta-visual-header {
+    margin: 0 0 22px;
+    padding-bottom: 14px;
+}
+#vesta-project .vesta-app-search {
+    font-size: 0.68rem;
+    color: #897a76;
+}
+#vesta-project .vesta-workspaces article {
+    padding: 17px;
+}
+#vesta-project .vesta-shared-visual figcaption {
+    border-top: 1px solid #e3d4ca;
+    padding: 12px 18px;
+    margin: 0;
+    background: #fcf7f0;
+}
+#vesta-project .vesta-readiness-track {
+    height: 5px;
+    background: #e5e8dc;
+    border-radius: 8px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+#vesta-project .vesta-readiness-track > span {
+    display: block;
+    height: 100%;
+    background: #6a7e53;
+    border-radius: inherit;
+}
+#vesta-project .vesta-readiness-track-risk {
+    background: #ead4d2;
+}
+#vesta-project .vesta-readiness-track-risk > span {
+    background: #9a435a;
+}
+
+/* Dated forecasts use matching axes and scales; color distinguishes the two scenarios. */
+#vesta-project .vesta-chart {
+    padding: 18px 16px;
+    background: #fdf8f4;
+    box-shadow: 0 3px 15px rgba(101, 16, 44, 0.025);
+}
+#vesta-project .vesta-chart-after {
+    background: #fcf8ef;
+}
+#vesta-project .vesta-chart-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#vesta-project .vesta-chart-callout {
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.66rem;
+    color: #831d3d;
+    background: #f6e1df;
+    text-align: center;
+    line-height: 1.4;
+}
+#vesta-project .vesta-chart-after .vesta-chart-callout {
+    color: #815b21;
+    background: #f5e7cc;
+}
+#vesta-project .vesta-comparison text {
+    font-size: 11px;
+}
+#vesta-project .vesta-forecast-line {
+    fill: none;
+    stroke: #831d3d;
+    stroke-width: 2.2;
+    stroke-linejoin: round;
+}
+#vesta-project .vesta-forecast-point {
+    fill: #831d3d;
+}
+#vesta-project .vesta-chart-after .vesta-forecast-line {
+    stroke: #b68632;
+}
+#vesta-project .vesta-chart-after .vesta-forecast-point {
+    fill: #b68632;
+}
+#vesta-project .vesta-minimum-ring {
+    fill: #fff9f1;
+    stroke: #831d3d;
+    stroke-width: 2;
+}
+#vesta-project .vesta-chart-after .vesta-minimum-ring {
+    stroke: #b68632;
+}
+#vesta-project .vesta-comparison .vesta-low-label {
+    font-weight: 700;
+    fill: #65102c;
+}
+#vesta-project .vesta-chart-after .vesta-comparison .vesta-low-label {
+    fill: #855c20;
+}
+#vesta-project .vesta-comparison .vesta-chart-date {
+    font-size: 10px;
+}
+
+/* Keep the existing AI layout and spacing; remove the viewport-wide background paint. */
+#vesta-project .vesta-ai {
+    padding: 34px 0;
+    border-radius: 0;
+    gap: 26px;
+    position: relative;
+    isolation: isolate;
+    box-shadow: none;
+    clip-path: none;
+}
+#vesta-project .vesta-conversation {
+    border: 1px solid #ead2ca;
+}
+#vesta-project .vesta-conversation .vesta-question {
+    margin-left: 32px;
+    border-radius: 14px 14px 3px 14px;
+    background: #eed1cf;
+}
+#vesta-project .vesta-memory {
+    background: #f5e8e2;
+    align-self: stretch;
+}
+#vesta-project .vesta-assistant-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #65102c;
+    color: #fff4e9;
+    border-radius: 5px;
+    margin-right: 6px;
+    font-family: Georgia, serif;
+}
+#vesta-project .vesta-answer {
+    background: #fbf2e9;
+    padding: 14px;
+    border-radius: 3px 14px 14px 14px;
+}
+#vesta-project .vesta-conversation-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid #e1cac3;
+    border-radius: 25px;
+    padding: 9px 12px;
+    color: #927a76;
+    font-size: 0.72rem;
+}
+#vesta-project .vesta-conversation-input > span:last-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #831d3d;
+    color: #fff;
+}
+#vesta-project .vesta-editor-tab {
+    padding: 0 14px;
+    align-items: center;
+}
+#vesta-project .vesta-editor-tab .vesta-editor-active {
+    color: #fff2e9;
+    font-size: 0.78rem;
+    border-bottom: 2px solid #cf9aaa;
+    padding: 13px 0;
+}
+#vesta-project .vesta-code-line i {
+    color: #e4c899;
+    font-style: normal;
+}
+#vesta-project .vesta-process-icon {
+    width: 62px;
+    height: 62px;
+    background: #f1ddd7;
+    border: 1px solid #ead0cb;
+}
+#vesta-project .vesta-process li > svg {
+    top: 24px;
+    width: 34px;
+    right: -27px;
+}
+
+@media (max-width: 1100px) {
+    #vesta-project .vesta-problem {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #vesta-project .vesta-app-frame {
+        grid-template-columns: 135px minmax(0, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    #vesta-project .vesta-hero, #vesta-project .vesta-problem {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-ai {
+        padding: 26px 0;
+    }
+    #vesta-project .vesta-app-frame {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-app-sidebar {
+        border-right: 0;
+        border-bottom: 1px solid #e5d5ca;
+        padding: 14px 18px;
+    }
+    #vesta-project .vesta-app-sidebar > strong {
+        font-size: 1.7rem;
+    }
+    #vesta-project .vesta-app-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 10px 0 0;
+    }
+    #vesta-project .vesta-app-sidebar li {
+        margin: 0;
+        padding: 8px;
+    }
+    #vesta-project .vesta-app-sidebar > div, #vesta-project .vesta-app-sidebar > p, #vesta-project .vesta-app-sidebar > span {
+        display: none;
+    }
+    #vesta-project .vesta-app-main {
+        padding: 18px;
+    }
+    #vesta-project .vesta-process-icon {
+        width: 54px;
+        height: 54px;
+    }
+}
+
+/* Vesta hero composition: the image includes ~24% botanical margin before the
+   monitor. At 74% hero width, the monitor itself occupies about 53%.
+   Position the image independently; never crop, blur, or lower its opacity. */
+#vesta-project .vesta-hero {
+    position: relative;
+    display: block;
+    isolation: isolate;
+    min-height: clamp(380px, 32vw, 465px);
+    padding: 12px 0 18px;
+}
+
+#vesta-project .vesta-hero-copy {
+    position: relative;
+    z-index: 1;
+    width: 44%;
+    padding: 0;
+}
+
+#vesta-project .vesta-hero-image {
+    position: absolute;
+    z-index: 0;
+    top: -8px;
+    right: -2%;
+    width: 74%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    pointer-events: none;
+}
+
+#vesta-project .vesta-hero .vesta-subtitle {
+    margin-bottom: 14px;
+}
+
+#vesta-project .vesta-hero-copy > p:not(.vesta-subtitle) {
+    margin-bottom: 14px;
+}
+
+#vesta-project .vesta-hero .vesta-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+#vesta-project .vesta-hero .vesta-button {
+    padding: 11px 14px;
+    white-space: nowrap;
+}
+
+/* Five metadata columns remain a single row on desktop and laptop screens. */
+@media (min-width: 1000px) {
+    #vesta-project .vesta-metadata {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.3fr) minmax(0, 0.6fr) minmax(0, 1.25fr) minmax(0, 1fr);
+        gap: 18px;
+        margin-top: 10px;
+    }
+}
+
+/* Narrower screens restore natural image flow rather than shrinking the desktop
+   composition. The existing background-only masks scale with the image. */
+@media (max-width: 900px) {
+    #vesta-project .vesta-hero {
+        min-height: 0;
+        padding: 0;
+    }
+
+    #vesta-project .vesta-hero-copy {
+        width: 100%;
+        max-width: 620px;
+    }
+
+    #vesta-project .vesta-hero-image {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 14px;
+    }
+
+    #vesta-project .vesta-hero .vesta-actions {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 420px) {
+    #vesta-project .vesta-hero .vesta-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
