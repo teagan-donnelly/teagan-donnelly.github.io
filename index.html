@@ -10,6 +10,19 @@
 
     <title>Teagan Donnelly Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Computer Science student at the University of South Carolina building software across healthcare, financial technology, and collaborative applications. Explore my projects and engineering experience.">
+    <link rel="canonical" href="https://teagan-donnelly.github.io/">
+    <meta property="og:title" content="Teagan Donnelly | Computer Science &amp; Software Development">
+    <meta property="og:description" content="Computer Science student at the University of South Carolina building software across healthcare, financial technology, and collaborative applications. Explore my projects and engineering experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teagan-donnelly.github.io/">
+    <meta property="og:image" content="https://teagan-donnelly.github.io/images/profile.jpeg">
+    <meta property="og:image:alt" content="Professional portrait of Teagan Donnelly">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Teagan Donnelly | Computer Science &amp; Software Development">
+    <meta name="twitter:description" content="Computer Science student at the University of South Carolina building software across healthcare, financial technology, and collaborative applications. Explore my projects and engineering experience.">
+    <meta name="twitter:image" content="https://teagan-donnelly.github.io/images/profile.jpeg">
+    <meta name="twitter:image:alt" content="Professional portrait of Teagan Donnelly">
 </head>
 
 <body>
@@ -19,12 +32,13 @@
     <p>Computer Science Student | University of South Carolina</p>
 </header>
 
-<nav>
-    <button class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
-    <button class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
-    <button class="tab-btn" onclick="openTab(event, 'coursework')">Coursework</button>
-    <button class="tab-btn" onclick="openTab(event, 'about')">About</button>
-    <button class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
+<nav id="site-navigation" aria-label="Main navigation">
+    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="nav-home nav-projects nav-coursework nav-about nav-contact"><span>Menu</span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <button id="nav-home" class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
+    <button id="nav-projects" class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+    <button id="nav-coursework" class="tab-btn" onclick="openTab(event, 'coursework')">Coursework</button>
+    <button id="nav-about" class="tab-btn" onclick="openTab(event, 'about')">About</button>
+    <button id="nav-contact" class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
 </nav>
 
 <main>
@@ -34,19 +48,22 @@
         <div class="hero-content">
             <h2>Turning ideas<br>into impact.</h2>
             <p class="hero-subtitle">
-                Computer Science student at the University of South Carolina passionate about full-stack development, product thinking, and creating solutions that make a meaningful impact.
+                Computer Science student at the University of South Carolina building thoughtful software through full-stack development, collaborative engineering, and product design.
             </p>
+
+            <span class="home-availability">Open to Summer 2027 Software Engineering Internships</span>
 
             <div class="hero-buttons">
                 <button class="button-link" onclick="openTab(event, 'projects')">View Projects</button>
                 <button class="button-link secondary" onclick="openTab(event, 'about')">About Me</button>
+                <a class="button-link home-resume-primary" href="files/Teagan Donnelly Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Teagan Donnelly's résumé PDF in a new tab">View R&eacute;sum&eacute; <span aria-hidden="true">&#8599;</span></a>
             </div>
         </div>
     </div>
 
     <!-- A compact preview of ongoing work and directions worth exploring. -->
     <div class="home-building" aria-labelledby="home-building-title">
-        <div class="home-building-heading"><div><p class="home-eyebrow">A LOOK AT WHAT&rsquo;S NEXT</p><h2 id="home-building-title">Currently building</h2><p>A few things keeping me curious lately.</p></div><a class="home-all-projects" href="#projects" onclick="openTab(event, 'projects'); return false;">VIEW ALL PROJECTS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
+        <div class="home-building-heading"><div><p class="home-eyebrow">SELECTED PROJECTS</p><h2 id="home-building-title">Recent work</h2><p>Hackathon prototypes and collaborative engineering projects.</p></div><a class="home-all-projects" href="#projects" onclick="openTab(event, 'projects'); return false;">VIEW ALL PROJECTS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
         <div class="home-building-grid">
             <article class="home-building-card"><div class="home-card-top"><span class="home-project-icon home-project-icon-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/><path d="M3 12h5l2-4 3 8 2-4h6"/></svg></span><span class="home-project-category">HEALTHCARE</span></div>
                 <h3>Camellia</h3><p class="home-project-description">A clinical intelligence platform that unifies fragmented medical records, identifies patterns requiring clinical review, and supports OB anesthesia coordination.</p><p class="home-project-status">Completed hackathon prototype &middot; Exploring what comes next</p>
@@ -59,15 +76,20 @@
                 <a class="work-link" href="#HOPE-project" onclick="openTab(event, 'HOPE-project'); return false;" aria-label="View HOPE Foundation project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
             </article>
             <article class="home-building-card"><div class="home-card-top"><span class="home-project-icon home-project-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M5 5a3 3 0 0 0 0 6M19 5a3 3 0 0 1 0 6M2 19v-3a4 4 0 0 1 3-4M22 19v-3a4 4 0 0 0-3-4"/></svg></span><span class="home-project-category">DISASTER RELIEF</span></div>
-                <h3>Hurricane Relief Coordination System</h3><p class="home-project-description">Leading a five-person team developing a disaster relief platform connecting survivors, volunteers, and organizers through coordinated aid requests and emergency response workflows.</p><p class="home-project-status">Ongoing software engineering team project</p>
-                <ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/java.svg" alt="" width="16" height="16">Java</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="5" rx="1"/><rect x="2" y="17" width="7" height="5" rx="1"/><rect x="15" y="17" width="7" height="5" rx="1"/><path d="M12 7v5M5 17v-5h14v5"/></svg>UML</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 5 3-5 3-5-3ZM7 5v6l5 3 5-3V5M6 13l5 3-5 3-5-3ZM1 16v5l5 3 5-3v-5M18 13l5 3-5 3-5-3ZM13 16v5l5 3 5-3v-5"/></svg>OOP</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 12 1 1 2-2M13 12h3M8 17h8"/></svg>Requirements Engineering</li></ul>
+                <h3>Hurricane Relief Coordination System</h3><p class="home-project-description">Built with a five-person team, this Java backend organizes assistance requests and relief coordination. My work focused on request management and aid coordination.</p><p class="home-project-status">Backend complete &middot; Testing in progress</p>
+                <ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/java.svg" alt="" width="16" height="16">Java</li><li>Maven</li><li>OOP</li><li>UML</li><li>JSON</li><li><img src="icons/technologies/github.svg" alt="" width="16" height="16">Git/GitHub</li></ul>
                 <a class="work-link" href="#hurricane-project" onclick="openTab(event, 'hurricane-project'); return false;" aria-label="View Hurricane Relief Coordination System project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
+            </article>
+            <article class="home-building-card"><div class="home-card-top"><span class="home-project-icon home-project-icon-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M6 15l5-5 4 3 6-8M16 5h5v5"/></svg></span><span class="home-project-category">FINANCIAL TECHNOLOGY</span></div>
+                <h3>Vesta</h3><p class="home-project-description">An AI-powered financial planning prototype helping individuals and groups anticipate financial risks, explore hypothetical decisions, and coordinate shared financial responsibilities with customizable privacy controls.</p><p class="home-project-status">Completed Technica 2026 Hackathon Prototype</p>
+                <ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/nextdotjs.svg" alt="" width="16" height="16">Next.js</li><li><img src="icons/technologies/typescript.svg" alt="" width="16" height="16">TypeScript</li><li><img src="icons/technologies/googlegemini.svg" alt="" width="16" height="16">Gemini</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="m7 21 5-4M7 8h10M7 12h6"/></svg>Backboard</li></ul>
+                <a class="work-link" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
             </article>
         </div>
         <ul class="home-info-strip" aria-label="At a glance">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5ZM5 10v7q7 6 14 0v-7M22 8v9"/></svg><span>Computer Science &middot; USC &rsquo;28</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 6-6 6 6 6M17 6l6 6-6 6M14 3l-4 18"/></svg><span>Software &amp; Product Development</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V3h8v4M2 12q10 6 20 0M12 12v4"/></svg><span>Seeking Summer 2027 Internships</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V3h8v4M2 12q10 6 20 0M12 12v4"/></svg><span>Hackathon &amp; Client Projects</span></li>
         </ul>
     </div>
 </section>
@@ -87,14 +109,14 @@
             <img class="work-thumbnail" src="images/vesta-thumbnail.png" alt="Vesta project preview" loading="lazy">
             <div class="work-featured-content"><div class="work-title-row"><h4>Vesta</h4><ul class="work-categories" aria-label="Project categories"><li>Finance</li><li>Full Stack</li></ul><p class="work-meta">2026 &middot; Hackathon Project</p></div>
                 <p class="work-description">A collaborative financial planning prototype for roommates, couples, and shared households. Helps identify financial risks, manage shared commitments, explore hypothetical scenarios, and receive AI-assisted guidance with privacy-conscious sharing.</p><p class="work-note">Technica 2026 &middot; Demonstration uses fictional profiles and sandbox banking data.</p>
-                <div class="work-card-bottom"><ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/nextdotjs.svg" alt="" width="16" height="16">Next.js</li><li><img src="icons/technologies/typescript.svg" alt="" width="16" height="16">TypeScript</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-6 10 6ZM3 21h18M5 10v8M10 10v8M15 10v8M20 10v8"/></svg>Nessie</li><li><img src="icons/technologies/googlegemini.svg" alt="" width="16" height="16">Gemini</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></svg>Tiger Data / Timescale</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="m7 21 5-4M7 8h10M7 12h6"/></svg>Backboard</li></ul><a class="work-link" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
+                <div class="work-card-bottom"><ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/nextdotjs.svg" alt="" width="16" height="16">Next.js</li><li><img src="icons/technologies/typescript.svg" alt="" width="16" height="16">TypeScript</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-6 10 6ZM3 21h18M5 10v8M10 10v8M15 10v8M20 10v8"/></svg>Nessie</li><li><img src="icons/technologies/googlegemini.svg" alt="" width="16" height="16">Gemini</li><li><img src="icons/technologies/react.svg" alt="" width="16" height="16">React</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="m7 21 5-4M7 8h10M7 12h6"/></svg>Backboard</li></ul><a class="work-link" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
             </div>
         </article>
         <article class="work-featured-card">
             <img class="work-thumbnail" src="images/hurricane-thumbnail.jpg" alt="Hurricane Relief Coordination System project preview" loading="lazy">
             <div class="work-featured-content"><div class="work-title-row"><h4>Hurricane Relief Coordination System</h4><ul class="work-categories" aria-label="Project categories"><li>Disaster Relief</li><li>Full Stack</li></ul><p class="work-meta">2026 &middot; Team Project</p></div>
-                <p class="work-description">A disaster relief platform in development, designed to connect survivors, volunteers, and relief coordinators through aid requests, emergency escalation, resource coordination, and role-based access. Serving as Project Manager and Full-Stack Engineer on a five-person team.</p><p class="work-note">In progress &middot; Requirements, UML system design, and implementation planning.</p>
-                <div class="work-card-bottom"><ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/java.svg" alt="" width="16" height="16">Java</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="5" rx="1"/><rect x="2" y="17" width="7" height="5" rx="1"/><rect x="15" y="17" width="7" height="5" rx="1"/><path d="M12 7v5M5 17v-5h14v5"/></svg>UML</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 5 3-5 3-5-3ZM7 5v6l5 3 5-3V5M6 13l5 3-5 3-5-3ZM1 16v5l5 3 5-3v-5M18 13l5 3-5 3-5-3ZM13 16v5l5 3 5-3v-5"/></svg>OOP</li><li><svg class="work-tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m8 12 1 1 2-2M13 12h3M8 17h8"/></svg>Requirements Engineering</li></ul><a class="work-link" href="#hurricane-project" onclick="openTab(event, 'hurricane-project'); return false;" aria-label="View Hurricane Relief Coordination System project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
+                <p class="work-description">Developed collaboratively by a five-person team, this Java-based disaster-response coordination system organizes assistance requests, volunteer information, and relief coordination workflows. My contributions focused on request management and aid coordination within the object-oriented backend.</p><p class="work-note">Backend complete &middot; Testing in progress &middot; Backend Development, Request Management, Aid Coordination.</p>
+                <div class="work-card-bottom"><ul class="work-tags" aria-label="Technologies and concepts"><li><img src="icons/technologies/java.svg" alt="" width="16" height="16">Java</li><li>Maven</li><li>OOP</li><li>UML</li><li>JSON</li><li><img src="icons/technologies/github.svg" alt="" width="16" height="16">Git/GitHub</li></ul><a class="work-link" href="#hurricane-project" onclick="openTab(event, 'hurricane-project'); return false;" aria-label="View Hurricane Relief Coordination System project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a></div>
             </div>
         </article>
         <article class="work-featured-card">
@@ -241,7 +263,7 @@
         <div class="about-hero-copy">
             <p class="about-label">A LITTLE ABOUT ME</p>
             <h2 id="about-title">Hi, I&rsquo;m Teagan<span>.</span></h2>
-            <p>I&rsquo;m a Computer Science student at the University of South Carolina who loves turning complex problems into practical, people-centered technology. From healthcare tools to financial applications, I enjoy taking an idea from requirements and design to a working product, and I&rsquo;m especially drawn to the intersection of technology, creativity, and social impact.</p>
+            <p>I&rsquo;m a Computer Science student at the University of South Carolina interested in full-stack development and product design. From healthcare tools to financial applications, I enjoy taking an idea through requirements, interface design, and implementation. I like collaborative engineering and building features that make complex information easier to use.</p>
             <ul class="about-tags"><li>Software Engineering</li><li>Product Development</li><li>Full-Stack</li><li>Class of 2028</li></ul>
             <div class="about-actions"><a class="about-button" href="files/Teagan Donnelly Resume.pdf" target="_blank" rel="noopener noreferrer">View my r&eacute;sum&eacute; <span aria-hidden="true">&#8599;</span></a><a class="about-button about-button-outline" href="#contact" onclick="openTab(event, 'contact'); return false;">Let&rsquo;s connect <span aria-hidden="true">&#8599;</span></a></div>
         </div>
@@ -249,7 +271,7 @@
     </div>
     <!-- Three complementary perspectives, paired with supplied photography. -->
     <div class="about-features">
-        <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="13" rx="1"/><path d="M2 20h20l-2-4H4Z"/></svg></span><p class="about-label">WHAT I BUILD</p><h3>Technology<br>with purpose.</h3><p>From healthcare solutions and financial tools to consumer applications, I love building software that solves real-world problems and makes a meaningful impact.</p></div><img src="images/about-build.png" alt="A coding workspace with a laptop" loading="lazy"></article>
+        <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="13" rx="1"/><path d="M2 20h20l-2-4H4Z"/></svg></span><p class="about-label">WHAT I BUILD</p><h3>Technology<br>with purpose.</h3><p>I build healthcare tools, financial planning features, and consumer applications, with a focus on clear interfaces and useful functionality.</p></div><img src="images/about-build.png" alt="A coding workspace with a laptop" loading="lazy"></article>
         <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4M5 5a3 3 0 0 0 0 6M19 5a3 3 0 0 1 0 6M2 19v-3a4 4 0 0 1 3-4M22 19v-3a4 4 0 0 0-3-4"/></svg></span><p class="about-label">HOW I WORK</p><h3>From idea to implementation.</h3><p>I enjoy understanding problems, translating them into features, and collaborating across design, engineering, and stakeholders to build products people actually use.</p></div><img src="images/about-process.png" alt="Notebook with interface sketches beside a laptop" loading="lazy"></article>
         <article class="about-feature"><div class="about-feature-copy"><span class="about-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></svg></span><p class="about-label">BEYOND THE CLASSROOM</p><h3>Building<br>beyond coursework.</h3><p>Through hackathons, client work, and personal projects, I&rsquo;ve had opportunities to explore new technologies, solve meaningful problems, and strengthen both my technical and collaborative skills.</p></div><img src="images/about-beyond.png" alt="Sunlight on the University of South Carolina campus" loading="lazy"></article>
     </div>
@@ -273,15 +295,15 @@
             </div>
         </div>
         <div class="about-panel" aria-labelledby="about-projects-title"><p class="about-label">FEATURED PROJECTS</p><h3 id="about-projects-title">Hackathon Projects</h3>
-            <a class="about-project" href="#camellia-project" onclick="openTab(event, 'camellia-project'); return false;" aria-label="View Camellia project details"><div class="about-project-main"><img src="images/camellia-thumbnail.png" alt="Camellia application preview" loading="lazy"><div><h4>Camellia</h4><p class="about-label">CLINICAL INTELLIGENCE PLATFORM</p><p>A clinical intelligence prototype unifying fragmented medical records, flagging patterns for clinical review, supporting OB anesthesia coordination, and simulating wearable patient monitoring.</p><ul class="about-tags"><li>React</li><li>Spring Boot</li><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li><li>Raspberry Pi</li></ul></div></div><p class="about-project-event">PalmettoHacks 2026 &middot; Best Use of Hardware &middot; Best Use of ElevenLabs <span aria-hidden="true">&#8599;</span></p></a>
-            <a class="about-project" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project details"><div class="about-project-main"><img src="images/vesta-thumbnail.png" alt="Vesta application preview" loading="lazy"><div><h4>Vesta</h4><p class="about-label">COLLABORATIVE FINANCIAL PLANNING</p><p>A collaborative financial planning prototype for recurring commitments, financial risks, what-if scenarios, and AI-assisted guidance with control over shared information.</p><ul class="about-tags"><li>Next.js / React</li><li>Gemini</li><li>Nessie</li><li>Backboard</li><li>Tiger Data / Timescale</li></ul></div></div><p class="about-project-event">Technica 2026 &middot; Collaborative financial planning prototype <span aria-hidden="true">&#8599;</span></p></a>
+            <a class="about-project" href="#camellia-project" onclick="openTab(event, 'camellia-project'); return false;" aria-label="View Camellia project details"><div class="about-project-main"><img src="images/camellia-thumbnail.png" alt="Camellia application preview" loading="lazy"><div><h4>Camellia</h4><p class="about-label">CLINICAL INTELLIGENCE PLATFORM</p><p>A clinical intelligence prototype unifying fragmented medical records, flagging patterns for clinical review, supporting OB anesthesia coordination, and simulating wearable patient monitoring.</p><ul class="about-tags"><li>React</li><li>Spring Boot</li><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li></ul></div></div><p class="about-project-event">PalmettoHacks 2026 &middot; Best Use of Hardware &middot; Best Use of ElevenLabs <span aria-hidden="true">&#8599;</span></p></a>
+            <a class="about-project" href="#vesta-project" onclick="openTab(event, 'vesta-project'); return false;" aria-label="View Vesta project details"><div class="about-project-main"><img src="images/vesta-thumbnail.png" alt="Vesta application preview" loading="lazy"><div><h4>Vesta</h4><p class="about-label">COLLABORATIVE FINANCIAL PLANNING</p><p>A collaborative financial planning prototype for recurring commitments, financial risks, what-if scenarios, and AI-assisted guidance with control over shared information.</p><ul class="about-tags"><li>Next.js / React</li><li>TypeScript</li><li>Gemini</li><li>Nessie</li><li>Backboard</li></ul></div></div><p class="about-project-event">Technica 2026 &middot; Collaborative financial planning prototype <span aria-hidden="true">&#8599;</span></p></a>
         </div>
         <div class="about-panel" aria-labelledby="about-education-title"><p class="about-label">EDUCATION</p><h3 id="about-education-title">Education</h3><div class="about-education">
             <span class="about-education-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5ZM5 10v7q7 6 14 0v-7M22 8v9"/></svg></span><div><div class="about-job-heading"><div><h4>University of South Carolina</h4><p>B.S. Computer Science</p></div><p class="about-meta">Columbia, SC<br>Expected May 2028</p></div><p class="about-coursework"><strong>Relevant Coursework:</strong> Software Engineering, Algorithmic Design, UNIX/Linux, Discrete Structures, Computer Architecture, Design Patterns, Ethics in Computing</p></div></div></div>
         <div class="about-panel about-skills" aria-labelledby="about-skills-title"><p class="about-label">SKILLS</p><h3 id="about-skills-title">Technical Skills</h3>
             <div role="group" aria-label="Core programming and web technologies"><ul class="about-tags"><li>Java</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>HTML/CSS</li><li>React</li><li>Node.js</li><li>Spring Boot</li></ul></div>
             <div role="group" aria-label="Tools and development"><ul class="about-tags"><li>Git/GitHub</li><li>Vercel</li><li>UML</li><li>Linux</li><li>Shopify</li><li>RISC-V Assembly</li></ul></div>
-            <p class="about-integration-label">Project-specific integrations</p><div role="group" aria-label="Project-specific integrations"><ul class="about-tags"><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li><li>Nessie</li><li>Backboard</li><li>Tiger Data / Timescale</li></ul></div>
+            <p class="about-integration-label">Project-specific integrations</p><div role="group" aria-label="Project-specific integrations"><ul class="about-tags"><li>Snowflake</li><li>Gemini</li><li>ElevenLabs</li><li>Nessie</li><li>Backboard</li></ul></div>
         </div>
     </div>
     <footer class="contact-footer"><span>OPEN TO OPPORTUNITIES &amp; COLLABORATIONS</span><span class="contact-footer-line" aria-hidden="true"></span><span>BASED IN COLUMBIA, SC <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg></span></footer>
@@ -503,26 +525,82 @@
         }
     });
 
-    function openTab(evt, tabName) {
-        let sections = document.getElementsByTagName("section");
-        for (let i = 0; i < sections.length; i++) {
-            sections[i].classList.remove("active");
-        }
+    // Mobile navigation shares the existing route buttons and expands in document flow.
+    const siteNavigation = document.getElementById('site-navigation');
+    const mobileMenuToggle = siteNavigation.querySelector('.mobile-nav-toggle');
+    const mobileMenuQuery = window.matchMedia ? window.matchMedia('(max-width: 700px)') : null;
+    function closeMobileNavigation(restoreFocus = false) {
+        siteNavigation.classList.remove('mobile-menu-open');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        if (restoreFocus && mobileMenuQuery && mobileMenuQuery.matches) mobileMenuToggle.focus();
+    }
+    siteNavigation.classList.add('mobile-nav-ready');
+    mobileMenuToggle.addEventListener('click', () => {
+        const expanded = mobileMenuToggle.getAttribute('aria-expanded') !== 'true';
+        siteNavigation.classList.toggle('mobile-menu-open', expanded);
+        mobileMenuToggle.setAttribute('aria-expanded', String(expanded));
+    });
+    siteNavigation.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && mobileMenuToggle.getAttribute('aria-expanded') === 'true') closeMobileNavigation(true);
+    });
+    document.addEventListener('click', event => {
+        if (!siteNavigation.contains(event.target)) closeMobileNavigation();
+    });
+    if (mobileMenuQuery) mobileMenuQuery.addEventListener('change', () => closeMobileNavigation());
 
-        let buttons = document.getElementsByClassName("tab-btn");
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove("active");
-        }
+    // The existing section switcher is the single source of truth for URL navigation.
+    const portfolioSections = Array.from(document.querySelectorAll('main > section'));
+    const portfolioSectionIds = new Set(portfolioSections.map(section => section.id));
+    let portfolioNavigationReady = false;
 
-        document.getElementById(tabName).classList.add("active");
-        // Detail pages keep Projects selected; internal links select their destination tab.
-        const navigationTab = tabName.endsWith('-project') ? 'projects' : tabName;
-        for (const button of buttons) {
-            if (button.getAttribute('onclick').includes("'" + navigationTab + "'")) {
-                button.classList.add('active');
-            }
+    function sectionFromHash() {
+        try {
+            const id = decodeURIComponent(window.location.hash.slice(1));
+            return portfolioSectionIds.has(id) ? id : 'home';
+        } catch {
+            return 'home';
         }
     }
+
+    function openTab(evt, tabName, fromHistory = false) {
+        if (evt) evt.preventDefault();
+        const destination = portfolioSectionIds.has(tabName) ? tabName : 'home';
+        const target = document.getElementById(destination);
+        closeMobileNavigation();
+        const changed = !target.classList.contains('active');
+        const navigationTab = destination.endsWith('-project') ? 'projects' : destination;
+
+        portfolioSections.forEach(section => section.classList.toggle('active', section === target));
+        document.querySelectorAll('nav > .tab-btn').forEach(button => {
+            const active = button.getAttribute('onclick').includes("'" + navigationTab + "'");
+            button.classList.toggle('active', active);
+            if (active) button.setAttribute('aria-current', 'page');
+            else button.removeAttribute('aria-current');
+        });
+
+        const nextHash = '#' + destination;
+        if (!fromHistory && window.location.hash !== nextHash) {
+            // Selecting the same visible section updates the URL without duplicating history.
+            window.history[changed ? 'pushState' : 'replaceState'](null, '', nextHash);
+        } else if (fromHistory && window.location.hash && window.location.hash !== nextHash) {
+            window.history.replaceState(null, '', nextHash);
+        }
+
+        if (evt || (portfolioNavigationReady && changed)) {
+            const heading = target.querySelector('h2') || target;
+            heading.setAttribute('tabindex', '-1');
+            heading.focus({ preventScroll: true });
+            window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+        }
+    }
+
+    function syncPortfolioRoute() {
+        openTab(null, sectionFromHash(), true);
+    }
+    window.addEventListener('hashchange', syncPortfolioRoute);
+    window.addEventListener('popstate', syncPortfolioRoute);
+    syncPortfolioRoute();
+    portfolioNavigationReady = true;
 </script>
 
 </body>

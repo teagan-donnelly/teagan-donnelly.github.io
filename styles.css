@@ -697,7 +697,7 @@ ul {
 
 /* Home hero: campus background, dark overlay, and large introductory text. */
 .hero-banner {
-    background-image: linear-gradient(     90deg, rgba(20, 30, 40, 0.55) 0%, rgba(20, 30, 40, 0.25) 35%, rgba(20, 30, 40, 0) 65%     ), url("images/horseshoe.png");
+    background-image: url("images/horseshoe.png");
     width: 1240px;
     height: 530px;
     border-radius: 14px;
@@ -5564,5 +5564,464 @@ body:has(#vesta-project.active) > nav button:hover, body:has(#vesta-project.acti
     #vesta-project .vesta-hero .vesta-actions {
         align-items: flex-start;
         flex-direction: column;
+    }
+}
+
+/* Recruiter polish: retain existing cards and hero, with a quiet resume link. */
+#home .home-resume-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 44px;
+    margin: 10px 0 0 14px;
+    color: #fff;
+    font: inherit;
+    font-size: 0.82rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#home .home-resume-link:hover {
+    text-decoration-thickness: 2px;
+}
+
+#home .hero-buttons :focus-visible,
+nav > .tab-btn:focus-visible {
+    outline: 3px solid #d4e5f3;
+    outline-offset: 4px;
+}
+
+/* Four cards where they remain readable; balanced pairs at intermediate widths. */
+.home-building-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 1300px) {
+    .home-building-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .home-building-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #home .home-resume-link {
+        margin: 0;
+        padding: 0 5px;
+    }
+}
+
+/* Home hero readability: preserve the photograph, crop, size, and headline type. */
+#home .hero-banner {
+    background-image: url("images/horseshoe.png");
+}
+
+#home .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+#home .hero-content h2 {
+    margin: 0;
+}
+
+#home .hero-content .hero-subtitle {
+    max-width: 550px;
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: #fff;
+}
+
+#home .home-availability {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e6e5dc;
+    border-radius: 24px;
+    background: #faf7ef;
+    color: #1e3a5f;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+#home .hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
+#home .hero-buttons .button-link,
+#home .hero-buttons .home-resume-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 44px;
+    margin: 0;
+    padding: 11px 18px;
+    border-radius: 22px;
+    font-size: 0.8rem;
+    line-height: 1.25;
+}
+
+#home .hero-buttons .home-resume-link {
+    border: 1px solid #e4edf5;
+    background: rgba(16, 37, 56, 0.78);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#home .hero-buttons .home-resume-link:hover {
+    background: #203f59;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#home .hero-buttons .button-link.secondary {
+    background: #faf7ef;
+    color: #1e3a5f;
+}
+
+@media (max-width: 700px) {
+    #home .hero-banner {
+        background-image: url("images/horseshoe.png");
+    }
+
+    #home .hero-content {
+        gap: 16px;
+    }
+
+    #home .hero-content .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    #home .home-availability {
+        font-size: 0.74rem;
+        padding: 10px 13px;
+    }
+}
+
+/* Restore the unfiltered campus image. Contrast adjustments apply only to lettering. */
+#home .hero-banner {
+    background-image: url("images/horseshoe.png");
+}
+#home .hero-content h2 {
+    text-shadow: 0 2px 5px rgba(17, 35, 48, 0.6);
+}
+#home .hero-content .hero-subtitle {
+    text-shadow: 0 1px 3px rgba(17, 35, 48, 0.7);
+    font-weight: 500;
+}
+#home .hero-buttons .button-link {
+    font-family: inherit;
+}
+
+/* Desktop tabs are unchanged; the menu toggle occupies no desktop space. */
+.mobile-nav-toggle {
+    display: none;
+}
+
+/* Tablet adaptations: remove cramped project previews and contact columns. */
+@media (max-width: 1100px) {
+    #about .about-project-main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #about .about-project-main > img {
+        height: 180px;
+        min-height: 0;
+        object-position: center;
+    }
+    #contact .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+    }
+    #contact .contact-card-email {
+        grid-row: auto;
+    }
+}
+
+/* Mobile: fix container sizing and intrinsic widths rather than hiding overflow. */
+@media (max-width: 700px) {
+    main {
+        padding: 1rem 1rem 2rem;
+    }
+    main > section {
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 0;
+    }
+
+    #site-navigation {
+
+        gap: 8px;
+
+        padding: 8px 16px;
+
+    }
+    #site-navigation .mobile-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1 0 100%;
+        margin: 0;
+        min-height: 44px;
+        padding: 10px 12px;
+        color: #1e3a5f;
+        background: #f7f4ef;
+        font: inherit;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+    #site-navigation.mobile-nav-ready:not(.mobile-menu-open) > .tab-btn {
+        display: none;
+    }
+    #site-navigation > .tab-btn {
+        flex: 1 1 calc(50% - 8px);
+        min-height: 44px;
+        margin: 0;
+        padding: 10px 12px;
+    }
+    #site-navigation button:focus-visible {
+        outline: 3px solid #1e3a5f;
+        outline-offset: 2px;
+    }
+    body:has(#vesta-project.active) #site-navigation .mobile-nav-toggle {
+        color: #65102c;
+        background: #faf0e7;
+    }
+
+    #home .hero-banner {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        min-height: 530px;
+
+        height: auto;
+
+        padding: 28px 22px;
+
+    }
+    #home .hero-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    #home .hero-content h2 {
+        font-size: clamp(2rem, 8vw, 3.2rem);
+    }
+    #home .hero-buttons {
+        width: 100%;
+        gap: 10px;
+    }
+    #home .hero-buttons .button-link {
+        flex: 1 1 auto;
+    }
+    .home-building, .home-building-card, .home-info-strip {
+        box-sizing: border-box;
+        min-width: 0;
+    }
+    .home-building-heading, .work-title-row, .work-card-bottom {
+        min-width: 0;
+    }
+    .home-project-category {
+        overflow-wrap: anywhere;
+    }
+
+    #projects .work-featured-card {
+
+        grid-template-columns: minmax(0, 1fr);
+
+    }
+    #projects .work-thumbnail {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        aspect-ratio: 1.6;
+    }
+    #projects .work-coursework-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #projects .work-link {
+        min-height: 44px;
+    }
+
+    #coursework .coursework-toolbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+    #coursework .coursework-filters {
+        gap: 8px;
+    }
+    #coursework .coursework-filters button {
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+
+    #about .about-hero > *, #about .about-education > *, #about .about-feature > * {
+
+        min-width: 0;
+
+    }
+    #about .about-portrait {
+        max-width: 100%;
+    }
+    #about .about-feature {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #about .about-feature > img {
+        height: 190px;
+        min-height: 0;
+        max-height: none;
+        object-fit: cover;
+    }
+    #about .about-education {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #about .about-job-heading {
+        gap: 8px;
+    }
+    #about .about-meta {
+        flex-shrink: 1;
+    }
+
+    #contact .contact-card-email, #contact .contact-social-card, #contact .contact-copy {
+
+        box-sizing: border-box;
+
+        min-width: 0;
+
+    }
+    #contact .contact-card-email {
+        padding: 24px;
+        min-height: 0;
+    }
+    #contact .contact-address {
+        gap: 6px;
+    }
+    #contact .contact-social-content {
+        min-width: 0;
+        padding: 18px 14px;
+    }
+    #contact .contact-social-card h3 {
+        font-size: 1.35rem;
+    }
+    #contact #copy-email {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    #camellia-project .cam-award {
+
+        max-width: 100%;
+
+        flex: 1 1 210px;
+
+    }
+    #camellia-project .cam-actions, #vesta-project .vesta-actions {
+        min-width: 0;
+    }
+    #camellia-project .cam-button, #vesta-project .vesta-button {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    #hurricane-project .storm-editor pre {
+
+        overflow-x: auto;
+
+        white-space: pre;
+
+        overflow-wrap: normal;
+
+    }
+    #hurricane-project .storm-editor code {
+        white-space: pre;
+    }
+    #hurricane-project .storm-code-line {
+        grid-template-columns: 25px max-content;
+    }
+    #hurricane-project .storm-code-tabs {
+        flex-wrap: wrap;
+    }
+    #hurricane-project .storm-code-tabs button {
+        flex: 1 1 auto;
+    }
+
+    #HOPE-project .hope-progress li > div, #HOPE-project .hope-metadata > div {
+
+        min-width: 0;
+
+    }
+
+    #vesta-project .vesta-ai, #vesta-project .vesta-technical {
+
+        grid-template-columns: minmax(0, 1fr);
+
+    }
+    #vesta-project .vesta-chart-pair, #vesta-project .vesta-workspaces {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #vesta-project .vesta-chart-arrow {
+        justify-content: center;
+    }
+    #vesta-project .vesta-editor, #hurricane-project .storm-editor {
+        max-width: 100%;
+        min-width: 0;
+    }
+    #vesta-project .vesta-visual-header {
+        flex-wrap: wrap;
+    }
+    #vesta-project .vesta-conversation .vesta-question {
+        margin-left: 12px;
+    }
+}
+
+/* Small phones: give social photographs and metadata their own reading rows. */
+@media (max-width: 380px) {
+    #contact .contact-social-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #contact .contact-photo {
+        height: 155px;
+    }
+    #contact .contact-social-content {
+        padding: 20px;
+    }
+    #vesta-project .vesta-metadata, #hurricane-project .relief-metadata {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    #site-navigation .mobile-nav-toggle {
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    #contact .contact-card-email h3 {
+        font-size: clamp(1.9rem, 7vw, 2.65rem);
+    }
+
+    #vesta-project .vesta-comparison text,
+    #vesta-project .vesta-comparison .vesta-chart-date {
+        font-size: 15px;
     }
 }
