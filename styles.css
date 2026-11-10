@@ -6463,3 +6463,223 @@ nav > .tab-btn:focus-visible {
         padding-top: 22px;
     }
 }
+
+
+/* Boeing case study ---------------------------------------------------------
+   All rules stay inside this page. Desktop editorial compositions become
+   stacked reading layouts; the phase arrows become a connected mobile path. */
+#boeing-project {
+    --boeing-ink: #102a4b;
+    --boeing-blue: #1456a0;
+    --boeing-line: #dbe2ec;
+    --boeing-paper: #f7f4ef;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0 24px;
+    color: var(--boeing-ink);
+}
+#boeing-project *, #boeing-project *::before, #boeing-project *::after { box-sizing: border-box; }
+#boeing-project h2, #boeing-project h3, #boeing-project h4, #boeing-project p,
+#boeing-project ul, #boeing-project ol, #boeing-project dl, #boeing-project dd,
+#boeing-project figure { margin: 0; }
+#boeing-project h2, #boeing-project h3 { font-family: Georgia, serif; letter-spacing: -.035em; color: var(--boeing-ink); border: 0; padding: 0; }
+#boeing-project h3 { font-size: clamp(1.7rem, 2.5vw, 2.35rem); line-height: 1.12; margin-bottom: 12px; }
+#boeing-project h4 { font-size: 1rem; line-height: 1.3; }
+#boeing-project p, #boeing-project li { font-size: .98rem; line-height: 1.65; }
+#boeing-project svg { width: 25px; height: 25px; flex: 0 0 auto; }
+#boeing-project a:focus-visible { outline: 3px solid #2873bd; outline-offset: 5px; }
+#boeing-project .boeing-eyebrow { color: var(--boeing-blue); font-size: .76rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 12px; }
+#boeing-project .boeing-row { padding: 38px 0; border-top: 1px solid var(--boeing-line); }
+
+/* Large aircraft photograph with a fade confined to its left background. */
+#boeing-project .boeing-hero { position: relative; isolation: isolate; min-height: 470px; display: flex; align-items: center; }
+#boeing-project .boeing-hero-copy { position: relative; z-index: 1; width: 56%; padding: 22px 0 38px; }
+#boeing-project .boeing-back { display: inline-flex; align-items: center; gap: 8px; color: var(--boeing-ink); font-size: .84rem; font-weight: 700; text-decoration: none; margin-bottom: 28px; }
+#boeing-project .boeing-back svg { width: 19px; height: 19px; }
+#boeing-project #boeing-title { max-width: 630px; font-size: clamp(2.5rem, 4.3vw, 4.15rem); line-height: 1.01; margin-bottom: 15px; }
+#boeing-project .boeing-subtitle { max-width: 570px; font-size: clamp(1rem, 1.4vw, 1.18rem); line-height: 1.5; font-style: italic; }
+#boeing-project .boeing-hero-photo { position: absolute; inset: 0 0 0 47%; z-index: 0; overflow: hidden; }
+#boeing-project .boeing-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+#boeing-project .boeing-hero-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--boeing-paper), rgba(247,244,239,.92) 5%, rgba(247,244,239,.45) 17%, rgba(247,244,239,0) 32%); pointer-events: none; }
+#boeing-project .boeing-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin-top: 20px; }
+#boeing-project .boeing-tags li { border-radius: 20px; background: #dde8f8; padding: 3px 14px; font-size: .77rem; font-weight: 700; line-height: 1.6; }
+#boeing-project .boeing-metadata { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 26px; }
+#boeing-project .boeing-metadata > div { display: flex; align-items: center; gap: 9px; }
+#boeing-project .boeing-metadata dt { font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: #49617e; margin-bottom: 3px; }
+#boeing-project .boeing-metadata dd { font-size: .76rem; font-weight: 700; }
+#boeing-project .boeing-metadata svg { width: 21px; height: 21px; }
+
+/* Overview and role: one quiet divider, no enclosing cards. */
+#boeing-project .boeing-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+#boeing-project .boeing-overview > div + div { border-left: 1px solid var(--boeing-line); padding-left: 50px; }
+#boeing-project .boeing-checklist { list-style: none; padding: 0; display: grid; gap: 9px; }
+#boeing-project .boeing-checklist li { display: flex; align-items: flex-start; gap: 10px; }
+#boeing-project .boeing-checklist svg { width: 20px; height: 20px; margin-top: 3px; color: var(--boeing-blue); }
+#boeing-project .boeing-checklist strong { display: block; margin-bottom: 2px; }
+
+/* Connected engine photograph and pale-blue editorial panel. */
+#boeing-project .boeing-challenge { display: grid; grid-template-columns: 39% 1fr; border-radius: 15px; overflow: hidden; background: #eaf0f7; margin: 10px 0 38px; }
+#boeing-project .boeing-challenge > img { display: block; width: 100%; height: 100%; min-height: 245px; object-fit: cover; }
+#boeing-project .boeing-challenge > div { padding: 32px 38px; align-self: center; }
+
+/* Arrow ribbons remain linked across the three proposed phases. */
+#boeing-project .boeing-strategy { border-top: 0; padding-top: 0; }
+#boeing-project .boeing-section-intro { max-width: 830px; }
+#boeing-project .boeing-phases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; padding: 0; margin-top: 25px; gap: 10px; }
+#boeing-project .boeing-phases > li { min-width: 0; }
+#boeing-project .boeing-phase-heading { display: flex; align-items: center; gap: 12px; min-height: 76px; padding: 13px 26px 13px 28px; background: #173b65; color: white; clip-path: polygon(0 0, 94% 0, 100% 50%, 94% 100%, 0 100%, 5% 50%); }
+#boeing-project .boeing-phase-heading svg { width: 30px; height: 30px; }
+#boeing-project .boeing-phase-heading h4 { font-size: .88rem; }
+#boeing-project .boeing-phase-heading h4 span { display: block; font-size: .68rem; letter-spacing: .07em; margin-bottom: 3px; }
+#boeing-project .boeing-phases > li:nth-child(2) .boeing-phase-heading { background: #a9c8ee; color: #102a4b; }
+#boeing-project .boeing-phases > li:nth-child(3) .boeing-phase-heading { background: #dfe9f8; color: #102a4b; }
+#boeing-project .boeing-phases > li > p { padding: 16px 22px 4px; font-size: .9rem; }
+
+/* Contributions alongside a native, accessible tuition chart. Dashed lines
+   connect confirmed endpoints only; no unverified annual values are plotted. */
+#boeing-project .boeing-analysis { display: grid; grid-template-columns: .83fr 1.4fr; gap: 42px; }
+#boeing-project .boeing-contributions { padding-right: 38px; border-right: 1px solid var(--boeing-line); }
+#boeing-project .boeing-contribution { display: flex; align-items: flex-start; gap: 15px; margin-top: 22px; }
+#boeing-project .boeing-contribution > svg { box-sizing: content-box; padding: 10px; background: #edf0f4; border-radius: 12px; }
+#boeing-project .boeing-contribution p { font-size: .88rem; line-height: 1.5; margin-top: 5px; }
+#boeing-project .boeing-financial { min-width: 0; }
+#boeing-project .boeing-financial h3 { font-size: clamp(1.5rem, 2.1vw, 2rem); margin-bottom: 8px; }
+#boeing-project .boeing-financial figcaption p { font-size: .86rem; }
+#boeing-project .boeing-chart-layout { display: grid; grid-template-columns: minmax(0, 1fr) 160px; align-items: center; gap: 10px; margin-top: 20px; }
+#boeing-project .boeing-chart { width: 100%; height: auto; display: block; overflow: visible; }
+#boeing-project .boeing-grid { stroke: #dce2ea; stroke-width: 1; }
+#boeing-project .boeing-axis { fill: none; stroke: #c7d1de; }
+#boeing-project .boeing-axis-labels, #boeing-project .boeing-axis-title { font-family: 'Manrope', sans-serif; font-size: 13px; fill: #102a4b; }
+#boeing-project .boeing-axis-title { font-size: 12px; }
+#boeing-project .boeing-cost-long, #boeing-project .boeing-cost-short { fill: none; stroke-width: 2.5; stroke-dasharray: 7 5; }
+#boeing-project .boeing-cost-long { stroke: #173b65; }
+#boeing-project .boeing-cost-short { stroke: #7ea8dc; }
+#boeing-project .boeing-points-long { fill: #173b65; }
+#boeing-project .boeing-points-short { fill: #7ea8dc; }
+#boeing-project .boeing-legend { list-style: none; padding: 0; display: grid; gap: 13px; }
+#boeing-project .boeing-legend li { position: relative; padding-left: 17px; font-size: .73rem; line-height: 1.4; }
+#boeing-project .boeing-legend small { font-size: .68rem; color: #4d617d; }
+#boeing-project .boeing-dot { position: absolute; left: 0; top: 4px; height: 9px; width: 9px; border-radius: 50%; }
+#boeing-project .boeing-dot-long { background: #173b65; }
+#boeing-project .boeing-dot-short { background: #7ea8dc; }
+#boeing-project .boeing-cost-summary { margin-top: 18px; padding: 15px; border-radius: 12px; background: #e0eafa; }
+#boeing-project .boeing-cost-summary h4 { font-size: .83rem; }
+#boeing-project .boeing-cost-summary p { font-size: .7rem; line-height: 1.4; margin: 7px 0 12px; }
+#boeing-project .boeing-cost-summary dl > div + div { margin-top: 10px; }
+#boeing-project .boeing-cost-summary dt { font-size: .72rem; }
+#boeing-project .boeing-cost-summary dd { font-size: 1.05rem; font-weight: 800; }
+#boeing-project .boeing-chart-note { font-size: .73rem; color: #4d617d; line-height: 1.55; margin-top: 12px; }
+
+/* The real demonstration occupies the larger column, with a native player. */
+#boeing-project .boeing-twin { padding-top: 38px; padding-bottom: 42px; }
+#boeing-project .boeing-twin-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; margin-top: 24px; }
+#boeing-project .boeing-video { aspect-ratio: 16 / 9; border-radius: 14px; background: #102236; border: 1px solid #253d56; overflow: hidden; }
+#boeing-project .boeing-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+#boeing-project .boeing-video-caption { color: #4d617d; font-size: .74rem; margin-top: 11px; }
+#boeing-project .boeing-twin-copy > h4 { font-family: Georgia, serif; font-size: 1.45rem; margin-bottom: 12px; }
+#boeing-project .boeing-twin-copy > p { font-size: .92rem; }
+#boeing-project .boeing-twin-copy .boeing-checklist { margin-top: 20px; gap: 13px; }
+#boeing-project .boeing-twin-copy .boeing-checklist li { font-size: .83rem; line-height: 1.5; }
+#boeing-project .boeing-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+#boeing-project .button-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 17px; min-height: 46px; font-size: .77rem; line-height: 1.4; text-align: center; white-space: normal; background: #173b65; color: white; border: 1px solid #173b65; text-decoration: none; }
+#boeing-project .button-link svg { width: 18px; height: 18px; }
+#boeing-project .boeing-button-light { background: #f5f8ff; color: #102a4b; }
+#boeing-project .button-link:hover { background: #284e7d; color: white; }
+#boeing-project .boeing-button-light:hover { background: #dfe9f8; color: #102a4b; }
+
+/* Intended benefits and a final link to the team's actual presentation. */
+#boeing-project .boeing-outcomes { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 25px; align-items: start; }
+#boeing-project .boeing-outcomes h3 { font-size: 1.8rem; }
+#boeing-project .boeing-outcomes > div { display: flex; gap: 13px; border-left: 1px solid var(--boeing-line); padding-left: 22px; }
+#boeing-project .boeing-outcomes > div svg { width: 29px; height: 29px; }
+#boeing-project .boeing-outcomes p { font-size: .79rem; line-height: 1.55; }
+#boeing-project .boeing-outcomes strong { display: block; font-size: .85rem; margin-bottom: 5px; }
+#boeing-project .boeing-presentation { display: flex; align-items: center; gap: 22px; background: #102e54; border-radius: 15px; color: white; padding: 30px 34px; }
+#boeing-project .boeing-presentation > svg { width: 38px; height: 38px; }
+#boeing-project .boeing-presentation > div { flex: 1; }
+#boeing-project .boeing-presentation h3 { color: white; font-size: 1.8rem; margin-bottom: 7px; }
+#boeing-project .boeing-presentation p { font-size: .87rem; max-width: 760px; }
+#boeing-project .boeing-presentation .button-link { flex-shrink: 0; padding-inline: 22px; }
+
+/* Tablet: retain generous imagery while giving complex content full width. */
+@media (max-width: 1100px) {
+    #boeing-project .boeing-hero-copy { width: 59%; }
+    #boeing-project .boeing-metadata { gap: 15px; }
+    #boeing-project .boeing-overview { gap: 30px; }
+    #boeing-project .boeing-overview > div + div { padding-left: 30px; }
+    #boeing-project .boeing-analysis { grid-template-columns: .8fr 1.2fr; gap: 26px; }
+    #boeing-project .boeing-contributions { padding-right: 24px; }
+    #boeing-project .boeing-chart-layout { grid-template-columns: minmax(0, 1fr); }
+    #boeing-project .boeing-chart-aside { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 20px; }
+    #boeing-project .boeing-cost-summary { margin-top: 0; }
+    #boeing-project .boeing-twin-layout { gap: 26px; }
+    #boeing-project .boeing-outcomes { grid-template-columns: 1fr 1fr 1fr; }
+    #boeing-project .boeing-outcomes h3 { grid-column: 1 / -1; }
+    #boeing-project .boeing-outcomes > div:first-of-type { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 850px) {
+    #boeing-project .boeing-hero { display: flex; flex-direction: column; align-items: stretch; }
+    #boeing-project .boeing-hero-copy { width: 100%; padding-bottom: 26px; }
+    #boeing-project #boeing-title { max-width: 650px; }
+    #boeing-project .boeing-hero-photo { position: relative; inset: auto; height: 320px; }
+    #boeing-project .boeing-hero-photo img { object-position: center 45%; }
+    #boeing-project .boeing-hero-photo::after { background: linear-gradient(180deg, var(--boeing-paper), rgba(247,244,239,0) 22%); }
+    #boeing-project .boeing-challenge { grid-template-columns: 40% 1fr; }
+    #boeing-project .boeing-challenge > div { padding: 25px; }
+    #boeing-project .boeing-analysis { grid-template-columns: 1fr; gap: 32px; }
+    #boeing-project .boeing-contributions { border: 0; padding-right: 0; }
+    #boeing-project .boeing-contribution { max-width: 650px; }
+    #boeing-project .boeing-chart-layout { grid-template-columns: minmax(0, 1fr) 175px; }
+    #boeing-project .boeing-chart-aside { display: block; }
+    #boeing-project .boeing-cost-summary { margin-top: 18px; }
+    #boeing-project .boeing-twin-layout { grid-template-columns: 1fr; }
+    #boeing-project .boeing-presentation { flex-wrap: wrap; }
+    #boeing-project .boeing-presentation > div { flex-basis: calc(100% - 60px); }
+}
+/* Phone: a connected vertical phase timeline, readable chart and full video. */
+@media (max-width: 600px) {
+    #boeing-project .boeing-row { padding: 30px 0; }
+    #boeing-project .boeing-back { margin-bottom: 23px; }
+    #boeing-project .boeing-hero-copy { padding-top: 12px; }
+    #boeing-project #boeing-title { font-size: clamp(2.35rem, 10vw, 3.2rem); }
+    #boeing-project .boeing-subtitle { font-size: 1rem; }
+    #boeing-project .boeing-tags { gap: 7px; }
+    #boeing-project .boeing-tags li { padding-inline: 11px; font-size: .72rem; }
+    #boeing-project .boeing-metadata { gap: 18px 22px; }
+    #boeing-project .boeing-metadata > div:last-child { flex-basis: 100%; }
+    #boeing-project .boeing-hero-photo { height: 270px; }
+    #boeing-project .boeing-overview { grid-template-columns: 1fr; gap: 28px; }
+    #boeing-project .boeing-overview > div + div { border-left: 0; border-top: 1px solid var(--boeing-line); padding: 26px 0 0; }
+    #boeing-project .boeing-challenge { grid-template-columns: 1fr; margin: 0 0 30px; }
+    #boeing-project .boeing-challenge > img { min-height: 0; height: 220px; }
+    #boeing-project .boeing-challenge > div { padding: 25px 22px; }
+    #boeing-project .boeing-strategy { padding-top: 0; }
+    #boeing-project .boeing-phases { grid-template-columns: 1fr; gap: 25px; position: relative; padding-left: 20px; }
+    #boeing-project .boeing-phases::before { content: ''; position: absolute; left: 6px; top: 30px; bottom: 40px; width: 2px; background: #b8cbe2; }
+    #boeing-project .boeing-phases > li { position: relative; }
+    #boeing-project .boeing-phases > li::before { content: ''; position: absolute; left: -18px; top: 30px; width: 10px; height: 10px; background: #396699; border: 2px solid var(--boeing-paper); border-radius: 50%; }
+    #boeing-project .boeing-phase-heading { min-height: 74px; padding-left: 21px; }
+    #boeing-project .boeing-phases > li > p { padding: 12px 10px 0 21px; }
+    #boeing-project .boeing-chart-layout { grid-template-columns: minmax(0, 1fr); }
+    #boeing-project .boeing-chart-aside { display: grid; grid-template-columns: 1fr 1.15fr; gap: 14px; }
+    #boeing-project .boeing-cost-summary { margin-top: 0; }
+    #boeing-project .boeing-chart .boeing-axis-labels { font-size: 15px; }
+    #boeing-project .boeing-twin-layout { margin-top: 20px; }
+    #boeing-project .boeing-actions { flex-direction: column; }
+    #boeing-project .boeing-outcomes { grid-template-columns: 1fr; gap: 20px; }
+    #boeing-project .boeing-outcomes > div, #boeing-project .boeing-outcomes > div:first-of-type { border-left: 0; border-top: 1px solid var(--boeing-line); padding: 20px 0 0; }
+    #boeing-project .boeing-outcomes p { font-size: .88rem; }
+    #boeing-project .boeing-presentation { padding: 26px 22px; gap: 15px; }
+    #boeing-project .boeing-presentation > svg { width: 30px; height: 30px; }
+    #boeing-project .boeing-presentation h3 { font-size: 1.6rem; }
+    #boeing-project .boeing-presentation .button-link { width: 100%; }
+}
+
+/* Keep definition-list metadata semantic while aligning icon and label. */
+#boeing-project .boeing-metadata > div { display: grid; gap: 3px; }
+#boeing-project .boeing-metadata dt { display: flex; align-items: center; gap: 7px; }
+#boeing-project .boeing-metadata dd { padding-left: 28px; }
+
+/* Explicit text inheritance keeps dark ribbons and the final banner legible. */
+#boeing-project .boeing-phase-heading h4 { color: inherit; }
+#boeing-project .boeing-presentation p { color: #edf3ff; }

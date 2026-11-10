@@ -236,11 +236,83 @@
     </div>
 </section>
 
-<!-- Temporary destination only; the full Boeing case study will be designed separately. -->
-<section id="boeing-project" aria-labelledby="boeing-placeholder-title">
-    <h2 id="boeing-placeholder-title">Boeing Supply Chain Strategy</h2>
-    <p>Full case study coming soon.</p>
-    <a class="button-link" href="#consulting" onclick="openTab(event, 'consulting'); return false;">Back to Consulting <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
+<!-- Boeing case study: scoped layouts, native SVG chart, and real demonstration video. -->
+<section id="boeing-project" aria-labelledby="boeing-title">
+    <div class="boeing-hero">
+        <div class="boeing-hero-copy">
+            <a class="boeing-back" href="#consulting" onclick="openTab(event, 'consulting'); return false;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m5-5-5 5 5 5"/></svg>Back to Consulting</a>
+            <p class="boeing-eyebrow">Case Competition</p>
+            <h2 id="boeing-title">Boeing Supply Chain Strategy</h2>
+            <p class="boeing-subtitle">A strategic proposal to strengthen Boeing&rsquo;s aerospace supply chain through workforce development, supplier partnerships, and advanced manufacturing.</p>
+            <ul class="boeing-tags" aria-label="Project focus"><li>Strategy</li><li>Supply Chain</li><li>Financial Analysis</li><li>Operations</li></ul>
+            <dl class="boeing-metadata">
+                <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/></svg><span>Date</span></dt><dd>November 2026</dd></div>
+                <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21v-3a7 7 0 0 1 14 0v3M17 4a3 3 0 0 1 0 6m2 4a6 6 0 0 1 3 5v2"/></svg><span>Team</span></dt><dd>4 Students</dd></div>
+                <div><dt><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21V3h8v18M8 8H3v13h18V8h-5M11 7h2m-2 4h2m-2 4h2m-7-3v2m12-2v2M11 21v-3h2v3"/></svg><span>Organization</span></dt><dd>Kappa Theta Pi Consulting</dd></div>
+            </dl>
+        </div>
+        <div class="boeing-hero-photo"><img src="images/boeing-thumbnail.png" alt="Boeing aircraft tail beside a Boeing manufacturing facility" width="432" height="334" fetchpriority="high"></div>
+    </div>
+
+    <div class="boeing-overview boeing-row">
+        <div><h3>Project Overview</h3><p>Developed for the 2026 Carolina Case Competition, our team of four students representing Kappa Theta Pi proposed a multiyear strategy to strengthen Boeing&rsquo;s aerospace supply chain. Our approach addressed supplier consolidation, skilled workforce shortages, constrained manufacturing capacity, and the need for greater supply-chain resilience.</p></div>
+        <div><h3>My Role</h3><ul class="boeing-checklist"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span>Developed the Boeing Ed workforce development strategy.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span>Conducted aerospace industry and technical education research.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span>Built financial models and training-cost sensitivity analyses.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span>Designed and developed an interactive supply-chain digital twin demonstration.</span></li></ul></div>
+    </div>
+
+    <div class="boeing-challenge" role="region" aria-labelledby="boeing-challenge-title">
+        <img src="images/boeing-jet-engine.png" alt="Close-up of an aircraft jet engine inside a manufacturing facility" width="367" height="147" loading="lazy">
+        <div><h3 id="boeing-challenge-title">The Challenge</h3><p>Boeing&rsquo;s efforts to increase aircraft production face significant supply-chain constraints. Private-equity consolidation has concentrated ownership of specialized suppliers, reducing sourcing alternatives and increasing supplier negotiating leverage. Workforce shortages, lengthy qualification processes, manufacturing capacity limitations, and competition for resources create additional challenges.</p></div>
+    </div>
+
+    <div class="boeing-strategy boeing-row" role="region" aria-labelledby="boeing-strategy-title">
+        <p class="boeing-eyebrow">Our Solution</p><h3 id="boeing-strategy-title">A Three-Phase Strategy</h3>
+        <p class="boeing-section-intro">Our team proposed a coordinated, three-phase approach to expand the skilled workforce, secure supplier production capacity, and strengthen long-term supply-chain resilience.</p>
+        <ol class="boeing-phases">
+            <li><div class="boeing-phase-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 10-5 10 5-10 5L2 8Zm4 2v7q6 5 12 0v-7m4-2v8"/></svg><h4><span>Phase 1:</span> Workforce Development</h4></div><p>Launch Boeing Ed, a proposed workforce development initiative funding technical training through existing community colleges.</p></li>
+            <li><div class="boeing-phase-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 4-5 4 2 4-2 8 5-4 9-4 3-9-6-3-6Zm5 2 4-4h3l4 4-3 3-4-3m-6 4 5 5m1-5 5 4M1 8l3-4m16 2 3 3"/></svg><h4><span>Phase 2:</span> Supplier Partnerships</h4></div><p>Secure production capacity through multiyear supplier agreements, strategic investments, and improved demand visibility.</p></li>
+            <li><div class="boeing-phase-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 3 1-2h4l1 2 3 2 2 1 2 3-1 3 1 3-2 3-3 1-2 3h-4l-2-2-3-1-2-3 1-3-1-3 2-3 3-1Z"/><circle cx="12" cy="12" r="4"/></svg><h4><span>Phase 3:</span> Advanced Manufacturing</h4></div><p>Evaluate qualified 3D-printed alternatives and introduce a supply-chain digital twin to improve visibility into production constraints.</p></li>
+        </ol>
+    </div>
+
+    <div class="boeing-analysis boeing-row">
+        <div class="boeing-contributions"><h3>Key Contributions</h3>
+            <div class="boeing-contribution"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21v-3a7 7 0 0 1 14 0v3M17 4a3 3 0 0 1 0 6m2 4a6 6 0 0 1 3 5v2"/></svg><div><h4>Boeing Ed Initiative</h4><p>Researched technical training programs, evaluated potential education partners, and helped develop the pilot structure for a proposed aerospace workforce initiative.</p></div></div>
+            <div class="boeing-contribution"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V12m5 9V7m5 14V3m5 18V9"/></svg><div><h4>Financial Modeling</h4><p>Developed training-cost estimates and a five-year sensitivity analysis comparing 12-week and 24-week manufacturing education programs.</p></div></div>
+            <div class="boeing-contribution"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg><div><h4>Industry Research</h4><p>Analyzed aerospace labor shortages, supplier challenges, technical training requirements, and educational partnership opportunities.</p></div></div>
+        </div>
+        <figure class="boeing-financial"><figcaption><h3 id="boeing-chart-heading">Boeing Ed: Training Cost Analysis</h3><p>Cumulative tuition cost: proposed pilot to five-year target.</p></figcaption>
+            <div class="boeing-chart-layout">
+                <svg class="boeing-chart" viewBox="0 0 450 305" role="img" aria-labelledby="boeing-chart-title boeing-chart-desc">
+                    <title id="boeing-chart-title">Tuition scenarios at confirmed enrollment endpoints</title><desc id="boeing-chart-desc">Year 1 pilot: 50 trainees, $500,000 at $10,000 each for 24 weeks; $250,000 at $5,000 each for 12 weeks. Year 5 target: 1,000 cumulative trainees, $10 million for 24 weeks or $5 million for 12 weeks. Dashed connecting lines show endpoint comparisons, not verified annual enrollment or growth rates.</desc>
+                    <g class="boeing-grid"><path d="M65 26H420M65 68H420M65 110H420M65 152H420M65 194H420M65 236H420"/></g>
+                    <g class="boeing-axis-labels" text-anchor="end"><text x="55" y="31">$10M</text><text x="55" y="73">$8M</text><text x="55" y="115">$6M</text><text x="55" y="157">$4M</text><text x="55" y="199">$2M</text><text x="55" y="241">$0</text></g>
+                    <path class="boeing-axis" d="M65 26V236H420"/>
+                    <path class="boeing-cost-long" d="M95 225.5 390 26"/><path class="boeing-cost-short" d="M95 230.75 390 131"/>
+                    <g class="boeing-points-long"><circle cx="95" cy="225.5" r="5"/><circle cx="390" cy="26" r="5"/></g><g class="boeing-points-short"><circle cx="95" cy="230.75" r="5"/><circle cx="390" cy="131" r="5"/></g>
+                    <g class="boeing-axis-labels" text-anchor="middle"><text x="95" y="260">Year 1 pilot</text><text x="95" y="280">50 trainees</text><text x="375" y="260">Year 5 target</text><text x="375" y="280">1,000 trainees</text></g>
+                    <text class="boeing-axis-title" x="15" y="140" text-anchor="middle" transform="rotate(-90 15 140)">Cumulative tuition cost</text>
+                </svg>
+                <div class="boeing-chart-aside"><ul class="boeing-legend" aria-label="Training scenarios"><li><span class="boeing-dot boeing-dot-long"></span>24-week program<br><small>$10,000 / trainee</small></li><li><span class="boeing-dot boeing-dot-short"></span>12-week program<br><small>$5,000 / trainee</small></li></ul><div class="boeing-cost-summary"><h4>Total Five-Year Tuition Cost</h4><p>1,000 cumulative trainees</p><dl><div><dt>24-week program</dt><dd>~$10.0M</dd></div><div><dt>12-week program</dt><dd>~$5.0M</dd></div></dl></div></div>
+            </div>
+            <p class="boeing-chart-note">Confirmed endpoints only; dashed lines do not represent annual enrollment. Proposed pilot: 50 trainees in CNC machining and quality inspection, with a $500,000 tuition budget.</p>
+            <p class="boeing-chart-note">Illustrative tuition-only projections based on proposed enrollment and training-cost assumptions. Excludes administration, program operations, and other expenses.</p>
+        </figure>
+    </div>
+
+    <div class="boeing-twin boeing-row" role="region" aria-labelledby="boeing-twin-title">
+        <p class="boeing-eyebrow">From Strategy to Simulation</p><h3 id="boeing-twin-title">Visualizing the supply chain.</h3>
+        <div class="boeing-twin-layout">
+            <div><div class="boeing-video"><iframe src="https://www.youtube-nocookie.com/embed/Ab4n70PaeH0" title="Boeing Supply Chain Digital Twin: student simulation demonstration" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="boeing-video-caption">My interactive case-competition demonstration. All scenario data is simulated; this student concept is not affiliated with Boeing.</p></div>
+            <div class="boeing-twin-copy"><h4>Supply-Chain Digital Twin</h4><p>I developed an interactive simulation to demonstrate how Boeing could visualize manufacturing dependencies, identify production bottlenecks, and explore how hypothetical process changes might affect aircraft output.</p><ul class="boeing-checklist"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span><strong>Manufacturing Dependencies</strong>Modeled interconnected manufacturing stages and production constraints.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span><strong>Bottleneck Simulation</strong>Created hypothetical production scenarios illustrating downstream effects.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m7.5 12 3 3 6-7"/></svg><span><strong>Production Visualization</strong>Presented simulated manufacturing outcomes to explain operational tradeoffs.</span></li></ul><div class="boeing-actions"><a class="button-link" href="https://github.com/teagan-donnelly/Boeing-Digital-Twin-Demo" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg>View Source Code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a class="button-link boeing-button-light" href="https://youtu.be/Ab4n70PaeH0" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 6 3-6 3V9Z"/></svg>Watch Demonstration <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div></div>
+        </div>
+    </div>
+
+    <div class="boeing-outcomes boeing-row" role="region" aria-labelledby="boeing-outcomes-title"><h3 id="boeing-outcomes-title">Proposed Outcomes</h3>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M2 21v-3a7 7 0 0 1 14 0v3M17 4a3 3 0 0 1 0 6m2 4a6 6 0 0 1 3 5v2"/></svg><p><strong>Expand the Skilled Workforce</strong>Strengthen the pipeline of technically trained aerospace manufacturing workers.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 7 10-5 10 5-10 5L2 7Zm0 5 10 5 10-5M2 17l10 5 10-5"/></svg><p><strong>Secure Supplier Capacity</strong>Improve access to critical components through long-term partnerships.</p></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V12m5 9V7m5 14V3m5 18V9"/></svg><p><strong>Increase Supply-Chain Resilience</strong>Improve visibility into manufacturing constraints and potential disruptions.</p></div>
+    </div>
+    <div class="boeing-presentation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H5v20h14V7l-5-5Zm0 0v6h5M8 12h8m-8 4h8"/></svg><div><h3>View the Full Presentation</h3><p>Explore our team&rsquo;s complete analysis, proposed strategy, financial modeling, implementation plan, and supporting research.</p></div><a class="button-link boeing-button-light" href="project-docs/boeing-case-competition.pdf" target="_blank" rel="noopener noreferrer">View Slide Deck <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div>
 </section>
 
 <section id="coursework" aria-labelledby="coursework-title">
