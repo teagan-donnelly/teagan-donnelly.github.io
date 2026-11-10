@@ -6025,3 +6025,441 @@ nav > .tab-btn:focus-visible {
         font-size: 15px;
     }
 }
+
+/* Consulting: extend the existing navy/cream editorial system without changing other pages. */
+#consulting {
+    --consulting-navy: #102a4b;
+    --consulting-blue: #315b8d;
+    --consulting-border: #d2d9e4;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8px 0 28px;
+    color: #43516a;
+}
+
+#consulting *, #consulting *::before, #consulting *::after {
+    box-sizing: border-box;
+}
+
+#consulting p {
+    color: #43516a;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#consulting h2, #consulting h3, #consulting h4 {
+    font-family: Georgia, serif;
+    font-weight: 600;
+    color: var(--consulting-navy);
+    letter-spacing: -0.03em;
+}
+
+#consulting .consulting-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.23em;
+    color: var(--consulting-blue);
+    margin-bottom: 12px;
+}
+
+/* The campus image remains unaltered; its left edge fades into the warm page surface. */
+#consulting .consulting-hero {
+    position: relative;
+    isolation: isolate;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#consulting .consulting-hero-copy {
+    position: relative;
+    z-index: 1;
+    width: 53%;
+    padding: 34px 0;
+}
+
+#consulting h2 {
+    font-size: clamp(3.4rem, 5.6vw, 5.4rem);
+    line-height: 1.05;
+    border: 0;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+#consulting .consulting-hero-copy > p:last-child {
+    max-width: 570px;
+    font-size: 1.12rem;
+    line-height: 1.65;
+}
+
+#consulting .consulting-hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 57%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% center;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 33%);
+    mask-image: linear-gradient(to right, transparent, #000 33%);
+}
+
+/* One substantial horizontal project, rather than a grid of small tiles. */
+#consulting .consulting-featured {
+    padding-top: 38px;
+    margin-top: 14px;
+}
+
+#consulting h3 {
+    font-size: clamp(2rem, 3.1vw, 3rem);
+    line-height: 1.12;
+    margin: 0 0 30px;
+}
+
+#consulting .consulting-project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
+    border: 1px solid var(--consulting-border);
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fcfbf8;
+}
+
+#consulting .consulting-project-card > * {
+    min-width: 0;
+}
+
+#consulting .consulting-project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    object-position: 45% center;
+}
+
+#consulting .consulting-project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 32px 24px;
+}
+
+#consulting .consulting-category {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--consulting-blue);
+    margin-bottom: 8px;
+}
+
+#consulting .consulting-project-content h4 {
+    font-size: clamp(1.9rem, 2.7vw, 2.8rem);
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+
+#consulting .consulting-project-description {
+    font-size: 1.08rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#consulting .consulting-event {
+    font-size: 0.82rem;
+    color: #536b87;
+    margin-bottom: 20px;
+}
+
+#consulting .consulting-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+#consulting .consulting-tags li {
+    padding: 6px 13px;
+    border-radius: 20px;
+    background: #e6eaf4;
+    color: #163b70;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#consulting .consulting-card-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 18px;
+    border-top: 1px solid var(--consulting-border);
+    margin-top: auto;
+}
+
+#consulting .consulting-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 340px;
+    gap: 16px;
+    margin: 0;
+}
+
+#consulting .consulting-metadata > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+#consulting .consulting-metadata svg {
+    width: 21px;
+    height: 21px;
+    color: #49627e;
+    flex-shrink: 0;
+}
+
+#consulting .consulting-metadata dt {
+    color: #596d85;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 3px;
+}
+
+#consulting .consulting-metadata dd {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #233a58;
+    margin: 0;
+    line-height: 1.4;
+}
+
+#consulting .consulting-project-link {
+    min-height: 44px;
+    padding: 12px 20px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 0.83rem;
+    white-space: nowrap;
+}
+
+#consulting .consulting-project-link svg,
+#boeing-project .button-link svg {
+    width: 19px;
+    height: 19px;
+}
+
+/* Strengths are open columns with thin dividers, not four boxed cards. */
+#consulting .consulting-strengths {
+    border-top: 1px solid var(--consulting-border);
+    padding-top: 26px;
+    margin-top: 44px;
+}
+
+#consulting .consulting-strength-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+}
+
+#consulting .consulting-strength-grid article {
+    min-width: 0;
+}
+
+#consulting .consulting-strength-grid article + article {
+    border-left: 1px solid #dde2eb;
+    padding-left: 26px;
+}
+
+#consulting .consulting-strength-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #eaeef7;
+    color: #183f74;
+    margin-bottom: 14px;
+}
+
+#consulting .consulting-strength-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+#consulting .consulting-strength-grid h4 {
+    font-size: 1.3rem;
+    line-height: 1.18;
+    margin: 0 0 10px;
+}
+
+#consulting .consulting-strength-grid p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+#consulting a:focus-visible,
+#boeing-project a:focus-visible {
+    outline: 3px solid #5278a0;
+    outline-offset: 5px;
+}
+
+#consulting ::selection,
+#boeing-project ::selection {
+    background: #dce6f3;
+    color: #102a4b;
+}
+
+/* Minimal destination, intentionally separate from the future Boeing case study. */
+#boeing-project {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 42px 0;
+}
+
+#boeing-project h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #102a4b;
+    border: 0;
+    line-height: 1.1;
+}
+
+#boeing-project .button-link {
+    min-height: 44px;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+@media (max-width: 1050px) {
+    #consulting .consulting-hero-copy {
+        width: 58%;
+    }
+
+    #consulting .consulting-hero-image {
+        width: 55%;
+    }
+
+    #consulting .consulting-project-card {
+        grid-template-columns: minmax(0, 0.36fr) minmax(0, 0.64fr);
+    }
+
+    #consulting .consulting-project-content {
+        padding: 26px;
+    }
+
+    #consulting .consulting-strength-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    #consulting .consulting-strength-grid article:nth-child(3) {
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #consulting {
+        padding: 12px 0 24px;
+    }
+
+    #consulting .consulting-hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    #consulting .consulting-hero-copy {
+        width: 100%;
+        padding: 14px 0 24px;
+    }
+
+    #consulting h2 {
+        font-size: clamp(2.9rem, 12vw, 4.2rem);
+        margin-bottom: 18px;
+    }
+
+    #consulting .consulting-hero-copy > p:last-child {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #consulting .consulting-hero-image {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    #consulting .consulting-featured {
+        padding-top: 24px;
+        margin-top: 8px;
+    }
+
+    #consulting h3 {
+        font-size: clamp(1.9rem, 7.5vw, 2.4rem);
+        margin-bottom: 22px;
+    }
+
+    #consulting .consulting-project-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #consulting .consulting-project-image {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.5;
+        object-position: center;
+    }
+
+    #consulting .consulting-project-content {
+        padding: 24px 20px;
+    }
+
+    #consulting .consulting-project-content h4 {
+        font-size: 2rem;
+    }
+
+    #consulting .consulting-project-description {
+        font-size: 1rem;
+    }
+
+    #consulting .consulting-metadata {
+        flex-basis: 100%;
+        gap: 16px 22px;
+    }
+
+    #consulting .consulting-project-link {
+        min-height: 46px;
+    }
+
+    #consulting .consulting-strengths {
+        margin-top: 30px;
+    }
+
+    #consulting .consulting-strength-grid,
+    #consulting .consulting-strength-grid article + article {
+        gap: 22px;
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    #consulting .consulting-strength-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #consulting .consulting-strength-grid article + article {
+        border-top: 1px solid #dde2eb;
+        padding-top: 22px;
+    }
+}

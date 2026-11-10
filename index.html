@@ -33,9 +33,10 @@
 </header>
 
 <nav id="site-navigation" aria-label="Main navigation">
-    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="nav-home nav-projects nav-coursework nav-about nav-contact"><span>Menu</span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="nav-home nav-projects nav-consulting nav-coursework nav-about nav-contact"><span>Menu</span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     <button id="nav-home" class="tab-btn active" onclick="openTab(event, 'home')">Home</button>
     <button id="nav-projects" class="tab-btn" onclick="openTab(event, 'projects')">Projects</button>
+    <button id="nav-consulting" class="tab-btn" onclick="openTab(event, 'consulting')">Consulting</button>
     <button id="nav-coursework" class="tab-btn" onclick="openTab(event, 'coursework')">Coursework</button>
     <button id="nav-about" class="tab-btn" onclick="openTab(event, 'about')">About</button>
     <button id="nav-contact" class="tab-btn" onclick="openTab(event, 'contact')">Contact</button>
@@ -187,6 +188,59 @@
         </article>
     </div>
     <footer class="work-footer"><span>BUILT ON A FOUNDATION OF CURIOSITY</span><span class="work-footer-line" aria-hidden="true"></span><span>LEARNING TODAY, BUILDING TOMORROW <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16M12 5Q6 1 2 4v15q5-3 10 2 5-5 10-2V4q-4-3-10 1Z"/></svg></span></footer>
+</section>
+
+<section id="consulting" aria-labelledby="consulting-title">
+    <!-- A single editorial introduction, using the supplied campus photograph. -->
+    <div class="consulting-hero">
+        <div class="consulting-hero-copy">
+            <p class="consulting-eyebrow">STRATEGY &amp; CONSULTING</p>
+            <h2 id="consulting-title">Consulting</h2>
+            <p>I approach business challenges through analytical thinking, quantitative research, and structured problem-solving. My case competition experience has given me the opportunity to explore complex industries, evaluate financial and operational constraints, and develop practical, research-backed strategies.</p>
+        </div>
+        <img class="consulting-hero-image" src="images/consulting-hero.png" alt="University of South Carolina campus cupola framed by sunlit trees">
+    </div>
+
+    <div class="consulting-featured" role="region" aria-labelledby="consulting-featured-title">
+        <p class="consulting-eyebrow">FEATURED WORK</p>
+        <h3 id="consulting-featured-title">Case Competitions &amp; Strategy Projects</h3>
+        <article class="consulting-project-card" aria-labelledby="consulting-boeing-title">
+            <img class="consulting-project-image" src="images/boeing-thumbnail.png" alt="Boeing aircraft tail beside a Boeing manufacturing facility" loading="lazy">
+            <div class="consulting-project-content">
+                <p class="consulting-category">CASE COMPETITION</p>
+                <h4 id="consulting-boeing-title">Boeing Supply Chain Strategy</h4>
+                <p class="consulting-project-description">A strategic proposal to strengthen Boeing&rsquo;s aerospace supply chain through workforce development, supplier partnerships, and advanced manufacturing.</p>
+                <p class="consulting-event">2026 Carolina Case Competition</p>
+                <ul class="consulting-tags" aria-label="Project focus areas"><li>Strategy</li><li>Supply Chain</li><li>Financial Analysis</li><li>Operations</li></ul>
+                <div class="consulting-card-footer">
+                    <dl class="consulting-metadata">
+                        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M7 2v4M17 2v4M3 10h18"/></svg><div><dt>DATE</dt><dd>November 2026</dd></div></div>
+                        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5v2"/></svg><div><dt>TEAM</dt><dd>4 Students</dd></div></div>
+                        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V8h7V2h8v20ZM10 8v14M6 12v1M6 17v1M13 6h2M13 11h2M13 16h2M18 12h3v10H3"/></svg><div><dt>ORGANIZATION</dt><dd>Kappa Theta Pi Consulting</dd></div></div>
+                    </dl>
+                    <a class="button-link consulting-project-link" href="#boeing-project" onclick="openTab(event, 'boeing-project'); return false;" aria-label="View Boeing Supply Chain Strategy project">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="consulting-strengths" role="region" aria-labelledby="consulting-strengths-title">
+        <p class="consulting-eyebrow">CONSULTING SKILLS &amp; EXPERIENCE</p>
+        <h3 id="consulting-strengths-title">Key Strengths</h3>
+        <div class="consulting-strength-grid">
+            <article><span class="consulting-strength-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7M9 21V9M14 21V3M19 21V7"/></svg></span><h4>Strategic Analysis</h4><p>Break down complex business problems and develop research-backed recommendations.</p></article>
+            <article><span class="consulting-strength-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 6-10 6L2 8ZM2 12l10 6 10-6M2 16l10 6 10-6"/></svg></span><h4>Quantitative Modeling</h4><p>Develop financial models, compare scenarios, and evaluate the feasibility of proposed solutions.</p></article>
+            <article><span class="consulting-strength-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></span><h4>Industry Research</h4><p>Analyze market trends, industry dynamics, and operational constraints to inform strategic decisions.</p></article>
+            <article><span class="consulting-strength-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5v2"/></svg></span><h4>Strategic Communication</h4><p>Translate complex research and analysis into clear, persuasive recommendations and presentations.</p></article>
+        </div>
+    </div>
+</section>
+
+<!-- Temporary destination only; the full Boeing case study will be designed separately. -->
+<section id="boeing-project" aria-labelledby="boeing-placeholder-title">
+    <h2 id="boeing-placeholder-title">Boeing Supply Chain Strategy</h2>
+    <p>Full case study coming soon.</p>
+    <a class="button-link" href="#consulting" onclick="openTab(event, 'consulting'); return false;">Back to Consulting <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18m-7-7 7 7-7 7"/></svg></a>
 </section>
 
 <section id="coursework" aria-labelledby="coursework-title">
@@ -568,7 +622,8 @@
         const target = document.getElementById(destination);
         closeMobileNavigation();
         const changed = !target.classList.contains('active');
-        const navigationTab = destination.endsWith('-project') ? 'projects' : destination;
+        const navigationTab = destination === 'boeing-project' ? 'consulting'
+            : destination.endsWith('-project') ? 'projects' : destination;
 
         portfolioSections.forEach(section => section.classList.toggle('active', section === target));
         document.querySelectorAll('nav > .tab-btn').forEach(button => {
